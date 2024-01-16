@@ -6,7 +6,7 @@
 ### Running Test
 
 - In project repo first install the dependencies `npm install` if not done before and then run `npm run test`.
-- 
+
 ### Branch Naming Rules
 
 A git branch should start with a category. Pick one of these: `feature`, `bugfix`, `hotfix`, or `test`.
