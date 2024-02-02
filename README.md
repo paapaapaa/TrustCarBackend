@@ -17,3 +17,16 @@ eg. `git branch <category>/<short-description>-<ticket no. on borad>`
 * If you need to fix a bug: `git branch bugfix/button-not-displaying-342`
 * If you need to fix a bug really fast (possibly with a temporary solution): `git branch hotfix/registration-form-not-working-232`
 * If you need to experiment outside of an issue/ticket: `git branch test/http-client`
+
+
+### Database setup
+
+## Setting Up the Database
+
+Before you start the application, make sure you set up the database by following these steps:
+
+1. Run the following command to start the database instance using Docker Compose:
+
+   ```bash
+   docker compose -f .\docker-compose.dev.yml up
+2. Run ```npm run migrate``` and then ```npm run seed```
