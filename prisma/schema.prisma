@@ -15,7 +15,7 @@ model organization {
   address          String?            @db.VarChar
   city             String?            @db.VarChar
   postcode         Int?
-  phone            Int?
+  phone            BigInt?
   email            String?            @db.VarChar
   created_at       DateTime?          @db.Timestamp(6)
   updated_at       DateTime?          @db.Timestamp(6)
