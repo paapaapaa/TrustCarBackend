@@ -1,18 +1,20 @@
 import express from "express";
-import testRouter from "./routers/test-router";
-import swaggerUi,{SwaggerOptions} from "swagger-ui-express";
+import multer from 'multer';
+import authRouter from "./routers/auth-router";
+import swaggerUi,{SwaggerUiOptions} from "swagger-ui-express";
+import * as swaggerDocument from "./docs/swagger.json";
 
 const server = express();
+const upload = multer();
+server.use(express.json());
 
-server.use("/api/v1/test-route",testRouter);
-
-const swaggerOptions: SwaggerOptions = {
+const swaggerOptions: SwaggerUiOptions = {
     swaggerOptions: {
-      url: "/swagger.json",
+        url: "/swagger.json",
     },
-  };
-  
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-call
-  server.use("/docs", swaggerUi.serve, swaggerUi.setup(undefined, swaggerOptions));
+};
+
+server.use("/api/v1/authenticate", upload.none(), authRouter);
+server.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 
 export default server;

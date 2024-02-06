@@ -28,5 +28,5 @@ Before you start the application, make sure you set up the database by following
 1. Run the following command to start the database instance using Docker Compose:
 
    ```bash
-   docker compose -f .\docker-compose.dev.yml up
+   docker compose up
 2. Run ```npm run migrate``` and then ```npm run seed```
