@@ -11,7 +11,7 @@
     "http"
   ],
   "paths": {
-    "/v1/authenticate": {
+    "/v1/user/authenticate": {
       "post": {
         "summary": "Get authentication token",
         "description": "Retrieves authentication token with given credentials.",
@@ -48,6 +48,47 @@
           }
         }
       }
+    },
+    "/v1/registerUser": {
+      "post": {
+        "summary": "Register user, returns new id",
+        "description": "Creates new user with email and password.",
+        "operationId": "postRegisterUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "User credentials",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UserCredentials"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Authentication token successfully retrieved",
+            "schema": {
+              "$ref": "#/definitions/AuthToken"
+            }
+          },
+          "400": {
+            "description": "Invalid username or password supplied"
+          },
+          "401": {
+            "description": "Authentication failed"
+          }
+        }
+      }
+    },
+    "/v1/forgotPassword": {
+
     },
     "/v1/docs": {
       "get": {

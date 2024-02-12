@@ -25,8 +25,17 @@ eg. `git branch <category>/<short-description>-<ticket no. on borad>`
 
 Before you start the application, make sure you set up the database by following these steps:
 
-1. Run the following command to start the database instance using Docker Compose:
+1. Create .env file like : "DATABASE_URL="postgres://trustcar:password@postgres:5432/postgres".
+Switch the username 'trustcar' and password 'password' with your own.
 
-   ```bash
-   docker compose up
-2. Run ```npm run migrate``` and then ```npm run seed```
+2. Start the containers with "docker-compose -f docker-compose.dev.yml up"
+
+3. Switch the password for the database.
+Log in to database with: "docker-compose -f docker-compose.dev.yml exec postgres psql -U trustcar"
+Add Sql: "
+   ALTER USER trustcar WITH PASSWORD 'my_password';
+   ALTER USER trustcar RENAME TO my_username;
+"
+
+4. Run migrations when the docker is running with:
+docker-compose -f docker-compose.dev.yml exec backend npx prisma migrate deploy

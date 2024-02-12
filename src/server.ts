@@ -1,6 +1,6 @@
 import express from "express";
 import multer from 'multer';
-import authRouter from "./routers/auth-router";
+import userRouter from "./routers/user-router";
 import swaggerUi,{SwaggerUiOptions} from "swagger-ui-express";
 import * as swaggerDocument from "./docs/swagger.json";
 
@@ -14,7 +14,7 @@ const swaggerOptions: SwaggerUiOptions = {
     },
 };
 
-server.use("/api/v1/authenticate", upload.none(), authRouter);
+server.use("/api/v1/user", upload.none(), userRouter);
 server.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 
 export default server;
