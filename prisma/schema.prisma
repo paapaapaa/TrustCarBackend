@@ -25,12 +25,13 @@ model organization {
 
 model user {
   id               Int           @id @default(autoincrement())
-  name             String?       @db.VarChar
+  firstname        String        @db.VarChar
+  lastname         String        @db.VarChar
   email            String?
   password         String?       @db.VarChar
   role             String?       @db.VarChar
-  username         String?       @db.VarChar
-  password_salt    String?       @db.VarChar
+  username         String        @unique @db.VarChar
+  password_salt    String        @db.VarChar
   language_id      Int?
   created_at       DateTime?     @db.Timestamp(6)
   updated_at       DateTime?     @db.Timestamp(6)
