@@ -1,24 +1,22 @@
 version: '3.8'
 services:
-    backend:
-        image: backend-dev
-        build:
-            context: .
-            dockerfile: dev.Dockerfile
-        container_name: backend-dev
-        ports:
-            - 8080:8080
-        depends_on:
-            - postgres
-        networks:
-            - postgres-db-network
+backend:
+    image: backend-dev
+    build:
+        context: .
+        dockerfile: dev.Dockerfile
+    container_name: backend-dev
+    ports:
+        - 8080:8080
+    depends_on:
+        - postgres
+    networks:
+        - postgres-db-network
     postgres:
         image: postgres:15
         environment:
             - POSTGRES_USER=trustcar
             - POSTGRES_PASSWORD=password
-        volumes:
-            - postgres-db-volume:/var/lib/postgresql/data
         ports:
             - 5432:5432
         networks:
@@ -30,13 +28,8 @@ services:
             PGADMIN_DEFAULT_PASSWORD: 'password'
         ports:
             - 16543:80
-        volumes:
-            - ./servers.json:/pgadmin4/servers.json
         networks:
             - postgres-db-network
-
-volumes:
-    postgres-db-volume:
 
 networks:
     postgres-db-network:
