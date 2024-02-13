@@ -1,53 +1,73 @@
-import { Request, Response } from "express";
-import { hash } from "bcrypt";
-import { PrismaClient } from '@prisma/client';
-import {Email, Password, Username} from "../../types/parameters";
+import { NextFunction, Request, Response } from "express";
+import { loginUser, registerUser } from "../../utility/validators";
+import { hash, compare } from "bcrypt";
+import { PrismaClient } from "@prisma/client";
+
+
 const prisma = new PrismaClient();
 
 
-interface AuthParams {
-     username: Username;
-     password: Password;
-}
+export const registerController = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  const { username, password, firstname, lastname } = registerUser.cast(
+    req.body
+  );
+  try {
+    const hashedPassword = await hash(password, 10);
 
-interface RegisterParams {
-     username: Username;
-     email: Email;
-     password: Password;
-}
+    const user = await prisma.user.create({
+      data: {
+        username,
+        password_salt: hashedPassword,
+        firstname,
+        lastname,
+      },
+    });
 
-async function getUsers() {
-     return prisma.user.findMany();
-}
-
-export const authController = async (req: Request, res: Response): Promise<void> => {
-     const { username, password }: AuthParams = req.body;
-
-     try {
-          const hashedPassword = await hash(password, 10);
-          const users = await getUsers();
-
-          console.log(`Username: ${username}, Hashed Password: ${hashedPassword}, Users: ${users}`);
-
-          res.send("User registered successfully!");
-     } catch (error) {
-          console.error("Error hashing password", error);
-          res.status(500).send("Error: Authentication failed");
-     }
+    res.status(201).json({
+      username: user.username,
+      firsntname: user.firstname,
+      lastname: user.lastname,
+    });
+  } catch (error) {
+    next(error);
+  }
 };
 
-export const registerController = async (req: Request, res: Response): Promise<void> => {
-     const { username, email, password }: RequestDefinition = req.body;
+export const loginController = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const { username, password } = loginUser.cast(req.body);
+    const user = await prisma.user.findUnique({
+      where: {
+        username,
+      },
+    });
 
-     try {
-          const hashedPassword = await hash(password, 10);
-          const users = await getUsers();
+    if (!user) {
+      res.status(404).json({
+        message: "User not found",
+      });
+    }
 
-          console.log(`Username: ${username}, Hashed Password: ${hashedPassword}, Users: ${users}`);
+    const isValid = await compare(password, user!.password_salt);
 
-          res.send("User registered successfully!");
-     } catch (error) {
-          console.error("Error hashing password", error);
-          res.status(500).send("Error: Authentication failed");
-     }
+    if (!isValid) {
+         res.status(401).json({
+              message: "Invalid password",
+         });
+    }
+
+    res.status(200).json({
+      message: "User logged in",
+    });
+  } catch (error) {
+    next(error);
+  }
 };
