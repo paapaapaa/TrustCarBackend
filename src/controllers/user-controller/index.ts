@@ -3,6 +3,7 @@ import { loginUser, registerUser } from "../../utility/validators";
 import { hash, genSalt } from "bcrypt";
 import { PrismaClient } from "@prisma/client";
 import {sign} from "jsonwebtoken";
+import { JWT_SECRET } from "../../utility/Config";
 
 const prisma = new PrismaClient();
 
@@ -46,7 +47,6 @@ export const loginController = async (
 ) => {
   try {
     const { username, password } = loginUser.cast(req.body);
-    console.log(username, password);
     const user = await prisma.user.findUnique({
       where: {
         username,
@@ -68,15 +68,13 @@ export const loginController = async (
       });
     }
 
-    const secret = process.env.JWT_SECRET;
-
     const token = sign(
       {
         username: user!.username,
         firstname: user!.firstname,
         lastname: user!.lastname,
       },
-      secret as string,
+      JWT_SECRET!,
     );
 
     res.status(200).json({
