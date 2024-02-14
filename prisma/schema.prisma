@@ -28,7 +28,7 @@ model user {
   firstname        String        @db.VarChar
   lastname         String        @db.VarChar
   email            String?
-  password         String?       @db.VarChar
+  hashpassword         String?       @db.VarChar
   role             String?       @db.VarChar
   username         String        @unique @db.VarChar
   password_salt    String        @db.VarChar

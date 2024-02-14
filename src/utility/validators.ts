@@ -8,7 +8,6 @@ export const registerUser = object().shape({
   password: string().trim().required("Password is required").min(6, "Password must be at least 6 characters"),
   passwordConfirm: string().trim().required("Password confirmation is required").oneOf([ref("password")], "Passwords must match"),
 });
-
 export const loginUser = object().shape({
   username: string().trim().required("Username is required"),
   password: string().trim().required("Password is required"),

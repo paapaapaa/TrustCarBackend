@@ -1,11 +1,10 @@
 import { NextFunction, Request, Response } from "express";
 import { loginUser, registerUser } from "../../utility/validators";
-import { hash, compare } from "bcrypt";
+import { hash, genSalt } from "bcrypt";
 import { PrismaClient } from "@prisma/client";
-
+import {sign} from "jsonwebtoken";
 
 const prisma = new PrismaClient();
-
 
 export const registerController = async (
   req: Request,
@@ -16,12 +15,15 @@ export const registerController = async (
     req.body
   );
   try {
-    const hashedPassword = await hash(password, 10);
+    const saltRounds = 10;
+    const salt = await genSalt(saltRounds);
+    const hashedPassword = await hash(password, salt);
 
     const user = await prisma.user.create({
       data: {
         username,
-        password_salt: hashedPassword,
+        password_salt: salt,
+        hashpassword: hashedPassword,
         firstname,
         lastname,
       },
@@ -44,6 +46,7 @@ export const loginController = async (
 ) => {
   try {
     const { username, password } = loginUser.cast(req.body);
+    console.log(username, password);
     const user = await prisma.user.findUnique({
       where: {
         username,
@@ -56,16 +59,28 @@ export const loginController = async (
       });
     }
 
-    const isValid = await compare(password, user!.password_salt);
+    const hashedPassword = await hash(password, user!.password_salt);
+    const isValid = hashedPassword === user!.hashpassword;
 
     if (!isValid) {
-         res.status(401).json({
-              message: "Invalid password",
-         });
+      res.status(401).json({
+        message: "Invalid password",
+      });
     }
 
+    const secret = process.env.JWT_SECRET;
+
+    const token = sign(
+      {
+        username: user!.username,
+        firstname: user!.firstname,
+        lastname: user!.lastname,
+      },
+      secret as string,
+    );
+
     res.status(200).json({
-      message: "User logged in",
+      authtoken: token,
     });
   } catch (error) {
     next(error);
