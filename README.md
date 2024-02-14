@@ -1,5 +1,12 @@
 # Trust Car Backend
 
+### Environnement
+`.env` file with
+`
+DATABASE_URL="postgresql://trustcar:password@localhost:5432/trust_car_dev_db?schema=public"
+JWT_SECRET="mysecret"
+`
+
 ### Running Dev Mode
 - In project repo first install the dependencies `npm install` and then run `npm run dev` for development mode (By default App is live on `localhost:8080`)
 
