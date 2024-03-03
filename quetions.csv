@@ -1,0 +1,356 @@
+﻿Rekisrerikilvet,Registerplates,FULL_PETROL,1,1
+Valmistenumero,Productionnumber,FULL_PETROL,1,2
+Katsastustiedot,Inspections,FULL_PETROL,1,3
+Korjauskehoitus rekisteriotteessa,Correction prompt in the register extract,FULL_PETROL,1,4
+Huoltokirja,Maintenance book,FULL_PETROL,1,5
+Dynamometritesti - arvot,Dynamometer test - values,FULL_PETROL,2,6
+Etujarrut,Front brakes,FULL_PETROL,2,7
+Takajarrut,Back brakes,FULL_PETROL,2,8
+Käsijarru,Hand brake,FULL_PETROL,2,9
+Iskunvaimennus,Shock absorber,FULL_PETROL,2,10
+Etuakseli,Front axle,FULL_PETROL,2,11
+Taka-akseli,Back axle,FULL_PETROL,2,12
+Päästömittaus,Emission measurement,FULL_PETROL,3,13
+CO-Pitoisuus,CO-concentration,FULL_PETROL,3,14
+HC-pitoisuus,HC-concentration,FULL_PETROL,3,15
+Lambda-arvo,Lambda value,FULL_PETROL,3,16
+K-arvo,K-value,FULL_PETROL,3,17
+OBD-testi,OBD-test,FULL_PETROL,3,18
+Valaistus etu,Lighting front,FULL_PETROL,4,19
+Ajovalot/parkit etu,Headlight/parking lights front,FULL_PETROL,4,20
+Suuntavilkut,Direction indicators,FULL_PETROL,4,21
+Hätävilkut,Hazard flasher,FULL_PETROL,4,22
+Sumuvalot,Fog lights,FULL_PETROL,4,23
+Lisävalot,Additional lights,FULL_PETROL,4,24
+Valaistus taka,Lighting back,FULL_PETROL,4,25
+Ajovalot/parkit taka,Headlight/parking lights back,FULL_PETROL,4,26
+Suuntavilkut,Direction indicators,FULL_PETROL,4,27
+Hätävilkut,Hazard flasher,FULL_PETROL,4,28
+Sumuvalot,Fog lights,FULL_PETROL,4,29
+Lisävalot,Additional lights,FULL_PETROL,4,30
+Pyyhkijät etu/taka,Wipers back and front,FULL_PETROL,4,31
+Tuulilasinpyyhkimet,Windshield wipers,FULL_PETROL,4,32
+Takalasinpyyhin,Rear window wiper,FULL_PETROL,4,33
+Lasinpesurit,Windshield washers,FULL_PETROL,4,34
+Tuulilasinpesuri,Windshield washer,FULL_PETROL,4,35
+Takalasinpesuri,Rear window washer,FULL_PETROL,4,36
+Ajovalopesuri,Headlight washer,FULL_PETROL,4,37
+Äänimerkki,Sound signal,FULL_PETROL,4,38
+Tuulilasin kunto,Windshield condition,FULL_PETROL,4,39
+Ohjausnivelistö,Control joint,FULL_PETROL,5,40
+Etuakseli,Front axle,FULL_PETROL,5,41
+Taka-akseli,Rear axle,FULL_PETROL,5,42
+"Akselituennat, pyöränlaakerit","Axle supports, wheel bearings",FULL_PETROL,5,43
+Etuakseli,Front axle,FULL_PETROL,5,44
+Taka-akseli,Rear axle,FULL_PETROL,5,45
+Jousitus,Suspension,FULL_PETROL,5,46
+Etuakseli,Front axle,FULL_PETROL,5,47
+Taka-akseli,Rear axle,FULL_PETROL,5,48
+Pakoputkisto,Exhaust system,FULL_PETROL,5,49
+Putket ja letkut,Pipes and hoses,FULL_PETROL,5,50
+Polttoainesäiliöt,Fuel tank,FULL_PETROL,5,51
+Pohjalevy,Base plate,FULL_PETROL,5,52
+Runko,Frame,FULL_PETROL,5,53
+Helmakotelot,Sill panel,FULL_PETROL,5,54
+Jarrulevyt/palat,Brake pads/discs,FULL_PETROL,5,55
+Etuakseli,Front axle,FULL_PETROL,5,56
+Taka-akseli,Rear axle,FULL_PETROL,5,57
+Eturenkaat kulutuspinta vasen,Front tires tread left,FULL_PETROL,6,58
+Eturenkaat kulutuspinta oikea,Front tires tread right,FULL_PETROL,6,59
+Takarenkaat kulutuspinta vasen,Rear tires tread left,FULL_PETROL,6,60
+Takarenkaat kulutuspinta oikea,Rear tires tread right,FULL_PETROL,6,61
+"Moottori, ulkoiset havainnot","Engine, external observations",FULL_PETROL,7,62
+Käynnistys,Start,FULL_PETROL,7,63
+Tyhjäkäynti,Idle,FULL_PETROL,7,64
+Lataus-mitattu latausjännite tyhjäkäynnillä,Charge- measured charging voltage at idle,FULL_PETROL,7,65
+Akkutesti,Battery test,FULL_PETROL,7,66
+Jäähdytysjärjestelmä,Cooling system,FULL_PETROL,7,67
+Nesteen pakkaskestävyys,Frost resistance of the liquid,FULL_PETROL,7,68
+Lasit,Windows,FULL_PETROL,8,69
+Peilit,Mirrors,FULL_PETROL,8,70
+Kojetaulu,Panel,FULL_PETROL,8,71
+"Hallintalaitteet, mittaristo","Controls, instrument panel",FULL_PETROL,8,72
+Merkkivalot,Indicator lights,FULL_PETROL,8,73
+Lämmitys ja huurteenpoisto,Heating and frost protection,FULL_PETROL,8,74
+Ilmastointi,Air conditioning,FULL_PETROL,8,75
+Sisusta,Interior,FULL_PETROL,8,76
+Sisävalaistus,Interior lighting,FULL_PETROL,8,77
+Radio/Medialaitteet,Radio/media devices,FULL_PETROL,8,78
+Turvavyöt,Seatbelts,FULL_PETROL,8,79
+Korroosio,Corrosion,FULL_PETROL,9,80
+Luukut ja kahvat,Hatches and handles,FULL_PETROL,9,81
+Maalipinta(ei normaali kuluminen),Paint(not normal wearing),FULL_PETROL,9,82
+Korin muut vauriot,Other damage to the frame,FULL_PETROL,9,83
+Kytkimen toiminta,Clutch,FULL_PETROL,10,84
+Vaihteiston toiminta,Transmission operation,FULL_PETROL,10,85
+Vetopyörästö,Drive gear,FULL_PETROL,10,86
+Koeajo,Short test drive,FULL_PETROL,11,87
+Rekisrerikilvet,Registerplates,FULL_HYBRID,1,88
+Valmistenumero,Productionnumber,FULL_HYBRID,1,89
+Katsastustiedot,Inspections,FULL_HYBRID,1,90
+Korjauskehoitus rekisteriotteessa,Correction prompt in the register extract,FULL_HYBRID,1,91
+Huoltokirja,Maintenance book,FULL_HYBRID,1,92
+Dynamometritesti,Dynamometer test - values,FULL_HYBRID,2,93
+Etujarrut,Front brakes,FULL_HYBRID,2,94
+Takajarrut,Back brakes,FULL_HYBRID,2,95
+Käsijarru,Hand brake,FULL_HYBRID,2,96
+Iskunvaimennus,Shock absorber,FULL_HYBRID,2,97
+Etuakseli,Front axle,FULL_HYBRID,2,98
+Taka-akseli,Back axle,FULL_HYBRID,2,99
+OBD-testi,OBD-test,FULL_HYBRID,3,100
+Valaistus etu,Lighting front,FULL_HYBRID,4,101
+Ajovalot/parkit etu,Headlight/parking lights front,FULL_HYBRID,4,102
+Suuntavilkut,Direction indicators,FULL_HYBRID,4,103
+Hätävilkut,Hazard flasher,FULL_HYBRID,4,104
+Sumuvalot,Fog lights,FULL_HYBRID,4,105
+Lisävalot,Additional lights,FULL_HYBRID,4,106
+Valaistus taka,Lighting back,FULL_HYBRID,4,107
+Ajovalot/parkit taka,Headlight/parking lights back,FULL_HYBRID,4,108
+Suuntavilkut,Direction indicators,FULL_HYBRID,4,109
+Hätävilkut,Hazard flasher,FULL_HYBRID,4,110
+Sumuvalot,Fog lights,FULL_HYBRID,4,111
+Lisävalot,Additional lights,FULL_HYBRID,4,112
+Pyyhkijät etu/taka,Wipers back and front,FULL_HYBRID,4,113
+Tuulilasinpyyhkimet,Windshield wipers,FULL_HYBRID,4,114
+Takalasinpyyhin,Rear window wiper,FULL_HYBRID,4,115
+Lasinpesurit,Windshield washers,FULL_HYBRID,4,116
+Tuulilasinpesuri,Windshield washer,FULL_HYBRID,4,117
+Takalasinpesuri,Rear window washer,FULL_HYBRID,4,118
+Ajovalopesuri,Headlight washer,FULL_HYBRID,4,119
+Äänimerkki,Sound signal,FULL_HYBRID,4,120
+Tuulilasin kunto,Windshield condition,FULL_HYBRID,4,121
+Ohjausnivelistö,Control joint,FULL_HYBRID,5,122
+Etuakseli,Front axle,FULL_HYBRID,5,123
+Taka-akseli,Rear axle,FULL_HYBRID,5,124
+"Akselituennat, pyöränlaakerit","Axle supports, wheel bearings",FULL_HYBRID,5,125
+Etuakseli,Front axle,FULL_HYBRID,5,126
+Taka-akseli,Rear axle,FULL_HYBRID,5,127
+Jousitus,Suspension,FULL_HYBRID,5,128
+Etuakseli,Front axle,FULL_HYBRID,5,129
+Taka-akseli,Rear axle,FULL_HYBRID,5,130
+Pakoputkisto,Exhaust system,FULL_HYBRID,5,131
+Putket ja letkut,Pipes and hoses,FULL_HYBRID,5,132
+Polttoainesäiliöt,Fuel tank,FULL_HYBRID,5,133
+Pohjalevy,Base plate,FULL_HYBRID,5,134
+Runko,Frame,FULL_HYBRID,5,135
+Helmakotelot,Sill panel,FULL_HYBRID,5,136
+Jarrulevyt/palat,Brake pads/discs,FULL_HYBRID,5,137
+Etuakseli,Front axle,FULL_HYBRID,5,138
+Taka-akseli,Rear axle,FULL_HYBRID,5,139
+Ajoakku ulkoinen kunto,Driving battery external condition,FULL_HYBRID,12,140
+Ajoakku johdotus ja kaapelointi,Driving battery wiring and cabling,FULL_HYBRID,12,141
+Ajoakku akkutestaus(pyydettäessä),Driving battery battery testing(on request),FULL_HYBRID,12,142
+Eturenkaat kulutuspinta vasen,Front tires tread left,FULL_HYBRID,6,143
+Eturenkaat kulutuspinta oikea,Front tires tread right,FULL_HYBRID,6,144
+Takarenkaat kulutuspinta vasen,Rear tires tread left,FULL_HYBRID,6,145
+Takarenkaat kulutuspinta oikea,Rear tires tread right,FULL_HYBRID,6,146
+"Moottori, ulkoiset havainnot","Engine, external observations",FULL_HYBRID,7,147
+Käynnistys,Start,FULL_HYBRID,7,148
+Käynnistysääni,Idle,FULL_HYBRID,7,149
+Lataus-mitattu latausjännite tyhjäkäynnillä,Charge- measured charging voltage at idle,FULL_HYBRID,7,150
+Akkutesti,Battery test,FULL_HYBRID,7,151
+Jäähdytysjärjestelmä,Cooling system,FULL_HYBRID,7,152
+Nesteen pakkaskestävyys,Frost resistance of the liquid,FULL_HYBRID,7,153
+Lasit,Windows,FULL_HYBRID,8,154
+Peilit,Mirrors,FULL_HYBRID,8,155
+Kojetaulu,Panel,FULL_HYBRID,8,156
+"Hallintalaitteet, mittaristo","Controls, instrument panel",FULL_HYBRID,8,157
+Merkkivalot,Indicator lights,FULL_HYBRID,8,158
+Lämmitys ja huurteenpoisto,Heating and frost protection,FULL_HYBRID,8,159
+Ilmastointi,Air conditioning,FULL_HYBRID,8,160
+Sisusta,Interior,FULL_HYBRID,8,161
+Sisävalaistus,Interior lighting,FULL_HYBRID,8,162
+Radio/Medialaitteet,Radio/media devices,FULL_HYBRID,8,163
+Turvavyöt,Seatbelts,FULL_HYBRID,8,164
+Korroosio,Corrosion,FULL_HYBRID,9,165
+Luukut ja kahvat,Hatches and handles,FULL_HYBRID,9,166
+Maalipinta(ei normaali kuluminen),Paint(not normal wearing),FULL_HYBRID,9,167
+Korin muut vauriot,Other damage to the frame,FULL_HYBRID,9,168
+Vaihteiston toiminta,Transmission operation,FULL_HYBRID,10,169
+Vetopyörästö,Drive gear,FULL_HYBRID,10,170
+Koeajo,Short test drive,FULL_HYBRID,11,171
+Rekisterikilvet,Registerplates,FULL_ELECTRIC,1,172
+Valmistenumero,Productionnumber,FULL_ELECTRIC,1,173
+Katsastustiedot,Inspections,FULL_ELECTRIC,1,174
+Korjauskehoitus rekisteriotteessa,Correction prompt in the register extract,FULL_ELECTRIC,1,175
+Huoltokirja,Maintenance book,FULL_ELECTRIC,1,176
+Dynamometritesti - arvot,Dynamometer test - values,FULL_ELECTRIC,2,177
+Etujarrut,Front brakes,FULL_ELECTRIC,2,178
+Takajarrut,Back brakes,FULL_ELECTRIC,2,179
+Käsijarru,Hand brake,FULL_ELECTRIC,2,180
+Iskunvaimennus,Shock absorber,FULL_ELECTRIC,2,181
+Etuakseli,Front axle,FULL_ELECTRIC,2,182
+Taka-akseli,Back axle,FULL_ELECTRIC,2,183
+OBD-testi,OBD-test,FULL_ELECTRIC,13,184
+Valaistus etu,Lighting front,FULL_ELECTRIC,4,185
+Ajovalot/parkit etu,Headlight/parking lights front,FULL_ELECTRIC,4,186
+Suuntavilkut,Direction indicators,FULL_ELECTRIC,4,187
+Hätävilkut,Hazard flasher,FULL_ELECTRIC,4,188
+Sumuvalot,Fog lights,FULL_ELECTRIC,4,189
+Lisävalot,Additional lights,FULL_ELECTRIC,4,190
+Valaistus taka,Lighting back,FULL_ELECTRIC,4,191
+Ajovalot/parkit taka,Headlight/parking lights back,FULL_ELECTRIC,4,192
+Suuntavilkut,Direction indicators,FULL_ELECTRIC,4,193
+Hätävilkut,Hazard flasher,FULL_ELECTRIC,4,194
+Sumuvalot,Fog lights,FULL_ELECTRIC,4,195
+Lisävalot,Additional lights,FULL_ELECTRIC,4,196
+Pyyhkijät etu/taka,Wipers back and front,FULL_ELECTRIC,4,197
+Tuulilasinpyyhkimet,Windshield wipers,FULL_ELECTRIC,4,198
+Takalasinpyyhin,Rear window wiper,FULL_ELECTRIC,4,199
+Lasinpesurit,Windshield washers,FULL_ELECTRIC,4,200
+Tuulilasinpesuri,Windshield washer,FULL_ELECTRIC,4,201
+Takalasinpesuri,Rear window washer,FULL_ELECTRIC,4,202
+Ajovalopesuri,Headlight washer,FULL_ELECTRIC,4,203
+Äänimerkki,Sound signal,FULL_ELECTRIC,4,204
+Tuulilasin kunto,Windshield condition,FULL_ELECTRIC,4,205
+Ohjausnivelistö,Control joint,FULL_ELECTRIC,5,206
+Etuakseli,Front axle,FULL_ELECTRIC,5,207
+Taka-akseli,Rear axle,FULL_ELECTRIC,5,208
+"Akselituennat, pyöränlaakerit","Axle supports, wheel bearings",FULL_ELECTRIC,5,209
+Etuakseli,Front axle,FULL_ELECTRIC,5,210
+Taka-akseli,Rear axle,FULL_ELECTRIC,5,211
+Jousitus,Suspension,FULL_ELECTRIC,5,212
+Etuakseli,Front axle,FULL_ELECTRIC,5,213
+Taka-akseli,Rear axle,FULL_ELECTRIC,5,214
+Pakoputkisto,Exhaust system,FULL_ELECTRIC,5,215
+Putket ja letkut,Pipes and hoses,FULL_ELECTRIC,5,216
+Pohjalevy,Base plate,FULL_ELECTRIC,5,217
+Runko,Frame,FULL_ELECTRIC,5,218
+Helmakotelot,Sill panel,FULL_ELECTRIC,5,219
+Jarrulevyt/palat,Brake pads/discs,FULL_ELECTRIC,5,220
+Etuakseli,Front axle,FULL_ELECTRIC,5,221
+Taka-akseli,Rear axle,FULL_ELECTRIC,5,222
+Ajoakku ulkoinen kunto,Driving battery external condition,FULL_ELECTRIC,12,223
+Ajoakku johdotus ja kaapelointi,Driving battery wiring and cabling,FULL_ELECTRIC,12,224
+Ajoakku akkutestaus(pyydettäessä),Driving battery battery testing(on request),FULL_ELECTRIC,12,225
+Eturenkaat kulutuspinta vasen,Front tires tread left,FULL_ELECTRIC,6,226
+Eturenkaat kulutuspinta oikea,Front tires tread right,FULL_ELECTRIC,6,227
+Takarenkaat kulutuspinta vasen,Rear tires tread left,FULL_ELECTRIC,6,228
+Takarenkaat kulutuspinta oikea,Rear tires tread right,FULL_ELECTRIC,6,229
+Ajoakun jäähdytysjärjestelmä,Driving battery cooling system,FULL_ELECTRIC,7,230
+Lasit,Windows,FULL_ELECTRIC,8,231
+Peilit,Mirrors,FULL_ELECTRIC,8,232
+Kojetaulu,Panel,FULL_ELECTRIC,8,233
+"Hallintalaitteet, mittaristo","Controls, instrument panel",FULL_ELECTRIC,8,234
+Merkkivalot,Indicator lights,FULL_ELECTRIC,8,235
+Lämmitys ja huurteenpoisto,Heating and frost protection,FULL_ELECTRIC,8,236
+Ilmastointi,Air conditioning,FULL_ELECTRIC,8,237
+Sisusta,Interior,FULL_ELECTRIC,8,238
+Sisävalaistus,Interior lighting,FULL_ELECTRIC,8,239
+Radio/Medialaitteet,Radio/media devices,FULL_ELECTRIC,8,240
+Turvavyöt,Seatbelts,FULL_ELECTRIC,8,241
+Korroosio,Corrosion,FULL_ELECTRIC,9,242
+Luukut ja kahvat,Hatches and handles,FULL_ELECTRIC,9,243
+Maalipinta(ei normaali kuluminen),Paint(not normal wearing),FULL_ELECTRIC,9,244
+Korin muut vauriot,Other damage to the frame,FULL_ELECTRIC,9,245
+Vetopyörästö,Drive gear,FULL_ELECTRIC,10,246
+Koeajo,Short test drive,FULL_ELECTRIC,11,247
+Valmistenumero,Registerplates,NARROW_PETROL,1,248
+Katsastustiedot,Inspections,NARROW_PETROL,1,249
+Korjauskehoitus rekisteriotteessa,Correction prompt in the register extract,NARROW_PETROL,1,250
+Dynamometritesti - arvot,Dynamometer test - values,NARROW_PETROL,2,251
+Etujarrut,Front brakes,NARROW_PETROL,2,252
+Takajarrut,Back brakes,NARROW_PETROL,2,253
+Käsijarru,Hand brake,NARROW_PETROL,2,254
+Iskunvaimennus,Shock absorber,NARROW_PETROL,2,255
+Etuakseli,Front axle,NARROW_PETROL,2,256
+Taka-akseli,Back axle,NARROW_PETROL,2,257
+Mittariston vikavalot,Instument cluster fault lights,NARROW_PETROL,14,258
+Valaistus etu,Lighting front,NARROW_PETROL,4,259
+Ajovalot/parkit etu,Headlight/parking lights front,NARROW_PETROL,4,260
+Suuntavilkut,Direction indicators,NARROW_PETROL,4,261
+Hätävilkut,Hazard flasher,NARROW_PETROL,4,262
+Sumuvalot,Fog lights,NARROW_PETROL,4,263
+Lisävalot,Additional lights,NARROW_PETROL,4,264
+Valaistus taka,Lighting back,NARROW_PETROL,4,265
+Ajovalot/parkit taka,Headlight/parking lights back,NARROW_PETROL,4,266
+Suuntavilkut,Direction indicators,NARROW_PETROL,4,267
+rek.kilven valot,License plate lights,NARROW_PETROL,4,268
+Peruutusvalot,Reversing lights,NARROW_PETROL,4,269
+Sumuvalot,Fog lights,NARROW_PETROL,4,270
+Pyyhkijät etu/taka,Wipers back and front,NARROW_PETROL,4,271
+Tuulilasinpyyhkimet,Windshield wipers,NARROW_PETROL,4,272
+Takalasinpyyhin,Rear window wiper,NARROW_PETROL,4,273
+Lasinpesurit,Windshield washers,NARROW_PETROL,4,274
+Tuulilasinpesuri,Windshield washer,NARROW_PETROL,4,275
+Takalasinpesuri,Rear window washer,NARROW_PETROL,4,276
+Ajovalopesuri,Headlight washer,NARROW_PETROL,4,277
+Äänimerkki,Sound signal,NARROW_PETROL,4,278
+Tuulilasin kunto,Windshield condition,NARROW_PETROL,4,279
+Ohjausnivelistö,Control joint,NARROW_PETROL,5,280
+Etuakseli,Front axle,NARROW_PETROL,5,281
+Taka-akseli,Rear axle,NARROW_PETROL,5,282
+"Akselituennat, pyöränlaakerit","Axle supports, wheel bearings",NARROW_PETROL,5,283
+Etuakseli,Front axle,NARROW_PETROL,5,284
+Taka-akseli,Rear axle,NARROW_PETROL,5,285
+Jousitus,Suspension,NARROW_PETROL,5,286
+Etuakseli,Front axle,NARROW_PETROL,5,287
+Taka-akseli,Rear axle,NARROW_PETROL,5,288
+Pohjalevy,Base plate,NARROW_PETROL,5,289
+Runko,Frame,NARROW_PETROL,5,290
+Helmakotelot,Sill panel,NARROW_PETROL,5,291
+Eturenkaat kulutuspinta vasen,Front tires tread left,NARROW_PETROL,6,292
+Eturenkaat kulutuspinta oikea,Front tires tread right,NARROW_PETROL,6,293
+Takarenkaat kulutuspinta vasen,Rear tires tread left,NARROW_PETROL,6,294
+Takarenkaat kulutuspinta oikea,Rear tires tread right,NARROW_PETROL,6,295
+"Moottori, ulkoiset havainnot","Engine, external observations",NARROW_PETROL,7,296
+"Hallintalaitteet, mittaristo","Controls, instrument panel",NARROW_PETROL,8,297
+Lämmitys ja huurteenpoisto,Heating and frost protection,NARROW_PETROL,8,298
+Kytkimen toiminta,Clutch,NARROW_PETROL,10,299
+Vaihteiston toiminta,Transmission operation,NARROW_PETROL,10,300
+Vetopyörästö,Drive gear,NARROW_PETROL,10,301
+Koeajo,Short test drive,NARROW_PETROL,11,302
+Valmistenumero,Registerplates,NARROW_ELECTRIC,1,303
+Katsastustiedot,Inspections,NARROW_ELECTRIC,1,304
+Korjauskehoitus rekisteriotteessa,Correction prompt in the register extract,NARROW_ELECTRIC,1,305
+Dynamometritesti - arvot,Dynamometer test - values,NARROW_ELECTRIC,2,306
+Etujarrut,Front brakes,NARROW_ELECTRIC,2,307
+Takajarrut,Back brakes,NARROW_ELECTRIC,2,308
+Käsijarru,Hand brake,NARROW_ELECTRIC,2,309
+Iskunvaimennus,Shock absorber,NARROW_ELECTRIC,2,310
+Etuakseli,Front axle,NARROW_ELECTRIC,2,311
+Taka-akseli,Back axle,NARROW_ELECTRIC,2,312
+Mittariston vikavalot,Instument cluster fault lights,NARROW_ELECTRIC,14,313
+Valaistus etu,Lighting front,NARROW_ELECTRIC,4,314
+Ajovalot/parkit etu,Headlight/parking lights front,NARROW_ELECTRIC,4,315
+Suuntavilkut,Direction indicators,NARROW_ELECTRIC,4,316
+Hätävilkut,Hazard flasher,NARROW_ELECTRIC,4,317
+Sumuvalot,Fog lights,NARROW_ELECTRIC,4,318
+Lisävalot,Additional lights,NARROW_ELECTRIC,4,319
+Valaistus taka,Lighting back,NARROW_ELECTRIC,4,320
+Ajovalot/parkit taka,Headlight/parking lights back,NARROW_ELECTRIC,4,321
+Suuntavilkut,Direction indicators,NARROW_ELECTRIC,4,322
+rek.kilven valot,License plate lights,NARROW_ELECTRIC,4,323
+Peruutusvalot,Reversing lights,NARROW_ELECTRIC,4,324
+Sumuvalot,Fog lights,NARROW_ELECTRIC,4,325
+Pyyhkijät etu/taka,Wipers back and front,NARROW_ELECTRIC,4,326
+Tuulilasinpyyhkimet,Windshield wipers,NARROW_ELECTRIC,4,327
+Takalasinpyyhin,Rear window wiper,NARROW_ELECTRIC,4,328
+Lasinpesurit,Windshield washers,NARROW_ELECTRIC,4,329
+Tuulilasinpesuri,Windshield washer,NARROW_ELECTRIC,4,330
+Takalasinpesuri,Rear window washer,NARROW_ELECTRIC,4,331
+Ajovalopesuri,Headlight washer,NARROW_ELECTRIC,4,332
+Äänimerkki,Sound signal,NARROW_ELECTRIC,4,333
+Tuulilasin kunto,Windshield condition,NARROW_ELECTRIC,4,334
+Ohjausnivelistö,Control joint,NARROW_ELECTRIC,5,335
+Etuakseli,Front axle,NARROW_ELECTRIC,5,336
+Taka-akseli,Rear axle,NARROW_ELECTRIC,5,337
+"Akselituennat, pyöränlaakerit","Axle supports, wheel bearings",NARROW_ELECTRIC,5,338
+Etuakseli,Front axle,NARROW_ELECTRIC,5,339
+Taka-akseli,Rear axle,NARROW_ELECTRIC,5,340
+Jousitus,Suspension,NARROW_ELECTRIC,5,341
+Etuakseli,Front axle,NARROW_ELECTRIC,5,342
+Taka-akseli,Rear axle,NARROW_ELECTRIC,5,343
+Pohjalevy,Base plate,NARROW_ELECTRIC,5,344
+Runko,Frame,NARROW_ELECTRIC,5,345
+Helmakotelot,Sill panel,NARROW_ELECTRIC,5,346
+Eturenkaat kulutuspinta vasen,Front tires tread left,NARROW_ELECTRIC,6,347
+Eturenkaat kulutuspinta oikea,Front tires tread right,NARROW_ELECTRIC,6,348
+Takarenkaat kulutuspinta vasen,Rear tires tread left,NARROW_ELECTRIC,6,349
+Takarenkaat kulutuspinta oikea,Rear tires tread right,NARROW_ELECTRIC,6,350
+"Moottori, ulkoiset havainnot","Engine, external observations",NARROW_ELECTRIC,7,351
+"Hallintalaitteet, mittaristo","Controls, instrument panel",NARROW_ELECTRIC,8,352
+Lämmitys ja huurteenpoisto,Heating and frost protection,NARROW_ELECTRIC,8,353
+Vaihteiston toiminta,Transmission operation,NARROW_ELECTRIC,10,354
+Vetopyörästö,Drive gear,NARROW_ELECTRIC,10,355
+Koeajo,Short test drive,NARROW_ELECTRIC,11,356

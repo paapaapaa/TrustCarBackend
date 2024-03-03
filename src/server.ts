@@ -1,6 +1,7 @@
 import express from "express";
 import multer from "multer";
 import userRouter from "./routers/user-router";
+import reportRouter from "./routers/report";
 import swaggerUi,{SwaggerUiOptions} from "swagger-ui-express";
 import * as swaggerDocument from "./docs/swagger.json";
 import { ErrorHandler } from "./middlewares";
@@ -16,6 +17,7 @@ const swaggerOptions: SwaggerUiOptions = {
 };
 
 server.use("/api/v1/user", upload.none(), userRouter);
+server.use("/api/v1/report", upload.none(), reportRouter);
 server.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 server.use(ErrorHandler);
 

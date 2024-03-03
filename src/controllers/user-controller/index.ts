@@ -12,7 +12,7 @@ export const registerController = async (
   res: Response,
   next: NextFunction
 ) => {
-  const { username, password, firstname, lastname } = registerUser.cast(
+  const { username, password, firstname, lastname, organizationId } = registerUser.cast(
     req.body
   );
   try {
@@ -27,6 +27,11 @@ export const registerController = async (
         hashpassword: hashedPassword,
         firstname,
         lastname,
+        organization:{
+          connect:{
+            id: organizationId
+          }
+        }
       },
     });
 

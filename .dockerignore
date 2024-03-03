@@ -6,4 +6,3 @@ docker-compose.dev.yml
 .git
 .gitignore
 dist
-data
