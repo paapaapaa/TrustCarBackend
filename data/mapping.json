@@ -1,0 +1,1886 @@
+[
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 1,
+     "QuetionId": 1
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 1,
+     "QuetionId": 2
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 1,
+     "QuetionId": 3
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 1,
+     "QuetionId": 4
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 1,
+     "QuetionId": 5
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 6
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 7
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 8
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 9
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 10
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 12
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 3,
+     "QuetionId": 13
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 3,
+     "QuetionId": 14
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 3,
+     "QuetionId": 15
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 3,
+     "QuetionId": 16
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 3,
+     "QuetionId": 17
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 3,
+     "QuetionId": 18
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 19
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 20
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 21
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 22
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 23
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 24
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 25
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 26
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 27
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 28
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 29
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 30
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 31
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 32
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 33
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 34
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 35
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 36
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 37
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 38
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 39
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 40
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 41
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 42
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 43
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 44
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 45
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 46
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 6,
+     "QuetionId": 47
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 6,
+     "QuetionId": 48
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 6,
+     "QuetionId": 49
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 6,
+     "QuetionId": 50
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 7,
+     "QuetionId": 51
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 7,
+     "QuetionId": 52
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 7,
+     "QuetionId": 53
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 7,
+     "QuetionId": 54
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 7,
+     "QuetionId": 55
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 7,
+     "QuetionId": 56
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 7,
+     "QuetionId": 57
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 58
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 59
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 60
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 61
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 62
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 63
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 64
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 65
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 66
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 67
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 68
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 9,
+     "QuetionId": 69
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 9,
+     "QuetionId": 70
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 9,
+     "QuetionId": 71
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 9,
+     "QuetionId": 72
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 10,
+     "QuetionId": 73
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 10,
+     "QuetionId": 74
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 10,
+     "QuetionId": 75
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "petrol",
+     "SectionId": 11,
+     "QuetionId": 76
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 1,
+     "QuetionId": 1
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 1,
+     "QuetionId": 2
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 1,
+     "QuetionId": 3
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 1,
+     "QuetionId": 4
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 1,
+     "QuetionId": 5
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 2,
+     "QuetionId": 6
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 2,
+     "QuetionId": 7
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 2,
+     "QuetionId": 8
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 2,
+     "QuetionId": 9
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 2,
+     "QuetionId": 10
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 2,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 2,
+     "QuetionId": 12
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 3,
+     "QuetionId": 18
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 19
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 20
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 21
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 22
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 23
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 24
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 25
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 26
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 27
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 28
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 29
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 30
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 31
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 32
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 33
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 34
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 4,
+     "QuetionId": 35
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 36
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 37
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 38
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 39
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 40
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 41
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 42
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 43
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 44
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 45
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 5,
+     "QuetionId": 46
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 12,
+     "QuetionId": 78
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 12,
+     "QuetionId": 79
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 12,
+     "QuetionId": 80
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 6,
+     "QuetionId": 47
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 6,
+     "QuetionId": 48
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 6,
+     "QuetionId": 49
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 6,
+     "QuetionId": 50
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 7,
+     "QuetionId": 51
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 7,
+     "QuetionId": 52
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 7,
+     "QuetionId": 53
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 7,
+     "QuetionId": 54
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 7,
+     "QuetionId": 55
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 7,
+     "QuetionId": 56
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 7,
+     "QuetionId": 57
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 58
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 59
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 60
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 61
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 62
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 63
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 64
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 65
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 66
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 67
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 8,
+     "QuetionId": 68
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 9,
+     "QuetionId": 69
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 9,
+     "QuetionId": 70
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 9,
+     "QuetionId": 71
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 9,
+     "QuetionId": 72
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 10,
+     "QuetionId": 74
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 10,
+     "QuetionId": 75
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "hybrid",
+     "SectionId": 11,
+     "QuetionId": 76
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 1,
+     "QuetionId": 1
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 1,
+     "QuetionId": 2
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 1,
+     "QuetionId": 3
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 1,
+     "QuetionId": 4
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 1,
+     "QuetionId": 5
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 6
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 7
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 8
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 9
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 10
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 12
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 13,
+     "QuetionId": 18
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 19
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 20
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 21
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 22
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 23
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 24
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 25
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 26
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 27
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 28
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 29
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 30
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 31
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 32
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 33
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 34
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 35
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 36
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 37
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 38
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 39
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 40
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 41
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 43
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 44
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 45
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 46
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 12,
+     "QuetionId": 78
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 12,
+     "QuetionId": 79
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 12,
+     "QuetionId": 80
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 6,
+     "QuetionId": 47
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 6,
+     "QuetionId": 48
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 6,
+     "QuetionId": 49
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 6,
+     "QuetionId": 50
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 7,
+     "QuetionId": 83
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 58
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 59
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 60
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 61
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 62
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 63
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 64
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 65
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 66
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 67
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 68
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 9,
+     "QuetionId": 69
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 9,
+     "QuetionId": 70
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 9,
+     "QuetionId": 71
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 9,
+     "QuetionId": 72
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 10,
+     "QuetionId": 75
+    },
+    {
+     "ReportVariant": "full",
+     "ReportType": "electric",
+     "SectionId": 11,
+     "QuetionId": 76
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 1,
+     "QuetionId": 1
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 1,
+     "QuetionId": 3
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 1,
+     "QuetionId": 4
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 6
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 7
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 8
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 9
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 10
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 2,
+     "QuetionId": 12
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 14,
+     "QuetionId": 85
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 19
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 20
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 21
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 22
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 23
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 24
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 25
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 26
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 86
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 87
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 27
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 28
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 29
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 30
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 31
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 32
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 33
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 34
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 4,
+     "QuetionId": 35
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 36
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 37
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 38
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 39
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 43
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 44
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 5,
+     "QuetionId": 45
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 6,
+     "QuetionId": 47
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 6,
+     "QuetionId": 48
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 6,
+     "QuetionId": 49
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 6,
+     "QuetionId": 50
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 7,
+     "QuetionId": 51
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 61
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 8,
+     "QuetionId": 63
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 10,
+     "QuetionId": 73
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 10,
+     "QuetionId": 74
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 10,
+     "QuetionId": 75
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "petrol",
+     "SectionId": 11,
+     "QuetionId": 76
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 1,
+     "QuetionId": 1
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 1,
+     "QuetionId": 3
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 1,
+     "QuetionId": 4
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 6
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 7
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 8
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 9
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 10
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 2,
+     "QuetionId": 12
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 14,
+     "QuetionId": 85
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 19
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 20
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 21
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 22
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 23
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 24
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 25
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 26
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 86
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 87
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 27
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 28
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 29
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 30
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 31
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 32
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 33
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 34
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 4,
+     "QuetionId": 35
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 36
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 11
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 37
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 38
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 39
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 43
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 44
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 5,
+     "QuetionId": 45
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 6,
+     "QuetionId": 47
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 6,
+     "QuetionId": 48
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 6,
+     "QuetionId": 49
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 6,
+     "QuetionId": 50
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 7,
+     "QuetionId": 51
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 61
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 8,
+     "QuetionId": 63
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 10,
+     "QuetionId": 74
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 10,
+     "QuetionId": 75
+    },
+    {
+     "ReportVariant": "narrow",
+     "ReportType": "electric",
+     "SectionId": 11,
+     "QuetionId": 76
+    }
+   ]

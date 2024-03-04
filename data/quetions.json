@@ -1,0 +1,437 @@
+[
+    {
+     "finnish_text": "Rekisrerikilvet",
+     "english_text": "Registerplates",
+     "id": 1
+    },
+    {
+     "finnish_text": "Valmistenumero",
+     "english_text": "Productionnumber",
+     "id": 2
+    },
+    {
+     "finnish_text": "Katsastustiedot",
+     "english_text": "Inspections",
+     "id": 3
+    },
+    {
+     "finnish_text": "Korjauskehoitus rekisteriotteessa",
+     "english_text": "Correction prompt in the register extract",
+     "id": 4
+    },
+    {
+     "finnish_text": "Huoltokirja",
+     "english_text": "Maintenance book",
+     "id": 5
+    },
+    {
+     "finnish_text": "Dynamometritesti - arvot",
+     "english_text": "Dynamometer test - values",
+     "id": 6
+    },
+    {
+     "finnish_text": "Etujarrut",
+     "english_text": "Front brakes",
+     "id": 7
+    },
+    {
+     "finnish_text": "Takajarrut",
+     "english_text": "Back brakes",
+     "id": 8
+    },
+    {
+     "finnish_text": "Käsijarru",
+     "english_text": "Hand brake",
+     "id": 9
+    },
+    {
+     "finnish_text": "Iskunvaimennus",
+     "english_text": "Shock absorber",
+     "id": 10
+    },
+    {
+     "finnish_text": "Etuakseli",
+     "english_text": "Front axle",
+     "id": 11
+    },
+    {
+     "finnish_text": "Taka-akseli",
+     "english_text": "Back axle",
+     "id": 12
+    },
+    {
+     "finnish_text": "Päästömittaus",
+     "english_text": "Emission measurement",
+     "id": 13
+    },
+    {
+     "finnish_text": "CO-Pitoisuus",
+     "english_text": "CO-concentration",
+     "id": 14
+    },
+    {
+     "finnish_text": "HC-pitoisuus",
+     "english_text": "HC-concentration",
+     "id": 15
+    },
+    {
+     "finnish_text": "Lambda-arvo",
+     "english_text": "Lambda value",
+     "id": 16
+    },
+    {
+     "finnish_text": "K-arvo",
+     "english_text": "K-value",
+     "id": 17
+    },
+    {
+     "finnish_text": "OBD-testi",
+     "english_text": "OBD-test",
+     "id": 18
+    },
+    {
+     "finnish_text": "Valaistus etu",
+     "english_text": "Lighting front",
+     "id": 19
+    },
+    {
+     "finnish_text": "Ajovalot\/parkit etu",
+     "english_text": "Headlight\/parking lights front",
+     "id": 20
+    },
+    {
+     "finnish_text": "Suuntavilkut",
+     "english_text": "Direction indicators",
+     "id": 21
+    },
+    {
+     "finnish_text": "Hätävilkut",
+     "english_text": "Hazard flasher",
+     "id": 22
+    },
+    {
+     "finnish_text": "Sumuvalot",
+     "english_text": "Fog lights",
+     "id": 23
+    },
+    {
+     "finnish_text": "Lisävalot",
+     "english_text": "Additional lights",
+     "id": 24
+    },
+    {
+     "finnish_text": "Valaistus taka",
+     "english_text": "Lighting back",
+     "id": 25
+    },
+    {
+     "finnish_text": "Ajovalot\/parkit taka",
+     "english_text": "Headlight\/parking lights back",
+     "id": 26
+    },
+    {
+     "finnish_text": "Pyyhkijät etu\/taka",
+     "english_text": "Wipers back and front",
+     "id": 27
+    },
+    {
+     "finnish_text": "Tuulilasinpyyhkimet",
+     "english_text": "Windshield wipers",
+     "id": 28
+    },
+    {
+     "finnish_text": "Takalasinpyyhin",
+     "english_text": "Rear window wiper",
+     "id": 29
+    },
+    {
+     "finnish_text": "Lasinpesurit",
+     "english_text": "Windshield washers",
+     "id": 30
+    },
+    {
+     "finnish_text": "Tuulilasinpesuri",
+     "english_text": "Windshield washer",
+     "id": 31
+    },
+    {
+     "finnish_text": "Takalasinpesuri",
+     "english_text": "Rear window washer",
+     "id": 32
+    },
+    {
+     "finnish_text": "Ajovalopesuri",
+     "english_text": "Headlight washer",
+     "id": 33
+    },
+    {
+     "finnish_text": "Äänimerkki",
+     "english_text": "Sound signal",
+     "id": 34
+    },
+    {
+     "finnish_text": "Tuulilasin kunto",
+     "english_text": "Windshield condition",
+     "id": 35
+    },
+    {
+     "finnish_text": "Ohjausnivelistö",
+     "english_text": "Control joint",
+     "id": 36
+    },
+    {
+     "finnish_text": "Taka-akseli",
+     "english_text": "Rear axle",
+     "id": 37
+    },
+    {
+     "finnish_text": "Akselituennat, pyöränlaakerit",
+     "english_text": "Axle supports, wheel bearings",
+     "id": 38
+    },
+    {
+     "finnish_text": "Jousitus",
+     "english_text": "Suspension",
+     "id": 39
+    },
+    {
+     "finnish_text": "Pakoputkisto",
+     "english_text": "Exhaust system",
+     "id": 40
+    },
+    {
+     "finnish_text": "Putket ja letkut",
+     "english_text": "Pipes and hoses",
+     "id": 41
+    },
+    {
+     "finnish_text": "Polttoainesäiliöt",
+     "english_text": "Fuel tank",
+     "id": 42
+    },
+    {
+     "finnish_text": "Pohjalevy",
+     "english_text": "Base plate",
+     "id": 43
+    },
+    {
+     "finnish_text": "Runko",
+     "english_text": "Frame",
+     "id": 44
+    },
+    {
+     "finnish_text": "Helmakotelot",
+     "english_text": "Sill panel",
+     "id": 45
+    },
+    {
+     "finnish_text": "Jarrulevyt\/palat",
+     "english_text": "Brake pads\/discs",
+     "id": 46
+    },
+    {
+     "finnish_text": "Eturenkaat kulutuspinta vasen",
+     "english_text": "Front tires tread left",
+     "id": 47
+    },
+    {
+     "finnish_text": "Eturenkaat kulutuspinta oikea",
+     "english_text": "Front tires tread right",
+     "id": 48
+    },
+    {
+     "finnish_text": "Takarenkaat kulutuspinta vasen",
+     "english_text": "Rear tires tread left",
+     "id": 49
+    },
+    {
+     "finnish_text": "Takarenkaat kulutuspinta oikea",
+     "english_text": "Rear tires tread right",
+     "id": 50
+    },
+    {
+     "finnish_text": "Moottori, ulkoiset havainnot",
+     "english_text": "Engine, external observations",
+     "id": 51
+    },
+    {
+     "finnish_text": "Käynnistys",
+     "english_text": "Start",
+     "id": 52
+    },
+    {
+     "finnish_text": "Tyhjäkäynti",
+     "english_text": "Idle",
+     "id": 53
+    },
+    {
+     "finnish_text": "Lataus-mitattu latausjännite tyhjäkäynnillä",
+     "english_text": "Charge- measured charging voltage at idle",
+     "id": 54
+    },
+    {
+     "finnish_text": "Akkutesti",
+     "english_text": "Battery test",
+     "id": 55
+    },
+    {
+     "finnish_text": "Jäähdytysjärjestelmä",
+     "english_text": "Cooling system",
+     "id": 56
+    },
+    {
+     "finnish_text": "Nesteen pakkaskestävyys",
+     "english_text": "Frost resistance of the liquid",
+     "id": 57
+    },
+    {
+     "finnish_text": "Lasit",
+     "english_text": "Windows",
+     "id": 58
+    },
+    {
+     "finnish_text": "Peilit",
+     "english_text": "Mirrors",
+     "id": 59
+    },
+    {
+     "finnish_text": "Kojetaulu",
+     "english_text": "Panel",
+     "id": 60
+    },
+    {
+     "finnish_text": "Hallintalaitteet, mittaristo",
+     "english_text": "Controls, instrument panel",
+     "id": 61
+    },
+    {
+     "finnish_text": "Merkkivalot",
+     "english_text": "Indicator lights",
+     "id": 62
+    },
+    {
+     "finnish_text": "Lämmitys ja huurteenpoisto",
+     "english_text": "Heating and frost protection",
+     "id": 63
+    },
+    {
+     "finnish_text": "Ilmastointi",
+     "english_text": "Air conditioning",
+     "id": 64
+    },
+    {
+     "finnish_text": "Sisusta",
+     "english_text": "Interior",
+     "id": 65
+    },
+    {
+     "finnish_text": "Sisävalaistus",
+     "english_text": "Interior lighting",
+     "id": 66
+    },
+    {
+     "finnish_text": "Radio\/Medialaitteet",
+     "english_text": "Radio\/media devices",
+     "id": 67
+    },
+    {
+     "finnish_text": "Turvavyöt",
+     "english_text": "Seatbelts",
+     "id": 68
+    },
+    {
+     "finnish_text": "Korroosio",
+     "english_text": "Corrosion",
+     "id": 69
+    },
+    {
+     "finnish_text": "Luukut ja kahvat",
+     "english_text": "Hatches and handles",
+     "id": 70
+    },
+    {
+     "finnish_text": "Maalipinta(ei normaali kuluminen)",
+     "english_text": "Paint(not normal wearing)",
+     "id": 71
+    },
+    {
+     "finnish_text": "Korin muut vauriot",
+     "english_text": "Other damage to the frame",
+     "id": 72
+    },
+    {
+     "finnish_text": "Kytkimen toiminta",
+     "english_text": "Clutch",
+     "id": 73
+    },
+    {
+     "finnish_text": "Vaihteiston toiminta",
+     "english_text": "Transmission operation",
+     "id": 74
+    },
+    {
+     "finnish_text": "Vetopyörästö",
+     "english_text": "Drive gear",
+     "id": 75
+    },
+    {
+     "finnish_text": "Koeajo",
+     "english_text": "Short test drive",
+     "id": 76
+    },
+    {
+     "finnish_text": "Dynamometritesti",
+     "english_text": "Dynamometer test - values",
+     "id": 77
+    },
+    {
+     "finnish_text": "Ajoakku ulkoinen kunto",
+     "english_text": "Driving battery external condition",
+     "id": 78
+    },
+    {
+     "finnish_text": "Ajoakku johdotus ja kaapelointi",
+     "english_text": "Driving battery wiring and cabling",
+     "id": 79
+    },
+    {
+     "finnish_text": "Ajoakku akkutestaus(pyydettäessä)",
+     "english_text": "Driving battery battery testing(on request)",
+     "id": 80
+    },
+    {
+     "finnish_text": "Käynnistysääni",
+     "english_text": "Idle",
+     "id": 81
+    },
+    {
+     "finnish_text": "Rekisterikilvet",
+     "english_text": "Registerplates",
+     "id": 82
+    },
+    {
+     "finnish_text": "Ajoakun jäähdytysjärjestelmä",
+     "english_text": "Driving battery cooling system",
+     "id": 83
+    },
+    {
+     "finnish_text": "Valmistenumero",
+     "english_text": "Registerplates",
+     "id": 84
+    },
+    {
+     "finnish_text": "Mittariston vikavalot",
+     "english_text": "Instument cluster fault lights",
+     "id": 85
+    },
+    {
+     "finnish_text": "rek.kilven valot",
+     "english_text": "License plate lights",
+     "id": 86
+    },
+    {
+     "finnish_text": "Peruutusvalot",
+     "english_text": "Reversing lights",
+     "id": 87
+    }
+   ]

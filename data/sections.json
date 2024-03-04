@@ -1,0 +1,72 @@
+[
+    {
+     "id": 1,
+     "finnish_text": " Asiapaperit ja tunnistus",
+     "english_text": " Case papers and identification"
+    },
+    {
+     "id": 2,
+     "finnish_text": " Jarrujärjestelmä ja iskunvaimennus",
+     "english_text": " Brake system and shock absoption"
+    },
+    {
+     "id": 3,
+     "finnish_text": " Ympäristöpäästöt",
+     "english_text": " Environmental emissions"
+    },
+    {
+     "id": 4,
+     "finnish_text": " Valaistus, pesulaitteet, tuulilasi, äänimerkki",
+     "english_text": " Lighting, washing equipment, windshield, horn"
+    },
+    {
+     "id": 5,
+     "finnish_text": " Jousitus, akselisto, pohjalevy",
+     "english_text": " Suspension, axle set, base plate"
+    },
+    {
+     "id": 6,
+     "finnish_text": " Renkaat",
+     "english_text": " Tyres"
+    },
+    {
+     "id": 7,
+     "finnish_text": " Moottori ja apulaitteet",
+     "english_text": " Engine and auxiliary equipment"
+    },
+    {
+     "id": 8,
+     "finnish_text": " Sisätilat, hallintalaitteet",
+     "english_text": " Interiors, controls"
+    },
+    {
+     "id": 9,
+     "finnish_text": " Korin yleiskunto",
+     "english_text": " General condition of the body"
+    },
+    {
+     "id": 10,
+     "finnish_text": " Voimansiirto",
+     "english_text": " Transmission"
+    },
+    {
+     "id": 11,
+     "finnish_text": " Lyhyt koeajo",
+     "english_text": " Short test drive"
+    },
+    {
+     "id": 12,
+     "finnish_text": " Ajoakku",
+     "english_text": " Driving battery"
+    },
+    {
+     "id": 13,
+     "finnish_text": " OBD",
+     "english_text": " OBD"
+    },
+    {
+     "id": 14,
+     "finnish_text": " Valaistus, pesulaitteet, tuulilasi, äänimerkki",
+     "english_text": " Fault lights on teh instrumental panel"
+    }
+   ]

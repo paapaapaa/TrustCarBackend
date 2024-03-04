@@ -1,6 +1,5 @@
 node_modules
 dist
 database_dev
-data
 .idea/
 .env
