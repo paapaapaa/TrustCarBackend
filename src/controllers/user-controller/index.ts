@@ -37,7 +37,7 @@ export const registerController = async (
 
     res.status(201).json({
       username: user.username,
-      firsntname: user.firstname,
+      firstname: user.firstname,
       lastname: user.lastname,
     });
   } catch (error) {
