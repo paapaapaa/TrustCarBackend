@@ -5,7 +5,6 @@ import reportRouter from "./routers/report";
 import swaggerUi,{SwaggerUiOptions} from "swagger-ui-express";
 import * as swaggerDocument from "./docs/swagger.json";
 import { ErrorHandler } from "./middlewares";
-import path from "path";
 
 const server = express();
 const upload = multer();
@@ -17,11 +16,7 @@ const swaggerOptions: SwaggerUiOptions = {
     },
 };
 
-server.get("/privacy-policy", (req, res) => {
-    const privacyPolicyPdf = path.resolve("./docks/privacyPolicy.pdf");
-    res.sendFile(privacyPolicyPdf);
-});
-
+server.use(express.static('public'));
 server.use("/api/v1/user", upload.none(), userRouter);
 server.use("/api/v1/report", upload.none(), reportRouter);
 server.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
