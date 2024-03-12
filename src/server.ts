@@ -16,7 +16,7 @@ const swaggerOptions: SwaggerUiOptions = {
     },
 };
 
-server.use(express.static('public'));
+server.use(express.static("public"));
 server.use("/api/v1/user", upload.none(), userRouter);
 server.use("/api/v1/report", upload.none(), reportRouter);
 server.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
