@@ -4,3 +4,4 @@ database_dev
 .idea/
 .env
 *.pdf
+public/

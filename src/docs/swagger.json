@@ -108,6 +108,25 @@
           }
         }
       }
+    },
+    "/": {
+      "get": {
+        "summary": "Get Swagger documentation",
+        "description": "Returns Swagger documentation JSON.",
+        "operationId": "getDocs",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Swagger documentation JSON successfully retrieved",
+            "schema": {
+              "type": "object",
+              "description": "Swagger JSON"
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
