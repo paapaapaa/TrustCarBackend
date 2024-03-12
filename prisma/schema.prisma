@@ -53,7 +53,7 @@ model report {
   organization_id      Int?
   organization         organization?     @relation(fields: [organization_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   report_rows          report_row[]
-  report_type          report_type?
+  engine_type          engine_type?
 }
 
 model report_row {
@@ -99,8 +99,8 @@ model section {
 
 model question_mapping {
   id          Int       @id @default(autoincrement())     
+  engine_type engine_type
   report_type report_type
-  report_variant report_variant
   section_id   Int  
   question_id  Int  
   section     section   @relation(fields: [section_id], references: [id])
@@ -133,15 +133,19 @@ enum organization_type {
   repair
 }
 
-enum report_type {
+enum engine_type {
   petrol
+  diesel
   hybrid
+  hybrid_diesel
+  hybrid_gasoline
   electric
 }
 
-enum report_variant {
+enum report_type {
   full
   narrow
+  light
 }
 
 enum attachment_type {

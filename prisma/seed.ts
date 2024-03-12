@@ -1,5 +1,5 @@
 // ./prisma/seed.ts
-import { PrismaClient, report_type, report_variant } from "@prisma/client";
+import { PrismaClient, engine_type, report_type,  } from "@prisma/client";
 import { hash, genSalt } from "bcrypt";
 import quetions from  "../data/quetions.json";
 import sections from "../data/sections.json";
@@ -77,7 +77,7 @@ await prisma.organization.create({
       report_type:m["ReportType"] as report_type,
       section_id:m["SectionId"],
       question_id:m["QuetionId"],
-      report_variant:m["ReportVariant"] as report_variant
+      engine_type:m["EngineType"] as engine_type
     }
    });
   }

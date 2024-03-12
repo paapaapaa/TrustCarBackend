@@ -13,7 +13,7 @@ export const getReportStructure = async (
   next: NextFunction
 ) => {
   
-  const { ln, report_type } = reportStructure.cast(req.query);
+  const { ln, report_type, engine_type } = reportStructure.cast(req.query);
   const language = ln === "fi" ? "finnish_text" : "english_text";
 
   try {
@@ -32,7 +32,7 @@ export const getReportStructure = async (
                 report_type: report_type,
               },
               {
-                report_variant: "full",
+                engine_type: engine_type,
               }
             ]
           },
@@ -77,7 +77,7 @@ export const saveReport = async (
     odometer_reading,
     production_number,
     registeration_number,
-    report_type,
+    engine_type,
     report_rows,
   } = saveReportStructure.cast(req.body);
   try {
@@ -89,7 +89,7 @@ export const saveReport = async (
         organization_id,
         production_number,
         registeration_number,
-        report_type,
+        engine_type,
         report_rows: {
           create:{
             question_id: report_rows[0].question_id,

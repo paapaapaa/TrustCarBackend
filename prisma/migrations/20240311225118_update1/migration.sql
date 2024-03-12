@@ -5,10 +5,10 @@ CREATE TYPE "inspection_status" AS ENUM ('red', 'yellow', 'green');
 CREATE TYPE "organization_type" AS ENUM ('maintenance', 'seller', 'inspection', 'repair');
 
 -- CreateEnum
-CREATE TYPE "report_type" AS ENUM ('gasoline', 'hybrid', 'electric');
+CREATE TYPE "engine_type" AS ENUM ('petrol', 'diesel', 'hybrid_diesel', 'hybrid_gasoline', 'electric');
 
 -- CreateEnum
-CREATE TYPE "report_variant" AS ENUM ('full', 'narrow');
+CREATE TYPE "report_type" AS ENUM ('full', 'narrow', 'light');
 
 -- CreateEnum
 CREATE TYPE "attachment_type" AS ENUM ('image', 'audio');
@@ -61,7 +61,7 @@ CREATE TABLE "report" (
     "updated_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
     "modified_by_user" INTEGER,
     "organization_id" INTEGER,
-    "report_type" "report_type",
+    "engine_type" "engine_type",
 
     CONSTRAINT "report_pkey" PRIMARY KEY ("id")
 );
@@ -92,7 +92,7 @@ CREATE TABLE "attachments" (
 
 -- CreateTable
 CREATE TABLE "question" (
-    "id" SERIAL NOT NULL,
+    "id" INTEGER NOT NULL,
     "created_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
     "translations_id" INTEGER,
@@ -102,7 +102,7 @@ CREATE TABLE "question" (
 
 -- CreateTable
 CREATE TABLE "section" (
-    "id" SERIAL NOT NULL,
+    "id" INTEGER NOT NULL,
     "created_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
     "translations_id" INTEGER,
@@ -113,8 +113,8 @@ CREATE TABLE "section" (
 -- CreateTable
 CREATE TABLE "question_mapping" (
     "id" SERIAL NOT NULL,
+    "engine_type" "engine_type" NOT NULL,
     "report_type" "report_type" NOT NULL,
-    "report_variant" "report_variant" NOT NULL,
     "section_id" INTEGER NOT NULL,
     "question_id" INTEGER NOT NULL,
 
@@ -139,13 +139,16 @@ CREATE UNIQUE INDEX "user_username_key" ON "user"("username");
 CREATE UNIQUE INDEX "report_row_question_id_key" ON "report_row"("question_id");
 
 -- CreateIndex
+CREATE UNIQUE INDEX "question_id_key" ON "question"("id");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "question_translations_id_key" ON "question"("translations_id");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "section_translations_id_key" ON "section"("translations_id");
+CREATE UNIQUE INDEX "section_id_key" ON "section"("id");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "question_mapping_section_id_report_type_question_id_key" ON "question_mapping"("section_id", "report_type", "question_id");
+CREATE UNIQUE INDEX "section_translations_id_key" ON "section"("translations_id");
 
 -- AddForeignKey
 ALTER TABLE "user" ADD CONSTRAINT "user_organization_id_fkey" FOREIGN KEY ("organization_id") REFERENCES "organization"("id") ON DELETE NO ACTION ON UPDATE NO ACTION;
