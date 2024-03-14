@@ -1,0 +1,2 @@
+cd /usr/src/app
+npx run migrate deploy

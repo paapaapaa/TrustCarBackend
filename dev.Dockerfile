@@ -1,5 +1,9 @@
 FROM node:16
 
+COPY scripts/* /usr/local/bin/
+
+RUN chmod +x /usr/local/bin/*
+
 WORKDIR /usr/src/app
 
 COPY package*.json ./

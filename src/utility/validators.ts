@@ -1,5 +1,5 @@
 import { engine_type, inspection_status, attachment_type, report_type } from "@prisma/client";
-import { object,string,ref,number, array, mixed, } from "yup";
+import { object,string,number, array, mixed, } from "yup";
 
 // Define the schema for the register user object
 
@@ -8,7 +8,6 @@ export const registerUser = object().shape({
   lastname: string().trim().required("Last name is required").min(2, "Last name must be at least 2 characters"),
   username: string().trim().required("Username is required"),
   password: string().trim().required("Password is required").min(6, "Password must be at least 6 characters"),
-  passwordConfirm: string().trim().required("Password confirmation is required").oneOf([ref("password")], "Passwords must match"),
   organizationId: number().required("Organization ID is required"),
 });
 
