@@ -35,5 +35,6 @@ eg. `git branch <category>/<short-description>-<ticket no. on borad>`
 #### Using Docker
 
 1. In project repo run `docker compose -f .\docker-compose.dev.yml up`.
-2. Run `npm run migrate`.
+2. Stop the backend container if its running.
+3. Run `npm run migrate`.
 
