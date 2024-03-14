@@ -1,6 +1,6 @@
 FROM node:16
 
-COPY scripts/* /usr/local/bin/
+COPY bash-scripts/* /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/*
 
