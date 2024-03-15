@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import {
   getReportStructure as reportStructure,
   saveReportStructure,
-} from "../../utility/validators";
+} from "../../utility/validators/report";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();

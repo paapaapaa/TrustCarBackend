@@ -1,0 +1,4 @@
+cd /root/carpass-back
+docker-compose -f docker-compose.pro.yml down
+docker-compose -f docker-compose.pro.yml build
+docker-compose -f docker-compose.pro.yml up

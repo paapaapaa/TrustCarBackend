@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { loginUser, registerUser } from "../../utility/validators";
+import { loginUser, registerUser } from "../../utility/validators/user";
 import { hash, genSalt } from "bcrypt";
 import { PrismaClient } from "@prisma/client";
 import {sign} from "jsonwebtoken";

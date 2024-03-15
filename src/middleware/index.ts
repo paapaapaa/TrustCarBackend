@@ -1,74 +1,8 @@
 import { PrismaClient } from "@prisma/client";
-import {
-  registerUser,
-  loginUser,
-  getReportStructure,
-  saveReportStructure,
-} from "../utility/validators";
 import { Request, Response, NextFunction, ErrorRequestHandler } from "express";
 import { verify } from "jsonwebtoken";
 
 const prisma = new PrismaClient();
-
-export const validateRegisterUser = (
-  req: Request,
-  _res: Response,
-  next: NextFunction
-) => {
-  registerUser
-    .validate(req.body, { abortEarly: false })
-    .then(() => {
-      next();
-    })
-    .catch((errors) => {
-      next(errors);
-    });
-};
-
-export const validateLoginUser = (
-  req: Request,
-  _res: Response,
-  next: NextFunction
-) => {
-  loginUser
-    .validate(req.body, { abortEarly: false })
-    .then(() => {
-      next();
-    })
-    .catch((errors) => {
-      next(errors);
-    });
-};
-
-export const validateGetReportStructure = (
-  req: Request,
-  _res: Response,
-  next: NextFunction
-) => {
-  getReportStructure
-    .validate(req.query, { abortEarly: false })
-    .then(() => {
-      next();
-    })
-    .catch((errors) => {
-      next(errors);
-    });
-};
-
-export const validateSaveReportStructure = (
-  req: Request,
-  _res: Response,
-  next: NextFunction
-) => {
-  saveReportStructure
-    .validate(req.body, { abortEarly: false })
-    .then(() => {
-      next();
-    })
-    .catch((errors) => {
-      next(errors);
-    });
-};
 
 export const TokenExtractor = async (
   req: Request,

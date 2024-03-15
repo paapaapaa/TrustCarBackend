@@ -1,5 +1,5 @@
 import express from "express";
-import { validateRegisterUser, validateLoginUser } from "../../middlewares";
+import { validateRegisterUser, validateLoginUser } from "../../middleware/validate/user";
 import { loginController, registerController } from "../../controllers/user-controller";
 import { RequestHandler } from "express";
 

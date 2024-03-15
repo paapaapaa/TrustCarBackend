@@ -1,0 +1,2 @@
+cd /root/carpass-back
+docker exec -it trustcar-back_postgres_1 sh -c 'psql -U trustcar -d trustcar'

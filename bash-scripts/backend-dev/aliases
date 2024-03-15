@@ -1,0 +1,2 @@
+alias app="cd /usr/src/app"
+alias bin="cd /usr/local/bin"

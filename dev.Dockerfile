@@ -1,12 +1,18 @@
 FROM node:16
 
-COPY bash-scripts/* /usr/local/bin/
+WORKDIR /usr/src/app
+
+COPY bash-scripts/backend-dev/* /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/*
 
-WORKDIR /usr/src/app
+RUN echo 'alias bin="cd /usr/local/bin"' >> /root/.bashrc
 
 COPY package*.json ./
+
+COPY bash-scripts/backend-dev/aliases ./
+
+RUN echo "if [ -f /aliases ]; then . /aliases; fi" >> ~/.bashrc
 
 RUN npm install
 

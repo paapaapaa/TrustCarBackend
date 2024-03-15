@@ -4,7 +4,7 @@ import userRouter from "./routers/user-router";
 import reportRouter from "./routers/report";
 import swaggerUi,{SwaggerUiOptions} from "swagger-ui-express";
 import * as swaggerDocument from "./docs/swagger.json";
-import { ErrorHandler } from "./middlewares";
+import { ErrorHandler } from "./middleware";
 
 const server = express();
 const upload = multer();

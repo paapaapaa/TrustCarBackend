@@ -1,0 +1,2 @@
+cd /root/carpass-back
+docker exec -it backend-dev /bin/sh
