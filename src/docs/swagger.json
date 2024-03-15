@@ -11,7 +11,7 @@
     "http"
   ],
   "paths": {
-    "/v1/user/authenticate": {
+    "/v1/user/login": {
       "post": {
         "summary": "Get authentication token",
         "description": "Retrieves authentication token with given credentials.",
@@ -72,17 +72,11 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "Authentication token successfully retrieved",
+          "201": {
+            "description": "User successfully registered",
             "schema": {
-              "$ref": "#/definitions/AuthToken"
+              "$ref": "#/definitions/UserRegisterResponse"
             }
-          },
-          "400": {
-            "description": "Invalid username or password supplied"
-          },
-          "401": {
-            "description": "Authentication failed"
           }
         }
       }
@@ -177,6 +171,25 @@
           "$ref": "#/definitions/Name"
         },
         "organizationId": {
+          "$ref": "#/definitions/Name"
+        }
+      }
+    },
+    "UserRegisterResponse": {
+      "type": "object",
+      "required": [
+        "username",
+        "fistname",
+        "lastname"
+      ],
+      "properties": {
+        "username": {
+          "$ref": "#/definitions/Name"
+        },
+        "firstname": {
+          "$ref": "#/definitions/Name"
+        },
+        "lastname": {
           "$ref": "#/definitions/Name"
         }
       }
