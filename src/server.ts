@@ -2,24 +2,42 @@ import express from "express";
 import multer from "multer";
 import userRouter from "./routers/user-router";
 import reportRouter from "./routers/report";
-import swaggerUi,{SwaggerUiOptions} from "swagger-ui-express";
-import * as swaggerDocument from "./docs/swagger.json";
+import swaggerUi from "swagger-ui-express";
 import { ErrorHandler } from "./middleware";
+import * as path from "path";
+import * as fs from "fs";
 
 const server = express();
 const upload = multer();
-server.use(express.json());
 
-const swaggerOptions: SwaggerUiOptions = {
-    swaggerOptions: {
-        url: "/swagger.json",
-    },
-};
+const swaggerDocument = JSON.parse(fs.readFileSync(path.join('./docs/swagger.json'), 'utf8'));
+
+interface SwaggerDocument {
+    [key: string]: any;
+}
+function loadSwaggerReferences(swaggerDoc: SwaggerDocument) {
+    if (swaggerDoc.hasOwnProperty('$ref')) {
+        const refPath = path.join('./docs', swaggerDoc['$ref']);
+        return JSON.parse(fs.readFileSync(refPath, 'utf8'));
+    }
+
+    Object.keys(swaggerDoc).forEach(key => {
+        if (typeof swaggerDoc[key] === 'object') {
+            swaggerDoc[key] = loadSwaggerReferences(swaggerDoc[key]);
+        }
+    });
+
+    return swaggerDoc;
+}
+
+const resolvedSwaggerDocument = loadSwaggerReferences(swaggerDocument);
+server.use(express.json());
 
 server.use(express.static("public"));
 server.use("/api/v1/user", upload.none(), userRouter);
 server.use("/api/v1/report", upload.none(), reportRouter);
-server.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
+const swaggerMiddleware = swaggerUi.setup(resolvedSwaggerDocument);
+server.use("/api/v1/docs", swaggerUi.serve, swaggerMiddleware);
 server.use(ErrorHandler);
 
 export default server;
