@@ -5,7 +5,7 @@ CREATE TYPE "inspection_status" AS ENUM ('red', 'yellow', 'green');
 CREATE TYPE "organization_type" AS ENUM ('maintenance', 'seller', 'inspection', 'repair');
 
 -- CreateEnum
-CREATE TYPE "engine_type" AS ENUM ('petrol', 'diesel', 'hybrid_diesel', 'hybrid_gasoline', 'electric');
+CREATE TYPE "engine_type" AS ENUM ('petrol', 'diesel', 'hybrid_diesel', 'hybrid_gasoline', 'electric', 'hybrid');
 
 -- CreateEnum
 CREATE TYPE "report_type" AS ENUM ('full', 'narrow', 'light');
@@ -95,7 +95,7 @@ CREATE TABLE "question" (
     "id" INTEGER NOT NULL,
     "created_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
-    "translations_id" INTEGER,
+    "translation_id" INTEGER,
 
     CONSTRAINT "question_pkey" PRIMARY KEY ("id")
 );
@@ -105,7 +105,7 @@ CREATE TABLE "section" (
     "id" INTEGER NOT NULL,
     "created_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
-    "translations_id" INTEGER,
+    "translation_id" INTEGER,
 
     CONSTRAINT "section_pkey" PRIMARY KEY ("id")
 );
@@ -122,14 +122,25 @@ CREATE TABLE "question_mapping" (
 );
 
 -- CreateTable
-CREATE TABLE "translations" (
+CREATE TABLE "language" (
     "id" SERIAL NOT NULL,
-    "finnish_text" TEXT,
-    "english_text" TEXT,
+    "name" VARCHAR NOT NULL,
+    "code" VARCHAR NOT NULL,
+
+    CONSTRAINT "language_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "translation" (
+    "id" SERIAL NOT NULL,
+    "value" VARCHAR,
+    "language_id" INTEGER NOT NULL,
     "created_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
+    "questionId" INTEGER,
+    "sectionId" INTEGER,
 
-    CONSTRAINT "translations_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "translation_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
@@ -142,13 +153,13 @@ CREATE UNIQUE INDEX "report_row_question_id_key" ON "report_row"("question_id");
 CREATE UNIQUE INDEX "question_id_key" ON "question"("id");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "question_translations_id_key" ON "question"("translations_id");
+CREATE UNIQUE INDEX "question_translation_id_key" ON "question"("translation_id");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "section_id_key" ON "section"("id");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "section_translations_id_key" ON "section"("translations_id");
+CREATE UNIQUE INDEX "section_translation_id_key" ON "section"("translation_id");
 
 -- AddForeignKey
 ALTER TABLE "user" ADD CONSTRAINT "user_organization_id_fkey" FOREIGN KEY ("organization_id") REFERENCES "organization"("id") ON DELETE NO ACTION ON UPDATE NO ACTION;
@@ -157,22 +168,25 @@ ALTER TABLE "user" ADD CONSTRAINT "user_organization_id_fkey" FOREIGN KEY ("orga
 ALTER TABLE "report" ADD CONSTRAINT "report_organization_id_fkey" FOREIGN KEY ("organization_id") REFERENCES "organization"("id") ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 -- AddForeignKey
-ALTER TABLE "report_row" ADD CONSTRAINT "report_row_report_id_fkey" FOREIGN KEY ("report_id") REFERENCES "report"("id") ON DELETE CASCADE ON UPDATE NO ACTION;
+ALTER TABLE "report_row" ADD CONSTRAINT "report_row_question_id_fkey" FOREIGN KEY ("question_id") REFERENCES "question"("id") ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 -- AddForeignKey
-ALTER TABLE "report_row" ADD CONSTRAINT "report_row_question_id_fkey" FOREIGN KEY ("question_id") REFERENCES "question"("id") ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE "report_row" ADD CONSTRAINT "report_row_report_id_fkey" FOREIGN KEY ("report_id") REFERENCES "report"("id") ON DELETE CASCADE ON UPDATE NO ACTION;
 
 -- AddForeignKey
 ALTER TABLE "attachments" ADD CONSTRAINT "attachments_report_row_id_fkey" FOREIGN KEY ("report_row_id") REFERENCES "report_row"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "question" ADD CONSTRAINT "question_translations_id_fkey" FOREIGN KEY ("translations_id") REFERENCES "translations"("id") ON DELETE SET NULL ON UPDATE CASCADE;
-
--- AddForeignKey
-ALTER TABLE "section" ADD CONSTRAINT "section_translations_id_fkey" FOREIGN KEY ("translations_id") REFERENCES "translations"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "question_mapping" ADD CONSTRAINT "question_mapping_question_id_fkey" FOREIGN KEY ("question_id") REFERENCES "question"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "question_mapping" ADD CONSTRAINT "question_mapping_section_id_fkey" FOREIGN KEY ("section_id") REFERENCES "section"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "question_mapping" ADD CONSTRAINT "question_mapping_question_id_fkey" FOREIGN KEY ("question_id") REFERENCES "question"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "translation" ADD CONSTRAINT "translation_language_id_fkey" FOREIGN KEY ("language_id") REFERENCES "language"("id") ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- AddForeignKey
+ALTER TABLE "translation" ADD CONSTRAINT "translation_questionId_fkey" FOREIGN KEY ("questionId") REFERENCES "question"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "translation" ADD CONSTRAINT "translation_sectionId_fkey" FOREIGN KEY ("sectionId") REFERENCES "section"("id") ON DELETE SET NULL ON UPDATE CASCADE;

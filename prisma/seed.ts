@@ -1,60 +1,40 @@
 // ./prisma/seed.ts
-import { PrismaClient, engine_type, report_type,  } from "@prisma/client";
-import { hash, genSalt } from "bcrypt";
-import quetions from  "../data/questions.json";
+import {PrismaClient, engine_type, report_type, } from "@prisma/client";
+import questions from  "../data/questions.json";
 import sections from "../data/sections.json";
 import mapping from "../data/mapping.json";
 import languages from "../data/languages.json";
 
 const prisma = new PrismaClient();
 
+async function deleteStaticTables() {
+  await prisma.question_mapping.deleteMany({});
+  await prisma.section.deleteMany({});
+  await prisma.question.deleteMany({});
+}
 
-
-async function main() {
-  // Create translations
-
-await prisma.organization.create({
-  data:{
-    name: "organization 1",
-    type: "inspection",
-  }
-});
-
-  const username = "testuser";
-  const password = "testpassword";
-  const firstname = "testfirstname";
-  const lastname = "testlastname";
-  const organizationId = 1;
-
-  const salt = await genSalt(10);
-  const hashedPassword = await hash(password, salt);
-
-  await prisma.user.create({
-    data: {
-      username,
-      password_salt: salt,
-      hashpassword: hashedPassword,
-      firstname,
-      lastname,
-      organization:{
-        connect:{
-          id: organizationId
-        }
-      }
-    },
-  });
-
+async function createLanguages() {
   for (const l of languages) {
-    await prisma.language.create({
-      data:{
+    const languageExists = await prisma.language.findUnique({
+      where: {
         id: l.id,
-        name: l.name,
-        code: l.code
-      }
-    })
-  }
+      },
+    });
 
-  for (const q of quetions) {
+    if (!languageExists) {
+      await prisma.language.create({
+        data: {
+          id: l.id,
+          name: l.name,
+          code: l.code,
+        },
+      });
+    }
+  }
+}
+
+async function createQuestions() {
+  for (const q of questions) {
     await prisma.question.create({
       data:{
         id: q.id,
@@ -67,7 +47,9 @@ await prisma.organization.create({
       },
     });
   }
+}
 
+async function createSections() {
   for (const s of sections) {
     await prisma.section.create({
       data:{
@@ -81,17 +63,28 @@ await prisma.organization.create({
       },
     });
   }
+}
 
+async function createQuestionMappings() {
   for (const m of mapping) {
-   await prisma.question_mapping.create({
-    data:{
-      report_type:m["report_type"] as report_type,
-      section_id:m["section_id"] as number,
-      question_id:m["question_id"] as number,
-      engine_type:m["engine_type"] as engine_type
-    }
-   });
+    await prisma.question_mapping.create({
+      data:{
+        report_type:m["report_type"] as report_type,
+        section_id:m["section_id"] as number,
+        question_id:m["question_id"] as number,
+        engine_type:m["engine_type"] as engine_type
+      }
+    });
   }
+}
+
+async function main() {
+
+  await deleteStaticTables();
+  await createLanguages();
+  await createQuestions();
+  await createSections();
+  await createQuestionMappings();
 }
 
 main()

@@ -20,8 +20,8 @@ model organization {
   created_at       DateTime?          @db.Timestamp(6)
   updated_at       DateTime?          @db.Timestamp(6)
   modified_by_user Int?
-  users            user[]
   reports          report[]
+  users            user[]
 }
 
 model user {
@@ -51,49 +51,49 @@ model report {
   updated_at          DateTime?     @default(now()) @db.Timestamp(6)
   modified_by_user    Int?
   organization_id     Int?
+  engine_type         engine_type?
   organization        organization? @relation(fields: [organization_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   report_rows         report_row[]
-  engine_type         engine_type?
 }
 
 model report_row {
   id                Int                @id @default(autoincrement())
   report_id         Int?
-  report            report?            @relation(fields: [report_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
   question_id       Int?               @unique
-  question          question?          @relation(fields: [question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   inspection_status inspection_status?
   comment           String?
   created_at        DateTime?          @default(now()) @db.Timestamp(6)
   updated_at        DateTime?          @default(now()) @db.Timestamp(6)
   modified_by_user  Int?
   attachments       attachments[]
+  question          question?          @relation(fields: [question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  report            report?            @relation(fields: [report_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
 }
 
 model attachments {
   id              Int              @id @default(autoincrement())
   data            Bytes?
   attachment_type attachment_type?
-  report_row      report_row       @relation(fields: [report_row_id], references: [id])
   report_row_id   Int
+  report_row      report_row       @relation(fields: [report_row_id], references: [id])
 }
 
 model question {
   id             Int                @id @unique
   created_at     DateTime?          @default(now()) @db.Timestamp(6)
   updated_at     DateTime?          @default(now()) @db.Timestamp(6)
-  question_map   question_mapping[]
   translation_id Int?               @unique
-  translations   translation[]
+  question_map   question_mapping[]
   report_row     report_row?
+  translations   translation[]
 }
 
 model section {
   id             Int                @id @unique
   created_at     DateTime?          @default(now()) @db.Timestamp(6)
   updated_at     DateTime?          @default(now()) @db.Timestamp(6)
-  question_map   question_mapping[]
   translation_id Int?               @unique
+  question_map   question_mapping[]
   translations   translation[]
 }
 
@@ -103,14 +103,14 @@ model question_mapping {
   report_type report_type
   section_id  Int
   question_id Int
-  section     section     @relation(fields: [section_id], references: [id])
   question    question    @relation(fields: [question_id], references: [id])
+  section     section     @relation(fields: [section_id], references: [id])
 }
 
 model language {
   id           Int           @id @default(autoincrement())
-  name         String        @db.VarChar()
-  code         String        @db.VarChar()
+  name         String        @db.VarChar
+  code         String        @db.VarChar
   translations translation[]
 }
 
@@ -120,11 +120,11 @@ model translation {
   language_id Int
   created_at  DateTime? @default(now()) @db.Timestamp(6)
   updated_at  DateTime? @default(now()) @db.Timestamp(6)
-  question    question? @relation(fields: [questionId], references: [id])
-  section     section?  @relation(fields: [sectionId], references: [id])
-  language    language? @relation(fields: [language_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   questionId  Int?
   sectionId   Int?
+  language    language  @relation(fields: [language_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  question    question? @relation(fields: [questionId], references: [id])
+  section     section?  @relation(fields: [sectionId], references: [id])
 }
 
 enum inspection_status {
@@ -143,10 +143,10 @@ enum organization_type {
 enum engine_type {
   petrol
   diesel
-  hybrid
   hybrid_diesel
   hybrid_gasoline
   electric
+  hybrid
 }
 
 enum report_type {
