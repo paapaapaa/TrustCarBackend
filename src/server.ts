@@ -15,6 +15,9 @@ const swaggerOptions: SwaggerUiOptions = {
     },
 };
 
+server.get("/api/v1/test-route", (_req, res) => {
+    res.send("Hello World!");
+});
 server.use("/api/v1/user", upload.none(), userRouter);
 server.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 server.use(ErrorHandler);
