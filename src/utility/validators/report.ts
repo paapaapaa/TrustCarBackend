@@ -1,14 +1,14 @@
 import {attachment_type, engine_type, inspection_status, report_type} from "@prisma/client";
 import { object,string,number, array, mixed, } from "yup";
 
-export const getReportStructure = object().shape({
+export const getReportStructureValidator = object().shape({
     language: string().trim().oneOf(["fi", "en"], "Invalid language").default("fi"),
     engine_type: mixed<engine_type>().oneOf(Object.values(engine_type), "Invalid report type").default("petrol"),
     report_type: mixed<report_type>().oneOf(Object.values(report_type), "Invalid report type").default("full"),
 
 });
 
-export const saveReportStructure = object().shape(
+export const saveReportValidator = object().shape(
     {
         registration_number: string().trim().required("Registration number is required"),
         engine_type: mixed<engine_type>().required("Report type is required").oneOf(Object.values(engine_type), "Invalid report type"),
@@ -30,3 +30,8 @@ export const saveReportStructure = object().shape(
         )
     }
 );
+
+export const getReportValidator = object().shape({
+    reportId: number().required("ReportID is required"),
+    language: string().trim().oneOf(["fi", "en"], "Invalid language").default("en"),
+});

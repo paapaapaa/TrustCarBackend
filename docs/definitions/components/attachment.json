@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": ["id", "data", "attachment_type", "report_row_id"],
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "data": {
+      "type": "string"
+    },
+    "attachment_type": {
+      "$ref": "../types/attachmentType.json"
+    },
+    "report_row_id": {
+      "type": "int"
+    }
+  }
+}

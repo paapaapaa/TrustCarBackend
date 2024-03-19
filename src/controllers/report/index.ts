@@ -1,10 +1,8 @@
 import { NextFunction, Request, Response } from "express";
-import {
-  saveReportStructure,
-} from "../../utility/validators/report";
 import { PrismaClient } from "@prisma/client";
 import {getLanguageId, Language} from "../../middleware/types/language";
 import {EngineType, getEngineType, getReportType, ReportType} from "../../middleware/types/report";
+import {saveReportValidator} from "../../utility/validators/report";
 
 const prisma = new PrismaClient();
 
@@ -97,7 +95,7 @@ export const saveReport = async (
     registration_number,
     engine_type,
     report_rows,
-  } = saveReportStructure.cast(req.body);
+  } = saveReportValidator.cast(req.body);
   try {
     const data = await prisma.report.create({
       data: {
@@ -181,8 +179,18 @@ export const getReport = async (
       },
     });
 
+    const formattedData = data ? {
+      reportRows: data.report_rows
+          .map(reportRow => ({
+            attachments: reportRow.attachments,
+            question: {
+              name: reportRow?.question?.translations[0]?.value
+            }
+          }))
+    } : {};
+
     res.status(201).json({
-      data,
+      formattedData,
     });
   } catch (error) {
     next(error);

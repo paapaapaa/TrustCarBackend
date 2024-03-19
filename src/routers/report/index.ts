@@ -1,9 +1,11 @@
 import express from "express";
 import { RequestHandler } from "express";
 import {getReport, getReportStructure, saveReport} from "../../controllers/report";
-import { validateGetReportStructure, validateSaveReportStructure } from "../../middleware/validate/report";
+import {
+    validateGetReport,
+    validateGetReportStructure, validateSaveReport,
+} from "../../middleware/validate/report";
 import {TokenExtractor} from "../../middleware";
-import {validateId} from "../../middleware/validate/generic";
 
 
 const router = express.Router();
@@ -11,14 +13,14 @@ const router = express.Router();
 
 router.post(
     "/get",
-    validateId,
+    validateGetReport,
     TokenExtractor as RequestHandler,
     getReport as RequestHandler
 );
 
 router.post(
     "/save",
-    validateSaveReportStructure,
+    validateSaveReport,
     TokenExtractor as RequestHandler,
     saveReport as RequestHandler
 );

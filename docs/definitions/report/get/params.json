@@ -1,3 +1,15 @@
 {
-
+  "type": "object",
+  "required": [
+    "reportId",
+    "language"
+  ],
+  "properties": {
+    "reportId": {
+      "type": "number"
+    },
+    "language": {
+      "$ref": "../../types/language.json"
+    }
+  }
 }

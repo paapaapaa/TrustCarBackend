@@ -1,12 +1,16 @@
 import {NextFunction, Request, Response} from "express";
-import {getReportStructure, saveReportStructure} from "../../utility/validators/report";
+import {
+    getReportStructureValidator,
+    getReportValidator,
+    saveReportValidator
+} from "../../utility/validators/report";
 
 export const validateGetReportStructure = (
     req: Request,
     _res: Response,
     next: NextFunction
 ) => {
-    getReportStructure
+    getReportStructureValidator
         .validate(req.query, { abortEarly: false })
         .then(() => {
             next();
@@ -16,13 +20,28 @@ export const validateGetReportStructure = (
         });
 };
 
-export const validateSaveReportStructure = (
+export const validateSaveReport = (
     req: Request,
     _res: Response,
     next: NextFunction
 ) => {
-    saveReportStructure
+    saveReportValidator
         .validate(req.body, { abortEarly: false })
+        .then(() => {
+            next();
+        })
+        .catch((errors) => {
+            next(errors);
+        });
+};
+
+export const validateGetReport = (
+    req: Request,
+    _res: Response,
+    next: NextFunction
+) => {
+    getReportValidator
+        .validate(req.query, { abortEarly: false })
         .then(() => {
             next();
         })

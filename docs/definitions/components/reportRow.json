@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": ["attachments", "question"],
+  "properties": {
+    "attachments": {
+      "type": "array",
+      "items": {
+        "$ref": "./attachment.json"
+      }
+    },
+    "question": {
+      "$ref": "./question.json"
+    }
+  }
+}
