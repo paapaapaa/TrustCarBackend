@@ -1,0 +1,62 @@
+{
+  "get": {
+    "summary": "Get report",
+    "description": "Gets report by sections and questions with id.",
+    "operationId": "reportGet",
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "in": "body",
+        "name": "body",
+        "description": "ReportGetParams",
+        "required": true,
+        "schema": {
+          "$ref": "../../definitions/report/get/params.json"
+        }
+      }
+    ],
+    "responses": {
+      "201": {
+        "description": "Report fetched",
+        "schema": {
+          "$ref": "../../definitions/report/get/response/201.json"
+        }
+      }
+    }
+  },
+  "post": {
+    "summary": "Save report",
+    "description": "Saves report meta data and row data.",
+    "operationId": "reportSave",
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "in": "body",
+        "name": "body",
+        "description": "ReportPostParams",
+        "required": true,
+        "schema": {
+          "$ref": "../../definitions/report/post/params.json"
+        }
+      }
+    ],
+    "responses": {
+      "201": {
+        "description": "Report saved",
+        "schema": {
+          "$ref": "../../definitions/report/post/response/201.json"
+        }
+      }
+    }
+  }
+}

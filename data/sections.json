@@ -1,72 +1,100 @@
 [
-    {
-     "id": 1,
-     "finnish_text": " Asiapaperit ja tunnistus",
-     "english_text": " Case papers and identification"
-    },
-    {
-     "id": 2,
-     "finnish_text": " Jarrujärjestelmä ja iskunvaimennus",
-     "english_text": " Brake system and shock absoption"
-    },
-    {
-     "id": 3,
-     "finnish_text": " Ympäristöpäästöt",
-     "english_text": " Environmental emissions"
-    },
-    {
-     "id": 4,
-     "finnish_text": " Valaistus, pesulaitteet, tuulilasi, äänimerkki",
-     "english_text": " Lighting, washing equipment, windshield, horn"
-    },
-    {
-     "id": 5,
-     "finnish_text": " Jousitus, akselisto, pohjalevy",
-     "english_text": " Suspension, axle set, base plate"
-    },
-    {
-     "id": 6,
-     "finnish_text": " Renkaat",
-     "english_text": " Tyres"
-    },
-    {
-     "id": 7,
-     "finnish_text": " Moottori ja apulaitteet",
-     "english_text": " Engine and auxiliary equipment"
-    },
-    {
-     "id": 8,
-     "finnish_text": " Sisätilat, hallintalaitteet",
-     "english_text": " Interiors, controls"
-    },
-    {
-     "id": 9,
-     "finnish_text": " Korin yleiskunto",
-     "english_text": " General condition of the body"
-    },
-    {
-     "id": 10,
-     "finnish_text": " Voimansiirto",
-     "english_text": " Transmission"
-    },
-    {
-     "id": 11,
-     "finnish_text": " Lyhyt koeajo",
-     "english_text": " Short test drive"
-    },
-    {
-     "id": 12,
-     "finnish_text": " Ajoakku",
-     "english_text": " Driving battery"
-    },
-    {
-     "id": 13,
-     "finnish_text": " OBD",
-     "english_text": " OBD"
-    },
-    {
-     "id": 14,
-     "finnish_text": " Valaistus, pesulaitteet, tuulilasi, äänimerkki",
-     "english_text": " Fault lights on teh instrumental panel"
-    }
-   ]
+  {
+    "id": 1,
+    "translations": [
+      {"language_id": 1, "value": "Case papers and identification"},
+      {"language_id": 2, "value": "Asiapaperit ja tunnistus"}
+    ]
+  },
+  {
+    "id": 2,
+    "translations": [
+      {"language_id": 1, "value": "Brake system and shock absoption"},
+      {"language_id": 2, "value": "Jarrujärjestelmä ja iskunvaimennus"}
+    ]
+  },
+  {
+    "id": 3,
+    "translations": [
+      {"language_id": 1, "value": "Environmental emissions"},
+      {"language_id": 2, "value": "Ympäristöpäästöt"}
+    ]
+  },
+  {
+    "id": 4,
+    "translations": [
+      {"language_id": 1, "value": "Lighting, washing equipment, windshield, horn"},
+      {"language_id": 2, "value": "Valaistus, pesulaitteet, tuulilasi, äänimerkki"}
+    ]
+  },
+  {
+    "id": 5,
+    "translations": [
+      {"language_id": 1, "value": "Suspension, axle set, base plate"},
+      {"language_id": 2, "value": "Jousitus, akselisto, pohjalevy"}
+    ]
+  },
+  {
+    "id": 6,
+    "translations": [
+      {"language_id": 1, "value": "Tyres"},
+      {"language_id": 2, "value": "Renkaat"}
+    ]
+  },
+  {
+    "id": 7,
+    "translations": [
+      {"language_id": 1, "value": "Engine and auxiliary equipment"},
+      {"language_id": 2, "value": "Moottori ja apulaitteet"}
+    ]
+  },
+  {
+    "id": 8,
+    "translations": [
+      {"language_id": 1, "value": "Interiors, controls"},
+      {"language_id": 2, "value": "Sisätilat, hallintalaitteet"}
+    ]
+  },
+  {
+    "id": 9,
+    "translations": [
+      {"language_id": 1, "value": "General condition of the body"},
+      {"language_id": 2, "value": "Korin yleiskunto"}
+    ]
+  },
+  {
+    "id": 10,
+    "translations": [
+      {"language_id": 1, "value": "Transmission"},
+      {"language_id": 2, "value": "Voimansiirto"}
+    ]
+  },
+  {
+    "id": 11,
+    "translations": [
+      {"language_id": 1, "value": "Short test drive"},
+      {"language_id": 2, "value": "Lyhyt koeajo"}
+    ]
+  },
+  {
+    "id": 12,
+    "translations": [
+      {"language_id": 1, "value": "Driving battery"},
+      {"language_id": 2, "value": "Ajoakku"}
+    ]
+  },
+  {
+    "id": 13,
+    "translations": [
+      {"language_id": 1, "value": "OBD"},
+      {"language_id": 2, "value": "OBD"}
+    ]
+  },
+  {
+    "id": 14,
+    "translations": [
+      {"language_id": 1, "value": "Fault lights on the instrumental panel"},
+      {"language_id": 2, "value": "Valaistus, pesulaitteet, tuulilasi, äänimerkki"}
+    ]
+  }
+]

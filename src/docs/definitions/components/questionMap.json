@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["question"],
+  "properties": {
+    "question": {
+      "$ref": "question"
+    }
+  }
+}

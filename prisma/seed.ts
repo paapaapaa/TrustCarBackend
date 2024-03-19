@@ -1,9 +1,10 @@
 // ./prisma/seed.ts
 import { PrismaClient, engine_type, report_type,  } from "@prisma/client";
 import { hash, genSalt } from "bcrypt";
-import quetions from  "../data/quetions.json";
+import quetions from  "../data/questions.json";
 import sections from "../data/sections.json";
 import mapping from "../data/mapping.json";
+import languages from "../data/languages.json";
 
 const prisma = new PrismaClient();
 
@@ -43,16 +44,26 @@ await prisma.organization.create({
     },
   });
 
+  for (const l of languages) {
+    await prisma.language.create({
+      data:{
+        id: l.id,
+        name: l.name,
+        code: l.code
+      }
+    })
+  }
+
   for (const q of quetions) {
     await prisma.question.create({
       data:{
         id: q.id,
-        traslations:{
-          create:{
-            english_text:q.english_text,
-            finnish_text:q.finnish_text
-          }
-        }
+        translations: {
+          create: q.translations.map(t => ({
+            value: t.value,
+            language_id: t.language_id,
+          })),
+        },
       },
     });
   }
@@ -61,12 +72,12 @@ await prisma.organization.create({
     await prisma.section.create({
       data:{
         id:s.id,
-        traslations:{
-          create:{
-            english_text:s.english_text,
-            finnish_text:s.finnish_text
-          }
-        }
+        translations: {
+          create: s.translations.map(t => ({
+            value: t.value,
+            language_id: t.language_id,
+          })),
+        },
       },
     });
   }
@@ -74,10 +85,10 @@ await prisma.organization.create({
   for (const m of mapping) {
    await prisma.question_mapping.create({
     data:{
-      report_type:m["ReportType"] as report_type,
-      section_id:m["SectionId"],
-      question_id:m["QuetionId"],
-      engine_type:m["EngineType"] as engine_type
+      report_type:m["report_type"] as report_type,
+      section_id:m["section_id"] as number,
+      question_id:m["question_id"] as number,
+      engine_type:m["engine_type"] as engine_type
     }
    });
   }

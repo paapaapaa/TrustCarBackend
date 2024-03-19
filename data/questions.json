@@ -1,0 +1,611 @@
+[
+  {
+    "id": 1,
+    "translations": [
+      {"language_id": 1, "value": "Registerplates"},
+      {"language_id": 2, "value": "Rekisrerikilvet"}
+    ]
+  },
+  {
+    "id": 2,
+    "translations": [
+      {"language_id": 1, "value": "Productionnumber"},
+      {"language_id": 2, "value": "Valmistenumero"}
+    ]
+  },
+  {
+    "id": 3,
+    "translations": [
+      {"language_id": 1, "value": "Inspections"},
+      {"language_id": 2, "value": "Katsastustiedot"}
+    ]
+  },
+  {
+    "id": 4,
+    "translations": [
+      {"language_id": 1, "value": "Correction prompt in the register extract"},
+      {"language_id": 2, "value": "Korjauskehoitus rekisteriotteessa"}
+    ]
+  },
+  {
+    "id": 5,
+    "translations": [
+      {"language_id": 1, "value": "Maintenance book"},
+      {"language_id": 2, "value": "Huoltokirja"}
+    ]
+  },
+  {
+    "id": 6,
+    "translations": [
+      {"language_id": 1, "value": "Dynamometer test - values"},
+      {"language_id": 2, "value": "Dynamometritesti - arvot"}
+    ]
+  },
+  {
+    "id": 7,
+    "translations": [
+      {"language_id": 1, "value": "Front brakes"},
+      {"language_id": 2, "value": "Etujarrut"}
+    ]
+  },
+  {
+    "id": 8,
+    "translations": [
+      {"language_id": 1, "value": "Back brakes"},
+      {"language_id": 2, "value": "Takajarrut"}
+    ]
+  },
+  {
+    "id": 9,
+    "translations": [
+      {"language_id": 1, "value": "Hand brake"},
+      {"language_id": 2, "value": "Käsijarru"}
+    ]
+  },
+  {
+    "id": 10,
+    "translations": [
+      {"language_id": 1, "value": "Shock absorber"},
+      {"language_id": 2, "value": "Iskunvaimennus"}
+    ]
+  },
+  {
+    "id": 11,
+    "translations": [
+      {"language_id": 1, "value": "Front axle"},
+      {"language_id": 2, "value": "Etuakseli"}
+    ]
+  },
+  {
+    "id": 12,
+    "translations": [
+      {"language_id": 1, "value": "Back axle"},
+      {"language_id": 2, "value": "Taka-akseli"}
+    ]
+  },
+  {
+    "id": 13,
+    "translations": [
+      {"language_id": 1, "value": "Emission measurement"},
+      {"language_id": 2, "value": "Päästömittaus"}
+    ]
+  },
+  {
+    "id": 14,
+    "translations": [
+      {"language_id": 1, "value": "CO-concentration"},
+      {"language_id": 2, "value": "CO-Pitoisuus"}
+    ]
+  },
+  {
+    "id": 15,
+    "translations": [
+      {"language_id": 1, "value": "HC-concentration"},
+      {"language_id": 2, "value": "HC-pitoisuus"}
+    ]
+  },
+  {
+    "id": 16,
+    "translations": [
+      {"language_id": 1, "value": "Lambda value"},
+      {"language_id": 2, "value": "Lambda-arvo"}
+    ]
+  },
+  {
+    "id": 17,
+    "translations": [
+      {"language_id": 1, "value": "K-value"},
+      {"language_id": 2, "value": "K-arvo"}
+    ]
+  },
+  {
+    "id": 18,
+    "translations": [
+      {"language_id": 1, "value": "OBD-test"},
+      {"language_id": 2, "value": "OBD-testi"}
+    ]
+  },
+  {
+    "id": 19,
+    "translations": [
+      {"language_id": 1, "value": "Lighting front"},
+      {"language_id": 2, "value": "Valaistus etu"}
+    ]
+  },
+  {
+    "id": 20,
+    "translations": [
+      {"language_id": 1, "value": "Headlight/parking lights front"},
+      {"language_id": 2, "value": "Ajovalot/parkit etu"}
+    ]
+  },
+  {
+    "id": 21,
+    "translations": [
+      {"language_id": 1, "value": "Direction indicators"},
+      {"language_id": 2, "value": "Suuntavilkut"}
+    ]
+  },
+  {
+    "id": 22,
+    "translations": [
+      {"language_id": 1, "value": "Hazard flasher"},
+      {"language_id": 2, "value": "Hätävilkut"}
+    ]
+  },
+  {
+    "id": 23,
+    "translations": [
+      {"language_id": 1, "value": "Fog lights"},
+      {"language_id": 2, "value": "Sumuvalot"}
+    ]
+  },
+  {
+    "id": 24,
+    "translations": [
+      {"language_id": 1, "value": "Additional lights"},
+      {"language_id": 2, "value": "Lisävalot"}
+    ]
+  },
+  {
+    "id": 25,
+    "translations": [
+      {"language_id": 1, "value": "Lighting back"},
+      {"language_id": 2, "value": "Valaistus taka"}
+    ]
+  },
+  {
+    "id": 26,
+    "translations": [
+      {"language_id": 1, "value": "Headlight/parking lights back"},
+      {"language_id": 2, "value": "Ajovalot/parkit taka"}
+    ]
+  },
+  {
+    "id": 27,
+    "translations": [
+      {"language_id": 1, "value": "Wipers back and front"},
+      {"language_id": 2, "value": "Pyyhkijät etu/taka"}
+    ]
+  },
+  {
+    "id": 28,
+    "translations": [
+      {"language_id": 1, "value": "Windshield wipers"},
+      {"language_id": 2, "value": "Tuulilasinpyyhkimet"}
+    ]
+  },
+  {
+    "id": 29,
+    "translations": [
+      {"language_id": 1, "value": "Rear window wiper"},
+      {"language_id": 2, "value": "Takalasinpyyhin"}
+    ]
+  },
+  {
+    "id": 30,
+    "translations": [
+      {"language_id": 1, "value": "Windshield washers"},
+      {"language_id": 2, "value": "Lasinpesurit"}
+    ]
+  },
+  {
+    "id": 31,
+    "translations": [
+      {"language_id": 1, "value": "Windshield washer"},
+      {"language_id": 2, "value": "Tuulilasinpesuri"}
+    ]
+  },
+  {
+    "id": 32,
+    "translations": [
+      {"language_id": 1, "value": "Rear window washer"},
+      {"language_id": 2, "value": "Takalasinpesuri"}
+    ]
+  },
+  {
+    "id": 33,
+    "translations": [
+      {"language_id": 1, "value": "Headlight washer"},
+      {"language_id": 2, "value": "Ajovalopesuri"}
+    ]
+  },
+  {
+    "id": 34,
+    "translations": [
+      {"language_id": 1, "value": "Sound signal"},
+      {"language_id": 2, "value": "Äänimerkki"}
+    ]
+  },
+  {
+    "id": 35,
+    "translations": [
+      {"language_id": 1, "value": "Windshield condition"},
+      {"language_id": 2, "value": "Tuulilasin kunto"}
+    ]
+  },
+  {
+    "id": 36,
+    "translations": [
+      {"language_id": 1, "value": "Control joint"},
+      {"language_id": 2, "value": "Ohjausnivelistö"}
+    ]
+  },
+  {
+    "id": 37,
+    "translations": [
+      {"language_id": 1, "value": "Rear axle"},
+      {"language_id": 2, "value": "Taka-akseli"}
+    ]
+  },
+  {
+    "id": 38,
+    "translations": [
+      {"language_id": 1, "value": "Axle supports, wheel bearings"},
+      {"language_id": 2, "value": "Akselituennat, pyöränlaakerit"}
+    ]
+  },
+  {
+    "id": 39,
+    "translations": [
+      {"language_id": 1, "value": "Suspension"},
+      {"language_id": 2, "value": "Jousitus"}
+    ]
+  },
+  {
+    "id": 40,
+    "translations": [
+      {"language_id": 1, "value": "Exhaust system"},
+      {"language_id": 2, "value": "Pakoputkisto"}
+    ]
+  },
+  {
+    "id": 41,
+    "translations": [
+      {"language_id": 1, "value": "Pipes and hoses"},
+      {"language_id": 2, "value": "Putket ja letkut"}
+    ]
+  },
+  {
+    "id": 42,
+    "translations": [
+      {"language_id": 1, "value": "Fuel tank"},
+      {"language_id": 2, "value": "Polttoainesäiliöt"}
+    ]
+  },
+  {
+    "id": 43,
+    "translations": [
+      {"language_id": 1, "value": "Base plate"},
+      {"language_id": 2, "value": "Pohjalevy"}
+    ]
+  },
+  {
+    "id": 44,
+    "translations": [
+      {"language_id": 1, "value": "Frame"},
+      {"language_id": 2, "value": "Runko"}
+    ]
+  },
+  {
+    "id": 45,
+    "translations": [
+      {"language_id": 1, "value": "Sill panel"},
+      {"language_id": 2, "value": "Helmakotelot"}
+    ]
+  },
+  {
+    "id": 46,
+    "translations": [
+      {"language_id": 1, "value": "Brake pads/discs"},
+      {"language_id": 2, "value": "Jarrulevyt/palat"}
+    ]
+  },
+  {
+    "id": 47,
+    "translations": [
+      {"language_id": 1, "value": "Front tires tread left"},
+      {"language_id": 2, "value": "Eturenkaat kulutuspinta vasen"}
+    ]
+  },
+  {
+    "id": 48,
+    "translations": [
+      {"language_id": 1, "value": "Front tires tread right"},
+      {"language_id": 2, "value": "Eturenkaat kulutuspinta oikea"}
+    ]
+  },
+  {
+    "id": 49,
+    "translations": [
+      {"language_id": 1, "value": "Rear tires tread left"},
+      {"language_id": 2, "value": "Takarenkaat kulutuspinta vasen"}
+    ]
+  },
+  {
+    "id": 50,
+    "translations": [
+      {"language_id": 1, "value": "Rear tires tread right"},
+      {"language_id": 2, "value": "Takarenkaat kulutuspinta oikea"}
+    ]
+  },
+  {
+    "id": 51,
+    "translations": [
+      {"language_id": 1, "value": "Engine, external observations"},
+      {"language_id": 2, "value": "Moottori, ulkoiset havainnot"}
+    ]
+  },
+  {
+    "id": 52,
+    "translations": [
+      {"language_id": 1, "value": "Start"},
+      {"language_id": 2, "value": "Käynnistys"}
+    ]
+  },
+  {
+    "id": 53,
+    "translations": [
+      {"language_id": 1, "value": "Idle"},
+      {"language_id": 2, "value": "Tyhjäkäynti"}
+    ]
+  },
+  {
+    "id": 54,
+    "translations": [
+      {"language_id": 1, "value": "Charge- measured charging voltage at idle"},
+      {"language_id": 2, "value": "Lataus-mitattu latausjännite tyhjäkäynnillä"}
+    ]
+  },
+  {
+    "id": 55,
+    "translations": [
+      {"language_id": 1, "value": "Battery test"},
+      {"language_id": 2, "value": "Akkutesti"}
+    ]
+  },
+  {
+    "id": 56,
+    "translations": [
+      {"language_id": 1, "value": "Cooling system"},
+      {"language_id": 2, "value": "Jäähdytysjärjestelmä"}
+    ]
+  },
+  {
+    "id": 57,
+    "translations": [
+      {"language_id": 1, "value": "Frost resistance of the liquid"},
+      {"language_id": 2, "value": "Nesteen pakkaskestävyys"}
+    ]
+  },
+  {
+    "id": 58,
+    "translations": [
+      {"language_id": 1, "value": "Windows"},
+      {"language_id": 2, "value": "Lasit"}
+    ]
+  },
+  {
+    "id": 59,
+    "translations": [
+      {"language_id": 1, "value": "Mirrors"},
+      {"language_id": 2, "value": "Peilit"}
+    ]
+  },
+  {
+    "id": 60,
+    "translations": [
+      {"language_id": 1, "value": "Panel"},
+      {"language_id": 2, "value": "Kojetaulu"}
+    ]
+  },
+  {
+    "id": 61,
+    "translations": [
+      {"language_id": 1, "value": "Controls, instrument panel"},
+      {"language_id": 2, "value": "Hallintalaitteet, mittaristo"}
+    ]
+  },
+  {
+    "id": 62,
+    "translations": [
+      {"language_id": 1, "value": "Indicator lights"},
+      {"language_id": 2, "value": "Merkkivalot"}
+    ]
+  },
+  {
+    "id": 63,
+    "translations": [
+      {"language_id": 1, "value": "Heating and frost protection"},
+      {"language_id": 2, "value": "Lämmitys ja huurteenpoisto"}
+    ]
+  },
+  {
+    "id": 64,
+    "translations": [
+      {"language_id": 1, "value": "Air conditioning"},
+      {"language_id": 2, "value": "Ilmastointi"}
+    ]
+  },
+  {
+    "id": 65,
+    "translations": [
+      {"language_id": 1, "value": "Interior"},
+      {"language_id": 2, "value": "Sisusta"}
+    ]
+  },
+  {
+    "id": 66,
+    "translations": [
+      {"language_id": 1, "value": "Interior lighting"},
+      {"language_id": 2, "value": "Sisävalaistus"}
+    ]
+  },
+  {
+    "id": 67,
+    "translations": [
+      {"language_id": 1, "value": "Radio/media devices"},
+      {"language_id": 2, "value": "Radio/Medialaitteet"}
+    ]
+  },
+  {
+    "id": 68,
+    "translations": [
+      {"language_id": 1, "value": "Seatbelts"},
+      {"language_id": 2, "value": "Turvavyöt"}
+    ]
+  },
+  {
+    "id": 69,
+    "translations": [
+      {"language_id": 1, "value": "Corrosion"},
+      {"language_id": 2, "value": "Korroosio"}
+    ]
+  },
+  {
+    "id": 70,
+    "translations": [
+      {"language_id": 1, "value": "Hatches and handles"},
+      {"language_id": 2, "value": "Luukut ja kahvat"}
+    ]
+  },
+  {
+    "id": 71,
+    "translations": [
+      {"language_id": 1, "value": "Paint(not normal wearing)"},
+      {"language_id": 2, "value": "Maalipinta(ei normaali kuluminen)"}
+    ]
+  },
+  {
+    "id": 72,
+    "translations": [
+      {"language_id": 1, "value": "Other damage to the frame"},
+      {"language_id": 2, "value": "Korin muut vauriot"}
+    ]
+  },
+  {
+    "id": 73,
+    "translations": [
+      {"language_id": 1, "value": "Clutch"},
+      {"language_id": 2, "value": "Kytkimen toiminta"}
+    ]
+  },
+  {
+    "id": 74,
+    "translations": [
+      {"language_id": 1, "value": "Transmission operation"},
+      {"language_id": 2, "value": "Vaihteiston toiminta"}
+    ]
+  },
+  {
+    "id": 75,
+    "translations": [
+      {"language_id": 1, "value": "Drive gear"},
+      {"language_id": 2, "value": "Vetopyörästö"}
+    ]
+  },
+  {
+    "id": 76,
+    "translations": [
+      {"language_id": 1, "value": "Short test drive"},
+      {"language_id": 2, "value": "Koeajo"}
+    ]
+  },
+  {
+    "id": 77,
+    "translations": [
+      {"language_id": 1, "value": "Dynamometer test - values"},
+      {"language_id": 2, "value": "Dynamometritesti"}
+    ]
+  },
+  {
+    "id": 78,
+    "translations": [
+      {"language_id": 1, "value": "Driving battery external condition"},
+      {"language_id": 2, "value": "Ajoakku ulkoinen kunto"}
+    ]
+  },
+  {
+    "id": 79,
+    "translations": [
+      {"language_id": 1, "value": "Driving battery wiring and cabling"},
+      {"language_id": 2, "value": "Ajoakku johdotus ja kaapelointi"}
+    ]
+  },
+  {
+    "id": 80,
+    "translations": [
+      {"language_id": 1, "value": "Driving battery battery testing(on request)"},
+      {"language_id": 2, "value": "Ajoakku akkutestaus(pyydettäessä)"}
+    ]
+  },
+  {
+    "id": 81,
+    "translations": [
+      {"language_id": 1, "value": "Idle"},
+      {"language_id": 2, "value": "Käynnistysääni"}
+    ]
+  },
+  {
+    "id": 82,
+    "translations": [
+      {"language_id": 1, "value": "Registerplates"},
+      {"language_id": 2, "value": "Rekisterikilvet"}
+    ]
+  },
+  {
+    "id": 83,
+    "translations": [
+      {"language_id": 1, "value": "Driving battery cooling system"},
+      {"language_id": 2, "value": "Ajoakun jäähdytysjärjestelmä"}
+    ]
+  },
+  {
+    "id": 84,
+    "translations": [
+      {"language_id": 1, "value": "Registerplates"},
+      {"language_id": 2, "value": "Valmistenumero"}
+    ]
+  },
+  {
+    "id": 85,
+    "translations": [
+      {"language_id": 1, "value": "Instument cluster fault lights"},
+      {"language_id": 2, "value": "Mittariston vikavalot"}
+    ]
+  },
+  {
+    "id": 86,
+    "translations": [
+      {"language_id": 1, "value": "License plate lights"},
+      {"language_id": 2, "value": "rek.kilven valot"}
+    ]
+  },
+  {
+    "id": 87,
+    "translations": [
+      {"language_id": 1, "value": "Reversing lights"},
+      {"language_id": 2, "value": "Peruutusvalot"}
+    ]
+  }
+]

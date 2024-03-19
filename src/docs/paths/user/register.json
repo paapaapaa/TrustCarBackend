@@ -1,0 +1,32 @@
+{
+  "post": {
+    "summary": "Register user, returns new id",
+    "description": "Creates new user with email and password.",
+    "operationId": "userRegister",
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "in": "body",
+        "name": "body",
+        "description": "UserRegisterParams",
+        "required": true,
+        "schema": {
+          "$ref": "../../definitions/user/register/params.json"
+        }
+      }
+    ],
+    "responses": {
+      "201": {
+        "description": "User successfully registered",
+        "schema": {
+          "$ref": "../../definitions/user/register/response/201.json"
+        }
+      }
+    }
+  }
+}

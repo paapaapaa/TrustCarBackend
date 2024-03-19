@@ -1,0 +1,32 @@
+{
+  "get": {
+    "summary": "Get report structure",
+    "description": "Get report structure, sections and questions for type of report",
+    "operationId": "reportStructureGet",
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "in": "body",
+        "name": "body",
+        "description": "ReportStructureGetParams",
+        "required": true,
+        "schema": {
+          "$ref": "../../../definitions/report/structure/get/params.json"
+        }
+      }
+    ],
+    "responses": {
+      "201": {
+        "description": "Report structure fetched",
+        "schema": {
+          "$ref": "../../../definitions/report/structure/get/response/201.json"
+        }
+      }
+    }
+  }
+}

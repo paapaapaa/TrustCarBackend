@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": ["id", "translations", "question_map"],
+  "properties": {
+    "id": "number",
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "./translation.json"
+      }
+    },
+    "question_map": {
+      "type": "array",
+      "items": {
+        "$ref": "./question.json"
+      }
+    }
+  }
+}

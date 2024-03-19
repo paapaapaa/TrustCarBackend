@@ -1,5 +1,6 @@
 import {NextFunction, Request, Response} from "express";
 import {loginUser, registerUser} from "../../utility/validators/user";
+import {Error} from "../types/error";
 
 export const validateRegisterUser = (
     req: Request,
@@ -11,7 +12,7 @@ export const validateRegisterUser = (
         .then(() => {
             next();
         })
-        .catch((errors) => {
+        .catch((errors: Error[]) => {
             next(errors);
         });
 };
@@ -26,7 +27,7 @@ export const validateLoginUser = (
         .then(() => {
             next();
         })
-        .catch((errors) => {
+        .catch((errors: Error[]) => {
             next(errors);
         });
 };

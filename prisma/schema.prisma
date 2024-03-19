@@ -20,8 +20,8 @@ model organization {
   created_at       DateTime?          @db.Timestamp(6)
   updated_at       DateTime?          @db.Timestamp(6)
   modified_by_user Int?
-  user             user[]
-  report           report[]
+  users            user[]
+  reports          report[]
 }
 
 model user {
@@ -42,86 +42,93 @@ model user {
 }
 
 model report {
-  id                   Int               @id @default(autoincrement())
-  registeration_number String?
-  production_number    Int?
-  brand_and_model      String?
-  odometer_reading     Int?
-  created_at           DateTime?         @default(now()) @db.Timestamp(6)
-  updated_at           DateTime?         @default(now()) @db.Timestamp(6)
-  modified_by_user     Int?
-  organization_id      Int?
-  organization         organization?     @relation(fields: [organization_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  report_rows          report_row[]
-  engine_type          engine_type?
+  id                  Int           @id @default(autoincrement())
+  registration_number String?
+  production_number   Int?
+  brand_and_model     String?
+  odometer_reading    Int?
+  created_at          DateTime?     @default(now()) @db.Timestamp(6)
+  updated_at          DateTime?     @default(now()) @db.Timestamp(6)
+  modified_by_user    Int?
+  organization_id     Int?
+  organization        organization? @relation(fields: [organization_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  report_rows         report_row[]
+  engine_type         engine_type?
 }
 
 model report_row {
-  id                   Int               @id @default(autoincrement())
-  report_id            Int?
-  report               report?           @relation(fields: [report_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-  question_id          Int?              @unique
-  question             question?         @relation(fields: [question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  inspection_status    inspection_status?
-  comment              String?
-  created_at           DateTime?         @default(now()) @db.Timestamp(6)
-  updated_at           DateTime?         @default(now()) @db.Timestamp(6)
-  modified_by_user     Int?
-  attachments          attachments[]
+  id                Int                @id @default(autoincrement())
+  report_id         Int?
+  report            report?            @relation(fields: [report_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  question_id       Int?               @unique
+  question          question?          @relation(fields: [question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  inspection_status inspection_status?
+  comment           String?
+  created_at        DateTime?          @default(now()) @db.Timestamp(6)
+  updated_at        DateTime?          @default(now()) @db.Timestamp(6)
+  modified_by_user  Int?
+  attachments       attachments[]
 }
 
 model attachments {
-  id              Int       @id @default(autoincrement())
+  id              Int              @id @default(autoincrement())
   data            Bytes?
   attachment_type attachment_type?
-  report_row      report_row @relation(fields: [report_row_id], references: [id])
+  report_row      report_row       @relation(fields: [report_row_id], references: [id])
   report_row_id   Int
-} 
+}
 
 model question {
-  id               Int                @id @unique
-  created_at       DateTime?          @default(now()) @db.Timestamp(6)
-  updated_at       DateTime?          @default(now()) @db.Timestamp(6)
-  question_map     question_mapping[]
-  translations_id  Int?               @unique
-  traslations      translations?      @relation(fields: [translations_id], references: [id])
-  report_row       report_row? 
+  id             Int                @id @unique
+  created_at     DateTime?          @default(now()) @db.Timestamp(6)
+  updated_at     DateTime?          @default(now()) @db.Timestamp(6)
+  question_map   question_mapping[]
+  translation_id Int?               @unique
+  translations   translation[]
+  report_row     report_row?
 }
 
 model section {
-  id           Int        @id @unique
-  created_at   DateTime?  @default(now()) @db.Timestamp(6)
-  updated_at   DateTime?  @default(now()) @db.Timestamp(6)
-  question_map     question_mapping[]
-  translations_id Int?   @unique 
-  traslations      translations?    @relation(fields: [translations_id], references: [id])
+  id             Int                @id @unique
+  created_at     DateTime?          @default(now()) @db.Timestamp(6)
+  updated_at     DateTime?          @default(now()) @db.Timestamp(6)
+  question_map   question_mapping[]
+  translation_id Int?               @unique
+  translations   translation[]
 }
 
 model question_mapping {
-  id          Int       @id @default(autoincrement())     
+  id          Int         @id @default(autoincrement())
   engine_type engine_type
   report_type report_type
-  section_id   Int  
-  question_id  Int  
-  section     section   @relation(fields: [section_id], references: [id])
-  question    question  @relation(fields: [question_id], references: [id])
-
-
+  section_id  Int
+  question_id Int
+  section     section     @relation(fields: [section_id], references: [id])
+  question    question    @relation(fields: [question_id], references: [id])
 }
 
-model translations {
-  id           Int        @id @default(autoincrement())
-  finnish_text String?
-  english_text String?
-  created_at   DateTime?  @default(now()) @db.Timestamp(6)
-  updated_at   DateTime?  @default(now()) @db.Timestamp(6)
-  question     question?
-  section      section?
+model language {
+  id           Int           @id @default(autoincrement())
+  name         String        @db.VarChar()
+  code         String        @db.VarChar()
+  translations translation[]
 }
 
+model translation {
+  id          Int       @id @default(autoincrement())
+  value       String?   @db.VarChar
+  language_id Int
+  created_at  DateTime? @default(now()) @db.Timestamp(6)
+  updated_at  DateTime? @default(now()) @db.Timestamp(6)
+  question    question? @relation(fields: [questionId], references: [id])
+  section     section?  @relation(fields: [sectionId], references: [id])
+  language    language? @relation(fields: [language_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  questionId  Int?
+  sectionId   Int?
+}
 
 enum inspection_status {
-  red 
+  red
   yellow
   green
 }
@@ -152,4 +159,3 @@ enum attachment_type {
   image
   audio
 }
-

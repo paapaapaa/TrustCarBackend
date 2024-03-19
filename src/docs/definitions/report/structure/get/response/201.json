@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "required": ["sections"],
+  "properties": {
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../components/section.json"
+      }
+    }
+  }
+}

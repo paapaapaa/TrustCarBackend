@@ -2,7 +2,7 @@ import {attachment_type, engine_type, inspection_status, report_type} from "@pri
 import { object,string,number, array, mixed, } from "yup";
 
 export const getReportStructure = object().shape({
-    ln: string().trim().oneOf(["fi", "en"], "Invalid language").default("fi"),
+    language: string().trim().oneOf(["fi", "en"], "Invalid language").default("fi"),
     engine_type: mixed<engine_type>().oneOf(Object.values(engine_type), "Invalid report type").default("petrol"),
     report_type: mixed<report_type>().oneOf(Object.values(report_type), "Invalid report type").default("full"),
 
@@ -10,7 +10,7 @@ export const getReportStructure = object().shape({
 
 export const saveReportStructure = object().shape(
     {
-        registeration_number: string().trim().required("Registration number is required"),
+        registration_number: string().trim().required("Registration number is required"),
         engine_type: mixed<engine_type>().required("Report type is required").oneOf(Object.values(engine_type), "Invalid report type"),
         brand_and_model: string().trim().required("Brand and model is required"),
         odometer_reading: number().required("Odometer reading is required"),

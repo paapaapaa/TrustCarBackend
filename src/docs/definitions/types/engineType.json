@@ -1,0 +1,4 @@
+{
+  "type": "string",
+  "enum": ["petrol", "diesel", "hybrid_diesel", "hybrid_gasoline", "electric", "hybrid"]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "username",
+    "password",
+    "fistname",
+    "lastname",
+    "organizationId"
+  ],
+  "properties": {
+    "username": "string",
+    "password": "string",
+    "firstname": "string",
+    "lastname": "string",
+    "organizationId": "string"
+  }
+}

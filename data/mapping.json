@@ -1,1886 +1,316 @@
 [
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 1,
-     "QuetionId": 1
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 1,
-     "QuetionId": 2
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 1,
-     "QuetionId": 3
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 1,
-     "QuetionId": 4
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 1,
-     "QuetionId": 5
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 6
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 7
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 8
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 9
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 10
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 12
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 3,
-     "QuetionId": 13
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 3,
-     "QuetionId": 14
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 3,
-     "QuetionId": 15
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 3,
-     "QuetionId": 16
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 3,
-     "QuetionId": 17
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 3,
-     "QuetionId": 18
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 19
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 20
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 21
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 22
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 23
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 24
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 25
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 26
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 27
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 28
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 29
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 30
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 31
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 32
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 33
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 34
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 35
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 36
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 37
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 38
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 39
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 40
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 41
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 42
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 43
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 44
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 45
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 46
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 6,
-     "QuetionId": 47
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 6,
-     "QuetionId": 48
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 6,
-     "QuetionId": 49
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 6,
-     "QuetionId": 50
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 7,
-     "QuetionId": 51
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 7,
-     "QuetionId": 52
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 7,
-     "QuetionId": 53
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 7,
-     "QuetionId": 54
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 7,
-     "QuetionId": 55
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 7,
-     "QuetionId": 56
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 7,
-     "QuetionId": 57
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 58
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 59
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 60
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 61
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 62
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 63
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 64
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 65
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 66
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 67
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 68
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 9,
-     "QuetionId": 69
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 9,
-     "QuetionId": 70
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 9,
-     "QuetionId": 71
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 9,
-     "QuetionId": 72
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 10,
-     "QuetionId": 73
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 10,
-     "QuetionId": 74
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 10,
-     "QuetionId": 75
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "petrol",
-     "SectionId": 11,
-     "QuetionId": 76
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 1,
-     "QuetionId": 1
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 1,
-     "QuetionId": 2
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 1,
-     "QuetionId": 3
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 1,
-     "QuetionId": 4
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 1,
-     "QuetionId": 5
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 2,
-     "QuetionId": 6
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 2,
-     "QuetionId": 7
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 2,
-     "QuetionId": 8
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 2,
-     "QuetionId": 9
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 2,
-     "QuetionId": 10
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 2,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 2,
-     "QuetionId": 12
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 3,
-     "QuetionId": 18
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 19
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 20
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 21
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 22
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 23
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 24
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 25
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 26
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 27
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 28
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 29
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 30
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 31
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 32
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 33
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 34
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 4,
-     "QuetionId": 35
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 36
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 37
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 38
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 39
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 40
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 41
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 42
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 43
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 44
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 45
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 5,
-     "QuetionId": 46
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 12,
-     "QuetionId": 78
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 12,
-     "QuetionId": 79
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 12,
-     "QuetionId": 80
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 6,
-     "QuetionId": 47
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 6,
-     "QuetionId": 48
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 6,
-     "QuetionId": 49
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 6,
-     "QuetionId": 50
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 7,
-     "QuetionId": 51
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 7,
-     "QuetionId": 52
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 7,
-     "QuetionId": 53
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 7,
-     "QuetionId": 54
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 7,
-     "QuetionId": 55
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 7,
-     "QuetionId": 56
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 7,
-     "QuetionId": 57
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 58
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 59
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 60
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 61
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 62
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 63
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 64
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 65
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 66
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 67
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 8,
-     "QuetionId": 68
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 9,
-     "QuetionId": 69
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 9,
-     "QuetionId": 70
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 9,
-     "QuetionId": 71
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 9,
-     "QuetionId": 72
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 10,
-     "QuetionId": 74
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 10,
-     "QuetionId": 75
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "hybrid",
-     "SectionId": 11,
-     "QuetionId": 76
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 1,
-     "QuetionId": 1
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 1,
-     "QuetionId": 2
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 1,
-     "QuetionId": 3
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 1,
-     "QuetionId": 4
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 1,
-     "QuetionId": 5
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 6
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 7
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 8
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 9
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 10
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 12
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 13,
-     "QuetionId": 18
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 19
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 20
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 21
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 22
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 23
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 24
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 25
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 26
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 27
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 28
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 29
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 30
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 31
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 32
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 33
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 34
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 35
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 36
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 37
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 38
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 39
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 40
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 41
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 43
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 44
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 45
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 46
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 12,
-     "QuetionId": 78
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 12,
-     "QuetionId": 79
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 12,
-     "QuetionId": 80
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 6,
-     "QuetionId": 47
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 6,
-     "QuetionId": 48
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 6,
-     "QuetionId": 49
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 6,
-     "QuetionId": 50
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 7,
-     "QuetionId": 83
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 58
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 59
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 60
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 61
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 62
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 63
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 64
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 65
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 66
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 67
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 68
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 9,
-     "QuetionId": 69
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 9,
-     "QuetionId": 70
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 9,
-     "QuetionId": 71
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 9,
-     "QuetionId": 72
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 10,
-     "QuetionId": 75
-    },
-    {
-     "ReportType": "full",
-     "EngineType": "electric",
-     "SectionId": 11,
-     "QuetionId": 76
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 1,
-     "QuetionId": 1
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 1,
-     "QuetionId": 3
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 1,
-     "QuetionId": 4
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 6
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 7
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 8
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 9
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 10
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 2,
-     "QuetionId": 12
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 14,
-     "QuetionId": 85
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 19
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 20
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 21
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 22
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 23
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 24
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 25
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 26
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 86
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 87
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 27
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 28
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 29
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 30
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 31
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 32
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 33
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 34
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 4,
-     "QuetionId": 35
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 36
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 37
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 38
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 39
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 43
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 44
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 5,
-     "QuetionId": 45
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 6,
-     "QuetionId": 47
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 6,
-     "QuetionId": 48
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 6,
-     "QuetionId": 49
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 6,
-     "QuetionId": 50
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 7,
-     "QuetionId": 51
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 61
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 8,
-     "QuetionId": 63
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 10,
-     "QuetionId": 73
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 10,
-     "QuetionId": 74
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 10,
-     "QuetionId": 75
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "petrol",
-     "SectionId": 11,
-     "QuetionId": 76
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 1,
-     "QuetionId": 1
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 1,
-     "QuetionId": 3
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 1,
-     "QuetionId": 4
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 6
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 7
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 8
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 9
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 10
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 2,
-     "QuetionId": 12
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 14,
-     "QuetionId": 85
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 19
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 20
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 21
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 22
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 23
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 24
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 25
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 26
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 86
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 87
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 27
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 28
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 29
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 30
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 31
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 32
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 33
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 34
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 4,
-     "QuetionId": 35
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 36
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 11
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 37
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 38
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 39
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 43
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 44
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 5,
-     "QuetionId": 45
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 6,
-     "QuetionId": 47
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 6,
-     "QuetionId": 48
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 6,
-     "QuetionId": 49
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 6,
-     "QuetionId": 50
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 7,
-     "QuetionId": 51
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 61
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 8,
-     "QuetionId": 63
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 10,
-     "QuetionId": 74
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 10,
-     "QuetionId": 75
-    },
-    {
-     "ReportType": "narrow",
-     "EngineType": "electric",
-     "SectionId": 11,
-     "QuetionId": 76
-    }
-   ]
+  {"report_type": "full", "engine_type": "petrol", "section_id": 1, "question_id": 1},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 1, "question_id": 2},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 1, "question_id": 3},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 1, "question_id": 4},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 1, "question_id": 5},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 2, "question_id": 6},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 2, "question_id": 7},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 2, "question_id": 8},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 2, "question_id": 9},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 2, "question_id": 10},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 2, "question_id": 11},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 2, "question_id": 12},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 3, "question_id": 13},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 3, "question_id": 14},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 3, "question_id": 15},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 3, "question_id": 16},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 3, "quetsion_id": 17},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 3, "question_id": 18},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 19},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 20},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 21},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 22},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 23},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 24},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 25},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 26},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 27},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 28},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 29},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 30},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 31},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 32},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 33},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 34},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 4, "question_id": 35},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 36},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 11},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 37},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 38},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 39},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 40},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 41},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 42},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 43},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 44},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 45},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 5, "question_id": 46},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 6, "question_id": 47},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 6, "question_id": 48},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 6, "question_id": 49},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 6, "question_id": 50},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 7, "question_id": 51},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 7, "question_id": 52},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 7, "question_id": 53},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 7, "question_id": 54},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 7, "question_id": 55},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 7, "question_id": 56},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 7, "question_id": 57},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 58},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 59},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 60},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 61},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 62},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 63},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 64},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 65},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 66},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 67},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 8, "question_id": 68},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 9, "question_id": 69},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 9, "question_id": 70},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 9, "question_id": 71},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 9, "question_id": 72},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 10, "question_id": 73},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 10, "question_id": 74},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 10, "question_id": 75},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 11, "question_id": 76},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 1, "question_id": 1},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 1, "question_id": 2},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 1, "question_id": 3},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 1, "question_id": 4},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 1, "question_id": 5},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 2, "question_id": 6},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 2, "question_id": 7},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 2, "question_id": 8},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 2, "question_id": 9},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 2, "question_id": 10},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 2, "question_id": 11},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 2, "question_id": 12},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 3, "question_id": 18},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 19},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 20},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 21},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 22},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 23},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 24},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 25},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 26},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 27},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 28},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 29},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 30},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 31},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 32},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 33},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 34},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 4, "question_id": 35},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 36},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 11},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 37},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 38},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 39},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 40},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 41},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 42},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 43},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 44},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 45},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 5, "question_id": 46},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 12, "question_id": 78},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 12, "question_id": 79},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 12, "question_id": 80},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 6, "question_id": 47},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 6, "question_id": 48},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 6, "question_id": 49},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 6, "question_id": 50},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 7, "question_id": 51},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 7, "question_id": 52},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 7, "question_id": 53},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 7, "question_id": 54},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 7, "question_id": 55},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 7, "question_id": 56},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 7, "question_id": 57},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 58},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 59},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 60},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 61},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 62},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 63},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 64},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 65},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 66},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 67},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 8, "question_id": 68},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 9, "question_id": 69},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 9, "question_id": 70},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 9, "question_id": 71},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 9, "question_id": 72},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 10, "question_id": 74},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 10, "question_id": 75},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 11, "question_id": 76},
+  {"report_type": "full", "engine_type": "electric", "section_id": 1, "question_id": 1},
+  {"report_type": "full", "engine_type": "electric", "section_id": 1, "question_id": 2},
+  {"report_type": "full", "engine_type": "electric", "section_id": 1, "question_id": 3},
+  {"report_type": "full", "engine_type": "electric", "section_id": 1, "question_id": 4},
+  {"report_type": "full", "engine_type": "electric", "section_id": 1, "question_id": 5},
+  {"report_type": "full", "engine_type": "electric", "section_id": 2, "question_id": 6},
+  {"report_type": "full", "engine_type": "electric", "section_id": 2, "question_id": 7},
+  {"report_type": "full", "engine_type": "electric", "section_id": 2, "question_id": 8},
+  {"report_type": "full", "engine_type": "electric", "section_id": 2, "question_id": 9},
+  {"report_type": "full", "engine_type": "electric", "section_id": 2, "question_id": 10},
+  {"report_type": "full", "engine_type": "electric", "section_id": 2, "question_id": 11},
+  {"report_type": "full", "engine_type": "electric", "section_id": 2, "question_id": 12},
+  {"report_type": "full", "engine_type": "electric", "section_id": 13, "question_id": 18},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 19},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 20},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 21},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 22},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 23},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 24},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 25},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 26},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 27},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 28},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 29},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 30},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 31},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 32},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 33},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 34},
+  {"report_type": "full", "engine_type": "electric", "section_id": 4, "question_id": 35},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 36},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 11},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 37},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 38},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 39},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 40},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 41},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 43},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 44},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 45},
+  {"report_type": "full", "engine_type": "electric", "section_id": 5, "question_id": 46},
+  {"report_type": "full", "engine_type": "electric", "section_id": 12, "question_id": 78},
+  {"report_type": "full", "engine_type": "electric", "section_id": 12, "question_id": 79},
+  {"report_type": "full", "engine_type": "electric", "section_id": 12, "question_id": 80},
+  {"report_type": "full", "engine_type": "electric", "section_id": 6, "question_id": 47},
+  {"report_type": "full", "engine_type": "electric", "section_id": 6, "question_id": 48},
+  {"report_type": "full", "engine_type": "electric", "section_id": 6, "question_id": 49},
+  {"report_type": "full", "engine_type": "electric", "section_id": 6, "question_id": 50},
+  {"report_type": "full", "engine_type": "electric", "section_id": 7, "question_id": 83},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 58},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 59},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 60},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 61},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 62},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 63},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 64},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 65},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 66},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 67},
+  {"report_type": "full", "engine_type": "electric", "section_id": 8, "question_id": 68},
+  {"report_type": "full", "engine_type": "electric", "section_id": 9, "question_id": 69},
+  {"report_type": "full", "engine_type": "electric", "section_id": 9, "question_id": 70},
+  {"report_type": "full", "engine_type": "electric", "section_id": 9, "question_id": 71},
+  {"report_type": "full", "engine_type": "electric", "section_id": 9, "question_id": 72},
+  {"report_type": "full", "engine_type": "electric", "section_id": 10, "question_id": 75},
+  {"report_type": "full", "engine_type": "electric", "section_id": 11, "question_id": 76},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 1, "question_id": 1},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 1, "question_id": 3},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 1, "question_id": 4},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 2, "question_id": 6},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 2, "question_id": 7},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 2, "question_id": 8},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 2, "question_id": 9},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 2, "question_id": 10},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 2, "question_id": 11},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 2, "question_id": 12},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 14, "question_id": 85},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 19},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 20},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 21},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 22},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 23},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 24},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 25},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 26},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 86},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 87},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 27},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 28},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 29},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 30},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 31},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 32},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 33},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 34},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 4, "question_id": 35},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 5, "question_id": 36},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 5, "question_id": 11},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 5, "question_id": 37},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 5, "question_id": 38},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 5, "question_id": 39},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 5, "question_id": 43},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 5, "question_id": 44},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 5, "question_id": 45},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 6, "question_id": 47},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 6, "question_id": 48},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 6, "question_id": 49},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 6, "question_id": 50},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 7, "question_id": 51},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 8, "question_id": 61},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 8, "question_id": 63},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 10, "question_id": 73},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 10, "question_id": 74},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 10, "question_id": 75},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 11, "question_id": 76},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 1, "question_id": 1},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 1, "question_id": 3},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 1, "question_id": 4},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 2, "question_id": 6},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 2, "question_id": 7},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 2, "question_id": 8},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 2, "question_id": 9},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 2, "question_id": 10},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 2, "question_id": 11},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 2, "question_id": 12},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 14, "question_id": 85},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 19},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 20},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 21},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 22},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 23},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 24},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 25},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 26},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 86},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 87},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 27},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 28},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 29},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 30},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 31},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 32},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 33},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 34},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 4, "question_id": 35},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 5, "question_id": 36},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 5, "question_id": 11},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 5, "question_id": 37},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 5, "question_id": 38},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 5, "question_id": 39},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 5, "question_id": 43},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 5, "question_id": 44},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 5, "question_id": 45},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 6, "question_id": 47},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 6, "question_id": 48},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 6, "question_id": 49},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 6, "question_id": 50},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 7, "question_id": 51},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 8, "question_id": 61},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 8, "question_id": 63},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 10, "question_id": 74},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 10, "question_id": 75},
+  {"report_type": "narrow", "engine_type": "electric", "section_id": 11, "question_id": 76}
+]

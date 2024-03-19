@@ -4,6 +4,7 @@ import {
   saveReportStructure,
 } from "../../utility/validators/report";
 import { PrismaClient } from "@prisma/client";
+import {getLanguageId, Language} from "../../middleware/types/language";
 
 const prisma = new PrismaClient();
 
@@ -13,16 +14,19 @@ export const getReportStructure = async (
   next: NextFunction
 ) => {
   
-  const { ln, report_type, engine_type } = reportStructure.cast(req.query);
-  const language = ln === "fi" ? "finnish_text" : "english_text";
+  const { language, report_type, engine_type } = reportStructure.cast(req.query);
+  const languageId: Language = getLanguageId(language);
 
   try {
     const data = await prisma.section.findMany({
       select: {
         id: true,
-        traslations: {
+        translations: {
+          where: {
+            language_id: languageId,
+          },
           select: {
-            [language]: true,
+            value: true
           },
         },
         question_map: {
@@ -40,9 +44,12 @@ export const getReportStructure = async (
             question: {
               select: {
                 id: true,
-                traslations: {
+                translations: {
+                  where: {
+                    language_id: languageId,
+                  },
                   select: {
-                    [language]: true,
+                    value: true
                   },
                 },
               },
@@ -52,8 +59,17 @@ export const getReportStructure = async (
       },
     });
 
+    const formattedData = data.map(section => ({
+      id: section.id,
+      name: section.translations[0]?.value,
+      questions: section.question_map.map(qm => ({
+        id: qm.question.id,
+        name: qm.question.translations[0]?.value
+      }))
+    }));
+
     res.status(201).json({
-      data,
+      formattedData,
     });
   } catch (error) {
     next(error);
@@ -76,7 +92,7 @@ export const saveReport = async (
     brand_and_model,
     odometer_reading,
     production_number,
-    registeration_number,
+    registration_number,
     engine_type,
     report_rows,
   } = saveReportStructure.cast(req.body);
@@ -88,7 +104,7 @@ export const saveReport = async (
         odometer_reading,
         organization_id,
         production_number,
-        registeration_number,
+        registration_number,
         engine_type,
         report_rows: {
           create:{
@@ -115,47 +131,52 @@ export const saveReport = async (
 };
 
 export const getReport = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
+    req: Request,
+    res: Response,
+    next: NextFunction
 ) => {
-  const { reportId } = req.params;
+  const { reportId, language } = req.params;
   try {
+    const languageId = getLanguageId(language);
     const data = await prisma.report.findFirst({
       where: {
-        registeration_number: reportId,
+        id: reportId as unknown as number,
       },
-      include:{
-        report_rows:{
-          include:{
-            attachments:true,
-            question:{
-              include:{
-                traslations:{
-                  select:{
-                    finnish_text:true,
+      include: {
+        report_rows: {
+          include: {
+            attachments: true,
+            question: {
+              include: {
+                translations: {
+                  where: {
+                    language_id: languageId,
+                  },
+                  select: {
+                    value: true,
                   },
                 },
-                question_map:{
-                  select:{
-                    section:{
-                      include:{
-                        traslations:{
-                          select:{
-                            finnish_text:true,
+                question_map: {
+                  include: {
+                    section: {
+                      include: {
+                        translations: {
+                          where: {
+                            language_id: languageId,
+                          },
+                          select: {
+                            value: true,
                           },
                         },
                       },
-                    }
-                  }
-                }
-              }
-            
-            }
-          }
-        
-        }
-      }
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
     });
 
     res.status(201).json({

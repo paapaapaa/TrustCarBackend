@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "english",
+    "code": "en"
+  },
+  {
+    "id": 2,
+    "name": "finnish",
+    "code": "fi"
+  }
+]

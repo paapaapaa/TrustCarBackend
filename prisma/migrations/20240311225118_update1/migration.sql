@@ -53,7 +53,7 @@ CREATE TABLE "user" (
 -- CreateTable
 CREATE TABLE "report" (
     "id" SERIAL NOT NULL,
-    "registeration_number" TEXT,
+    "registration_number" TEXT,
     "production_number" INTEGER,
     "brand_and_model" TEXT,
     "odometer_reading" INTEGER,
