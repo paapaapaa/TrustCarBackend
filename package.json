@@ -8,7 +8,7 @@
     "start": "node dist/src/index.js",
     "build": "tsc",
     "lint": "eslint .",
-    "test": "jest --verbose",
+    "test": "jest --verbose ./dist/tests/",
     "migrate": "prisma migrate dev",
     "seed": "prisma db seed"
   },

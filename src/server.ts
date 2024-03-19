@@ -35,6 +35,15 @@ const resolvedSwaggerDocument = loadSwaggerReferences(swaggerDocument);
 server.use(express.json());
 
 server.use(express.static("public"));
+const swaggerOptions: SwaggerUiOptions = {
+    swaggerOptions: {
+        url: "/swagger.json",
+    },
+};
+
+server.get("/api/v1/test-route", (_req, res) => {
+    res.send("Hello World!");
+});
 server.use("/api/v1/user", upload.none(), userRouter);
 server.use("/api/v1/report", upload.none(), reportRouter);
 const swaggerMiddleware = swaggerUi.setup(resolvedSwaggerDocument);

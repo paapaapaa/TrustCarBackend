@@ -1,5 +1,5 @@
 module.exports = {
     preset: 'ts-jest',
     testEnvironment: 'node',
-    modulePathIgnorePatterns:['front-end']
+    modulePathIgnorePatterns:['front-end'],
   };
