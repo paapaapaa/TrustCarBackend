@@ -11,7 +11,7 @@ on:
       - dev
 
 jobs:
-  lint and deploy:
+  lint_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Lint 
