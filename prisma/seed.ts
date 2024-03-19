@@ -1,9 +1,10 @@
 // ./prisma/seed.ts
-import {PrismaClient, engine_type, report_type, } from "@prisma/client";
+import {PrismaClient, engine_type, report_type, organization,} from "@prisma/client";
 import questions from  "../data/questions.json";
 import sections from "../data/sections.json";
 import mapping from "../data/mapping.json";
 import languages from "../data/languages.json";
+import {genSalt, hash} from "bcrypt";
 
 const prisma = new PrismaClient();
 
@@ -78,6 +79,45 @@ async function createQuestionMappings() {
   }
 }
 
+async function addTestUser() {
+  const orgCount = await prisma.organization.count();
+  if (orgCount > 0) {
+    return;
+  }
+
+  const organization: organization = await prisma.organization.create({
+    data: {
+      name: "organization 1",
+      type: "inspection",
+    },
+  });
+
+  const username = "test";
+  const password = "password";
+  const firstname = "test";
+  const lastname = "tester";
+
+  // Assuming genSalt and hash are coming from a library like bcrypt
+  const salt = await genSalt(10);
+  const hashedPassword = await hash(password, salt);
+
+  await prisma.user.create({
+    data: {
+      username,
+      password_salt: salt,
+      hashpassword: hashedPassword,
+      firstname,
+      lastname,
+      organization: {
+        connect: {
+          id: organization.id,
+        },
+      },
+    },
+  });
+
+}
+
 async function main() {
 
   await deleteStaticTables();
@@ -85,6 +125,7 @@ async function main() {
   await createQuestions();
   await createSections();
   await createQuestionMappings();
+  await addTestUser();
 }
 
 main()

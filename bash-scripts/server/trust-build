@@ -2,11 +2,3 @@ cd /root/carpass-back
 docker-compose -f docker-compose.pro.yml down
 docker-compose -f docker-compose.pro.yml build
 docker-compose -f docker-compose.pro.yml up -d
-
-until docker exec backend-dev pg_isready -h database_host -p 5432; do
-  echo "Waiting for database..."
-  sleep 1
-done
-
-echo "Database is up and ready."
-docker exec -it backend-dev /bin/sh -c "migrate"

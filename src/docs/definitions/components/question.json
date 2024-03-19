@@ -3,11 +3,6 @@
   "required": ["id", "translations"],
   "properties": {
     "id": "number",
-    "translations": {
-      "type": "array",
-      "items": {
-        "$ref": "./translation.json"
-      }
-    }
+    "name": "string"
   }
 }
