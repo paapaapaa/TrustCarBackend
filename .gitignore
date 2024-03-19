@@ -5,3 +5,4 @@ database_dev
 .env
 *.pdf
 public/
+docker-compose.pro.yml
