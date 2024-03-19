@@ -1,8 +1,12 @@
 {
   "type": "object",
-  "required": ["id", "translations"],
+  "required": ["id", "name"],
   "properties": {
-    "id": "number",
-    "name": "string"
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    }
   }
 }

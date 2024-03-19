@@ -3,15 +3,25 @@
   "required": [
     "username",
     "password",
-    "fistname",
+    "firstname",
     "lastname",
     "organizationId"
   ],
   "properties": {
-    "username": "string",
-    "password": "string",
-    "firstname": "string",
-    "lastname": "string",
-    "organizationId": "string"
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "organizationId": {
+      "type": "string"
+    }
   }
 }

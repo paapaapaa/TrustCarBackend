@@ -83,7 +83,7 @@ export const loginController = async (
     );
 
     res.status(200).json({
-      authtoken: token,
+      authToken: token,
     });
   } catch (error) {
     next(error);

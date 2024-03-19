@@ -2,12 +2,18 @@
   "type": "object",
   "required": [
     "username",
-    "fistname",
+    "firstname",
     "lastname"
   ],
   "properties": {
-    "username": "string",
-    "firstname": "string",
-    "lastname": "string"
+    "username": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    }
   }
 }

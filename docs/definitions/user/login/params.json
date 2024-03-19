@@ -5,7 +5,11 @@
     "password"
   ],
   "properties": {
-    "username": "string",
-    "password": "string"
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    }
   }
 }

@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from "express";
 import {
-  getReportStructure as reportStructure,
   saveReportStructure,
 } from "../../utility/validators/report";
 import { PrismaClient } from "@prisma/client";
 import {getLanguageId, Language} from "../../middleware/types/language";
+import {EngineType, getEngineType, getReportType, ReportType} from "../../middleware/types/report";
 
 const prisma = new PrismaClient();
 
@@ -14,9 +14,10 @@ export const getReportStructure = async (
   next: NextFunction
 ) => {
   
-  const { language, report_type, engine_type } = reportStructure.cast(req.query);
+  const { language, report_type, engine_type } = req.params;
   const languageId: Language = getLanguageId(language);
-  console.log(222, languageId, language, report_type, engine_type);
+  const reportType: ReportType = getReportType(report_type);
+  const engineType: EngineType = getEngineType(engine_type);
 
   try {
     const data = await prisma.section.findMany({
@@ -34,10 +35,10 @@ export const getReportStructure = async (
           where: {
             AND:[
               {
-                report_type: report_type,
+                report_type: reportType,
               },
               {
-                engine_type: engine_type,
+                engine_type: engineType,
               }
             ]
           },

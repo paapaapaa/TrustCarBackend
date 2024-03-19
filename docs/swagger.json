@@ -10,6 +10,19 @@
   "schemes": [
     "http"
   ],
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "Enter your bearer token in the format [Bearer yourToken]"
+    }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ],
   "paths": {
     "/v1/user/login": {
       "$ref": "paths/user/login.json"
@@ -17,11 +30,14 @@
     "/v1/user/register": {
       "$ref": "paths/user/register.json"
     },
-    "/v1/report/": {
-      "$ref": "paths/report/index.json"
+    "/v1/report/get": {
+      "$ref": "paths/report/get.json"
     },
-    "/v1/report/structure": {
-      "$ref": "paths/report/structure/index.json"
+    "/v1/report/save": {
+      "$ref": "paths/report/save.json"
+    },
+    "/v1/report/structure/get": {
+      "$ref": "paths/report/structure/get.json"
     }
   }
 }

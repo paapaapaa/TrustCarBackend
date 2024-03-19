@@ -1,9 +1,13 @@
 {
   "type": "object",
-  "required": ["id", "translations", "question_map"],
+  "required": ["id", "name", "questions"],
   "properties": {
-    "id": "number",
-    "name": "string",
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
     "questions": {
       "type": "array",
       "items": {

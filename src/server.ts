@@ -15,15 +15,16 @@ const swaggerDocument = JSON.parse(fs.readFileSync(path.join('./docs/swagger.jso
 interface SwaggerDocument {
     [key: string]: any;
 }
-function loadSwaggerReferences(swaggerDoc: SwaggerDocument) {
+function loadSwaggerReferences(swaggerDoc: SwaggerDocument, basePath = './docs') {
     if (swaggerDoc.hasOwnProperty('$ref')) {
-        const refPath = path.join('./docs', swaggerDoc['$ref']);
-        return JSON.parse(fs.readFileSync(refPath, 'utf8'));
+        const refPath = path.join(basePath, swaggerDoc['$ref']);
+        const referencedDoc = JSON.parse(fs.readFileSync(refPath, 'utf8'));
+        return loadSwaggerReferences(referencedDoc, path.dirname(refPath));
     }
 
     Object.keys(swaggerDoc).forEach(key => {
-        if (typeof swaggerDoc[key] === 'object') {
-            swaggerDoc[key] = loadSwaggerReferences(swaggerDoc[key]);
+        if (typeof swaggerDoc[key] === 'object' && swaggerDoc[key] !== null) {
+            swaggerDoc[key] = loadSwaggerReferences(swaggerDoc[key], basePath);
         }
     });
 

@@ -1,5 +1,5 @@
 {
-  "get": {
+  "post": {
     "summary": "Get report structure",
     "description": "Get report structure, sections and questions for type of report",
     "operationId": "reportStructureGet",
