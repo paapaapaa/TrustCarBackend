@@ -26,6 +26,12 @@
         "schema": {
           "$ref": "../../definitions/user/login/response/200.json"
         }
+      },
+      "404": {
+        "description": "User not found",
+        "schema": {
+          "$ref": "../../definitions/user/login/response/404.json"
+        }
       }
     }
   }

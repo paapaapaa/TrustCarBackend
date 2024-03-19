@@ -3,7 +3,8 @@ import { RequestHandler } from "express";
 import {getReport, getReportStructure, saveReport} from "../../controllers/report";
 import {
     validateGetReport,
-    validateGetReportStructure, validateSaveReport,
+    validateGetReportStructure,
+    validateSaveReport,
 } from "../../middleware/validate/report";
 import {TokenExtractor} from "../../middleware";
 
@@ -11,22 +12,22 @@ import {TokenExtractor} from "../../middleware";
 const router = express.Router();
 
 
-router.post(
-    "/get",
+router.get(
+    "/",
     validateGetReport,
     TokenExtractor as RequestHandler,
     getReport as RequestHandler
 );
 
 router.post(
-    "/save",
+    "/",
     validateSaveReport,
     TokenExtractor as RequestHandler,
     saveReport as RequestHandler
 );
 
-router.post(
-  "/structure/get",
+router.get(
+  "/structure",
   validateGetReportStructure,
   TokenExtractor as RequestHandler,
   getReportStructure as RequestHandler

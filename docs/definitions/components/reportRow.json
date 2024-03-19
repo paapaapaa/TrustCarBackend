@@ -1,7 +1,13 @@
 {
   "type": "object",
-  "required": ["attachments", "question"],
+  "required": ["comment", "inspection_status", "attachments", "question"],
   "properties": {
+    "comment": {
+      "type": "string"
+    },
+    "inspections_status": {
+      "$ref": "../types/inspectionStatus.json"
+    },
     "attachments": {
       "type": "array",
       "items": {

@@ -2,7 +2,8 @@ import { NextFunction, Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
 import {getLanguageId, Language} from "../../middleware/types/language";
 import {EngineType, getEngineType, getReportType, ReportType} from "../../middleware/types/report";
-import {saveReportValidator} from "../../utility/validators/report";
+import {getReportStructureValidator, getReportValidator, saveReportValidator} from "../../utility/validators/report";
+import {REPORT_NOT_FOUND} from "../../messages/report";
 
 const prisma = new PrismaClient();
 
@@ -12,7 +13,7 @@ export const getReportStructure = async (
   next: NextFunction
 ) => {
   
-  const { language, report_type, engine_type } = req.params;
+  const { language, report_type, engine_type } = getReportStructureValidator.cast(req.query);
   const languageId: Language = getLanguageId(language);
   const reportType: ReportType = getReportType(report_type);
   const engineType: EngineType = getEngineType(engine_type);
@@ -70,7 +71,7 @@ export const getReportStructure = async (
       }))
     }
 
-    res.status(201).json(formattedData);
+    res.status(200).json(formattedData);
   } catch (error) {
     next(error);
   }
@@ -85,8 +86,6 @@ export const saveReport = async (
   const { userId, organizationId } = req.params;
   const modified_by_user = parseInt(userId);
   const organization_id = parseInt(organizationId);
-
-  console.log(req.params);
 
   const {
     brand_and_model,
@@ -107,17 +106,17 @@ export const saveReport = async (
         registration_number,
         engine_type,
         report_rows: {
-          create:{
-            question_id: report_rows[0].question_id,
-            inspection_status: report_rows[0].inspection_status,
-            comment: report_rows[0].comment,
-            attachments: {
-              create:{
-                attachment_type: report_rows[0].attachment[0].attachment_type,
-                data: Buffer.from(report_rows[0].attachment[0].data, "base64"),
-              }
-            }
-          },
+          create: report_rows.map(row => ({
+            question_id: row.question_id,
+            inspection_status: row.inspection_status,
+            comment: row.comment,
+            attachments: row.attachments && row.attachments.length > 0 ? {
+              create: row.attachments.map(attachment => ({
+                attachment_type: attachment.attachment_type,
+                data: Buffer.from(attachment.data, "base64"),
+              })),
+            } : undefined,
+          })),
         },
       },
     });
@@ -135,7 +134,7 @@ export const getReport = async (
     res: Response,
     next: NextFunction
 ) => {
-  const { reportId, language } = req.params;
+  const { reportId, language } = getReportValidator.cast(req.query);
   try {
     const languageId = getLanguageId(language);
     const data = await prisma.report.findFirst({
@@ -179,17 +178,25 @@ export const getReport = async (
       },
     });
 
+    if (!data?.report_rows) {
+      res.status(404).json({
+        message: REPORT_NOT_FOUND
+      })
+    }
+
     const formattedData = {
       reportRows: data ? data.report_rows
-          .map(reportRow => ({
+          .map((reportRow: any) => ({
+            comment: reportRow.comment,
+            inspection_status: reportRow.inspection_status,
             attachments: reportRow.attachments,
             question: {
               name: reportRow?.question?.translations[0]?.value
             }
-          })) : {}
+          })) : []
     };
 
-    res.status(201).json(formattedData);
+    res.status(200).json(formattedData);
   } catch (error) {
     next(error);
   }

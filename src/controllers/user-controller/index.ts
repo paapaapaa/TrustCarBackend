@@ -4,6 +4,7 @@ import { hash, genSalt } from "bcrypt";
 import { PrismaClient } from "@prisma/client";
 import {sign} from "jsonwebtoken";
 import { JWT_SECRET } from "../../utility/Config";
+import {USER_NOT_FOUND} from "../../messages/user";
 
 const prisma = new PrismaClient();
 
@@ -60,7 +61,7 @@ export const loginController = async (
 
     if (!user) {
       res.status(404).json({
-        message: "User not found",
+        message: USER_NOT_FOUND,
       });
     }
 
