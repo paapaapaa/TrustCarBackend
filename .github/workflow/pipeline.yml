@@ -1,0 +1,21 @@
+name: Lint and Deploy Pipeline
+
+on:
+  pull_request:
+    branches:
+      - main
+      - dev
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  lint and deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint 
+        run: echo "Linting code"
+
+      - name: Test
+        run: echo "Testing code"
