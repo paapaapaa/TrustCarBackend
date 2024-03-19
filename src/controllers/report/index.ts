@@ -59,18 +59,18 @@ export const getReportStructure = async (
       },
     });
 
-    const formattedData = data.map(section => ({
-      id: section.id,
-      name: section.translations[0]?.value,
-      questions: section.question_map.map(qm => ({
-        id: qm.question.id,
-        name: qm.question.translations[0]?.value
+    const formattedData = {
+      sections: data.map(section => ({
+        id: section.id,
+        name: section.translations[0]?.value,
+        questions: section.question_map.map(qm => ({
+          id: qm.question.id,
+          name: qm.question.translations[0]?.value
+        }))
       }))
-    }));
+    }
 
-    res.status(201).json({
-      formattedData,
-    });
+    res.status(201).json(formattedData);
   } catch (error) {
     next(error);
   }
@@ -179,19 +179,17 @@ export const getReport = async (
       },
     });
 
-    const formattedData = data ? {
-      reportRows: data.report_rows
+    const formattedData = {
+      reportRows: data ? data.report_rows
           .map(reportRow => ({
             attachments: reportRow.attachments,
             question: {
               name: reportRow?.question?.translations[0]?.value
             }
-          }))
-    } : {};
+          })) : {}
+    };
 
-    res.status(201).json({
-      formattedData,
-    });
+    res.status(201).json(formattedData);
   } catch (error) {
     next(error);
   }
