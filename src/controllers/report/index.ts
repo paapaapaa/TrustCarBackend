@@ -16,6 +16,7 @@ export const getReportStructure = async (
   
   const { language, report_type, engine_type } = reportStructure.cast(req.query);
   const languageId: Language = getLanguageId(language);
+  console.log(222, languageId, language, report_type, engine_type);
 
   try {
     const data = await prisma.section.findMany({
