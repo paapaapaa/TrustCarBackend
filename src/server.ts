@@ -34,13 +34,6 @@ function loadSwaggerReferences(swaggerDoc: SwaggerDocument, basePath = './docs')
 const resolvedSwaggerDocument = loadSwaggerReferences(swaggerDocument);
 server.use(express.json());
 
-server.use(express.static("public"));
-const swaggerOptions: SwaggerUiOptions = {
-    swaggerOptions: {
-        url: "/swagger.json",
-    },
-};
-
 server.get("/api/v1/test-route", (_req, res) => {
     res.send("Hello World!");
 });
