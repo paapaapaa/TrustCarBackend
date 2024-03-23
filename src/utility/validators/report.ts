@@ -83,6 +83,7 @@ export const getReportStructureValidator = object().shape({
  *               question_id:
  *                 type: number
  *                 description: ID of the question.
+ *                 default: 1
  *               inspection_status:
  *                 type: string
  *                 description: Inspection status.
@@ -90,6 +91,7 @@ export const getReportStructureValidator = object().shape({
  *                   - green
  *                   - yellow
  *                   - red
+ *                 default: yellow
  *               comment:
  *                 type: string
  *                 description: Comment for the report row.
