@@ -1,9 +1,11 @@
 import { NextFunction, Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
-import {getLanguageId, Language} from "../../middleware/types/language";
-import {EngineType, getEngineType, getReportType, ReportType} from "../../middleware/types/report";
-import {getReportStructureValidator, getReportValidator, saveReportValidator} from "../../utility/validators/report";
-import {REPORT_NOT_FOUND} from "../../messages/report";
+import {
+  getReportStructureValidator,
+  saveReportValidator,
+  getReportValidator,
+} from "../../utility/validators/report";
+import { ReportStructureResponse } from "../../utility/types/report";
 
 const prisma = new PrismaClient();
 
@@ -12,11 +14,8 @@ export const getReportStructure = async (
   res: Response,
   next: NextFunction
 ) => {
-  
-  const { language, report_type, engine_type } = getReportStructureValidator.cast(req.query);
-  const languageId: Language = getLanguageId(language);
-  const reportType: ReportType = getReportType(report_type);
-  const engineType: EngineType = getEngineType(engine_type);
+  const { language, report_type, engine_type } =
+    getReportStructureValidator.cast(req.query);
 
   try {
     const data = await prisma.section.findMany({
@@ -24,22 +23,26 @@ export const getReportStructure = async (
         id: true,
         translations: {
           where: {
-            language_id: languageId,
+            language: {
+              is: {
+                code: language,
+              },
+            },
           },
           select: {
-            value: true
+            value: true,
           },
         },
         question_map: {
           where: {
-            AND:[
+            AND: [
               {
-                report_type: reportType,
+                report_type,
               },
               {
-                engine_type: engineType,
-              }
-            ]
+                engine_type,
+              },
+            ],
           },
           select: {
             question: {
@@ -47,10 +50,14 @@ export const getReportStructure = async (
                 id: true,
                 translations: {
                   where: {
-                    language_id: languageId,
+                    language: {
+                      is: {
+                        code: language,
+                      },
+                    },
                   },
                   select: {
-                    value: true
+                    value: true,
                   },
                 },
               },
@@ -60,16 +67,21 @@ export const getReportStructure = async (
       },
     });
 
-    const formattedData = {
-      sections: data.map(section => ({
-        id: section.id,
-        name: section.translations[0]?.value,
-        questions: section.question_map.map(qm => ({
-          id: qm.question.id,
-          name: qm.question.translations[0]?.value
-        }))
-      }))
-    }
+    const formattedData: ReportStructureResponse[] = data.map((section) => {
+      const id = section.id;
+      const name = section.translations[0].value;
+      const questions_map = section.question_map;
+      const questions = questions_map.map((qm) => ({
+        id: qm.question.id,
+        name: qm.question.translations[0].value,
+      }));
+
+      return {
+        id,
+        name,
+        questions,
+      };
+    });
 
     res.status(200).json(formattedData);
   } catch (error) {
@@ -81,8 +93,7 @@ export const saveReport = async (
   req: Request,
   res: Response,
   next: NextFunction
-) => {  
-
+) => {
   const { userId, organizationId } = req.params;
   const modified_by_user = parseInt(userId);
   const organization_id = parseInt(organizationId);
@@ -106,16 +117,19 @@ export const saveReport = async (
         registration_number,
         engine_type,
         report_rows: {
-          create: report_rows.map(row => ({
+          create: report_rows.map((row) => ({
             question_id: row.question_id,
             inspection_status: row.inspection_status,
             comment: row.comment,
-            attachments: row.attachments && row.attachments.length > 0 ? {
-              create: row.attachments.map(attachment => ({
-                attachment_type: attachment.attachment_type,
-                data: Buffer.from(attachment.data, "base64"),
-              })),
-            } : undefined,
+            attachments:
+              row.attachments && row.attachments.length > 0
+                ? {
+                    create: row.attachments.map((attachment) => ({
+                      attachment_type: attachment.attachment_type,
+                      data: Buffer.from(attachment.data, "base64"),
+                    })),
+                  }
+                : undefined,
           })),
         },
       },
@@ -130,73 +144,25 @@ export const saveReport = async (
 };
 
 export const getReport = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
+  req: Request,
+  res: Response,
+  next: NextFunction
 ) => {
-  const { reportId, language } = getReportValidator.cast(req.query);
+  const { registration_number } = getReportValidator.cast(req.query);
   try {
-    const languageId = getLanguageId(language);
-    const data = await prisma.report.findFirst({
+    const data = await prisma.report.findMany({
       where: {
-        id: reportId as unknown as number,
-      },
-      include: {
-        report_rows: {
-          include: {
-            attachments: true,
-            question: {
-              include: {
-                translations: {
-                  where: {
-                    language_id: languageId,
-                  },
-                  select: {
-                    value: true,
-                  },
-                },
-                question_map: {
-                  include: {
-                    section: {
-                      include: {
-                        translations: {
-                          where: {
-                            language_id: languageId,
-                          },
-                          select: {
-                            value: true,
-                          },
-                        },
-                      },
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
+        registration_number,
       },
     });
 
-    if (!data?.report_rows) {
+    if (!data || data === null || data.length === 0) {
       res.status(404).json({
-        message: REPORT_NOT_FOUND
-      })
+        message: "Report not found",
+      });
     }
 
-    const formattedData = {
-      reportRows: data ? data.report_rows
-          .map((reportRow: any) => ({
-            comment: reportRow.comment,
-            inspection_status: reportRow.inspection_status,
-            attachments: reportRow.attachments,
-            question: {
-              name: reportRow?.question?.translations[0]?.value
-            }
-          })) : []
-    };
-
-    res.status(200).json(formattedData);
+    res.status(200).json(data);
   } catch (error) {
     next(error);
   }

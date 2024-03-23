@@ -44,7 +44,7 @@ model user {
 model report {
   id                  Int           @id @default(autoincrement())
   registration_number String?
-  production_number   Int?
+  production_number   String?
   brand_and_model     String?
   odometer_reading    Int?
   created_at          DateTime?     @default(now()) @db.Timestamp(6)
@@ -59,7 +59,7 @@ model report {
 model report_row {
   id                Int                @id @default(autoincrement())
   report_id         Int?
-  question_id       Int?               @unique
+  question_id       Int?               
   inspection_status inspection_status?
   comment           String?
   created_at        DateTime?          @default(now()) @db.Timestamp(6)
@@ -68,6 +68,8 @@ model report_row {
   attachments       attachments[]
   question          question?          @relation(fields: [question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   report            report?            @relation(fields: [report_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@unique([report_id, question_id])
 }
 
 model attachments {
@@ -82,9 +84,8 @@ model question {
   id             Int                @id @unique
   created_at     DateTime?          @default(now()) @db.Timestamp(6)
   updated_at     DateTime?          @default(now()) @db.Timestamp(6)
-  translation_id Int?               @unique
   question_map   question_mapping[]
-  report_row     report_row?
+  report_row     report_row[]
   translations   translation[]
 }
 
@@ -92,7 +93,6 @@ model section {
   id             Int                @id @unique
   created_at     DateTime?          @default(now()) @db.Timestamp(6)
   updated_at     DateTime?          @default(now()) @db.Timestamp(6)
-  translation_id Int?               @unique
   question_map   question_mapping[]
   translations   translation[]
 }
@@ -108,7 +108,7 @@ model question_mapping {
 }
 
 model language {
-  id           Int           @id @default(autoincrement())
+  id           Int           @id @unique
   name         String        @db.VarChar
   code         String        @db.VarChar
   translations translation[]

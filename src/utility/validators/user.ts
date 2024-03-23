@@ -8,6 +8,27 @@ export const registerUser = object().shape({
   organizationId: number().required("Organization ID is required"),
 });
 
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     LoginUser:
+ *       type: object
+ *       required:
+ *         - username
+ *         - password
+ *       properties:
+ *         username:
+ *           type: string
+ *           description: The username of the user
+ *           minLength: 1
+ *           example: testuser
+ *         password:
+ *           type: string
+ *           description: The password of the user
+ *           minLength: 1
+ *           example: testpassword
+ */
 export const loginUser = object().shape({
   username: string().trim().required("Username is required"),
   password: string().trim().required("Password is required"),
