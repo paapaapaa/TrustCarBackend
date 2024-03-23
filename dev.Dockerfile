@@ -25,6 +25,4 @@ RUN npx prisma generate
 
 RUN npm run build
 
-RUN npm run migrate
-
 CMD ["npm", "start"]
