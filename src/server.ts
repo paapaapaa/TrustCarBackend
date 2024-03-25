@@ -12,7 +12,7 @@ const upload = multer();
 
 server.use(express.json());
 
-
+server.use(express.static("public"));
 server.get("/api/v1/test-route", (_req, res) => {
     res.send("Hello World!");
 });
