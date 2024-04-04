@@ -35,7 +35,9 @@ jobs:
         run: npm run test
 
   deploy:
-
+    permissions: write-all
+    needs: [simple_deployment_pipeline]
+    runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
 
     steps:
