@@ -13,13 +13,17 @@ export const registerController = async (
   res: Response,
   next: NextFunction
 ) => {
-  const { username, password, firstname, lastname, organizationId } = registerUser.cast(
+  const { username, password, firstname, lastname } = registerUser.cast(
     req.body
   );
+
   try {
     const saltRounds = 10;
     const salt = await genSalt(saltRounds);
     const hashedPassword = await hash(password, salt);
+
+    const organization = await prisma.organization.findFirst({});
+    const organizationId = organization!.id;
 
     const user = await prisma.user.create({
       data: {
