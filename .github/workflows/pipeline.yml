@@ -33,3 +33,9 @@ jobs:
 
       - name: Test
         run: npm run test
+
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
+
+    steps:
+      - name: Deploy to production
+        run: echo "Deploying to production"
