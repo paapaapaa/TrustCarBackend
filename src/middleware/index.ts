@@ -34,7 +34,7 @@ export const TokenExtractor = async (
 };
 
 export const ErrorHandler: ErrorRequestHandler = (error, _req, _res, _next) => {
-  console.log(error);
+  // console.log(error);
 
   if (error.name === "ValidationError") {
     return _res.status(403).send(error.errors);
