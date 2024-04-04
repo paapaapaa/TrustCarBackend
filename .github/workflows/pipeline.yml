@@ -11,7 +11,7 @@ on:
       - dev
 
 jobs:
-  lint_and_deploy:
+  lint_and_test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -33,6 +33,8 @@ jobs:
 
       - name: Test
         run: npm run test
+
+  deploy:
 
     if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
 
