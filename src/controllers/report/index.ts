@@ -83,7 +83,7 @@ export const getReportStructure = async (
       };
     });
 
-    res.status(200).json(formattedData);
+    res.status(200).json(formattedData.filter((section) => section.questions!.length > 0));
   } catch (error) {
     next(error);
   }
