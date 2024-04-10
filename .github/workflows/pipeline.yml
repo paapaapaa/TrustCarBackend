@@ -43,3 +43,8 @@ jobs:
     steps:
       - name: Deploy to production
         run: echo "Deploying to production"
+
+      - name: Deploy via SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: echo "$SSH_PRIVATE_KEY"
