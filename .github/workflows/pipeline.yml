@@ -56,4 +56,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            ls -l
+            cd trustcar/trustcar-back/
+            git checkout main
+            git pull
