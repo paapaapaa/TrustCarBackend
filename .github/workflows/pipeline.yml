@@ -48,3 +48,12 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: echo "$SSH_PRIVATE_KEY"
+      - name: Run Command via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: carpass.fi
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            ls -l
