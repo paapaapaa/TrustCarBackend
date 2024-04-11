@@ -1,6 +1,6 @@
-import {httpsServer} from "./server";
+import server from "./server";
 import { PORT } from "./utility/Config";
 
-httpsServer.listen(PORT, () => {
+server.listen(PORT, () => {
     console.log("Server is listening on port "+PORT);
 });
