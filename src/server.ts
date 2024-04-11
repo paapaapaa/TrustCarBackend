@@ -31,6 +31,6 @@ swaggerDocs(server, PORT.toString());
 
 server.use(ErrorHandler);
 
-const httpsServer = https.createServer(options, server);
+export const httpsServer = https.createServer(options, server);
 
-export default httpsServer;
+export default server;
