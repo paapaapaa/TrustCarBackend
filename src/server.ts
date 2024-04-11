@@ -5,10 +5,17 @@ import reportRouter from "./routers/report";
 import { ErrorHandler } from "./middleware";
 import swaggerDocs from "./swagger";
 import { PORT } from "./utility/Config";
+import https from "https";
 
 
 const server = express();
 const upload = multer();
+
+const options: https.ServerOptions = {
+    key: process.env.KEY,
+    cert: process.env.CERT
+};
+
 
 server.use(express.json());
 
@@ -24,4 +31,6 @@ swaggerDocs(server, PORT.toString());
 
 server.use(ErrorHandler);
 
-export default server;
+const httpsServer = https.createServer(options, server);
+
+export default httpsServer;

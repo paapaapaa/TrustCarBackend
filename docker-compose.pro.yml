@@ -6,12 +6,14 @@ services:
       - DATABASE_URL=postgresql://trustcar:password@postgres:5432/trust_car_dev_db?schema=public
       - JWT_SECRET=mysecret
       - PORT=8080
+      - KEY= /etc/letsencrypt/live/carpass.fi/privkey.pem
+      - CERT=/etc/letsencrypt/live/carpass.fi/fullchain.pem
     build:
       context: .
       dockerfile: dev.Dockerfile
     container_name: backend-dev
     ports:
-      - 80:8080
+      - 443:8080
     depends_on:
       - postgres
 
