@@ -24,8 +24,8 @@ server.get("/api/v1/test-route", (_req, res) => {
     res.send("Hello World!");
 });
 
-server.use("/api/v1/user", upload.none(), userRouter);
-server.use("/api/v1/report", upload.none(), reportRouter);
+server.use("/v1/user", upload.none(), userRouter);
+server.use("/v1/report", upload.none(), reportRouter);
 
 swaggerDocs(server, PORT.toString());
 
