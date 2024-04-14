@@ -5,7 +5,7 @@ const app = supertest(server);
 describe("Login API", () => {
   it("no password and username", async () => {
     const response = await app
-      .post("/v1/user/login")
+      .post("/api/v1/user/login")
       .send({ username: "", password: "" });
     expect(response.status).toEqual(403);
   });
@@ -31,7 +31,7 @@ describe("Login API", () => {
   // });
   it("should not authenticate with invalid form of data", async () => {
     const response = await app
-      .post("/v1/user/login")
+      .post("/api/v1/user/login")
       .send({ firstname: "testfirstname", lastname: "testlastname" });
     expect(response.status).toEqual(403);
   });

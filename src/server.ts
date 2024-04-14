@@ -20,12 +20,12 @@ const upload = multer();
 server.use(express.json());
 
 server.use(express.static("public"));
-server.get("/v1/test-route", (_req, res) => {
+server.get("/api/v1/test-route", (_req, res) => {
     res.send("Hello World!");
 });
 
-server.use("/v1/user", upload.none(), userRouter);
-server.use("/v1/report", upload.none(), reportRouter);
+server.use("/api/v1/user", upload.none(), userRouter);
+server.use("/api/v1/report", upload.none(), reportRouter);
 
 swaggerDocs(server, PORT.toString());
 
