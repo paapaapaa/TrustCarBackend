@@ -60,6 +60,7 @@ export const getReportStructure = async (
                     value: true,
                   },
                 },
+                type: true,
               },
             },
           },
@@ -74,6 +75,7 @@ export const getReportStructure = async (
       const questions = questions_map.map((qm) => ({
         id: qm.question.id,
         name: qm.question.translations[0].value,
+        type: qm.question.type,
       }));
 
       return {
@@ -130,6 +132,12 @@ export const saveReport = async (
                     })),
                   }
                 : undefined,
+              input_left: row.input_left,
+              input_left_measurement: row.input_left_measurement,
+              input_right: row.input_right,
+              input_right_measurement: row.input_right_measurement,
+              additional_input: row.additional_input,
+              additional_input_measurement: row.additional_input_measurement,
           })),
         },
       },

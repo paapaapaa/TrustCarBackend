@@ -129,6 +129,12 @@ export const saveReportValidator = object().shape(
                 question_id: number().required("Question id is required"),
                 inspection_status: mixed<inspection_status>().required("Inspection status is required").oneOf(Object.values(inspection_status), "Invalid inspection status"),
                 comment: string().trim(),
+                input_left: number(), 
+                input_left_measurement: string().trim(), 
+                input_right: number(), 
+                input_right_measurement: string().trim(), 
+                additional_input: number(),
+                additional_input_measurement: string().trim(),
                 attachments: array().of(
                     object().shape({
                         attachment_type: mixed<attachment_type>().required("Attachment type is required").oneOf(Object.values(attachment_type), "Invalid attachment type"),
