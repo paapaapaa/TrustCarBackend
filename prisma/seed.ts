@@ -3,6 +3,7 @@ import {
   PrismaClient,
   engine_type,
   report_type,
+  question_type,
 } from "@prisma/client";
 import questions from "../data/questions.json";
 import sections from "../data/sections.json";
@@ -33,16 +34,18 @@ async function createLanguages() {
 }
 
 async function createQuestions() {
+  const defaultType: question_type = "description";
   for (const q of questions) {
     await prisma.question.create({
-      data:{
+      data: {
         id: q.id,
         translations: {
-          create: q.translations.map(t => ({
+          create: q.translations.map((t) => ({
             value: t.value,
             language_id: t.language_id,
           })),
         },
+        type: defaultType,
       },
     });
   }
@@ -51,10 +54,10 @@ async function createQuestions() {
 async function createSections() {
   for (const s of sections) {
     await prisma.section.create({
-      data:{
-        id:s.id,
+      data: {
+        id: s.id,
         translations: {
-          create: s.translations.map(t => ({
+          create: s.translations.map((t) => ({
             value: t.value,
             language_id: t.language_id,
           })),
@@ -67,49 +70,47 @@ async function createSections() {
 async function createQuestionMappings() {
   for (const m of mapping) {
     await prisma.question_mapping.create({
-      data:{
-        report_type:m["report_type"] as report_type,
-        section_id:m["section_id"] ,
-        question_id:m["question_id"] ,
-        engine_type:m["engine_type"] as engine_type
-      }
+      data: {
+        report_type: m["report_type"] as report_type,
+        section_id: m["section_id"],
+        question_id: m["question_id"],
+        engine_type: m["engine_type"] as engine_type,
+      },
     });
   }
 }
 
 async function addTestUser() {
-
   const org = await prisma.organization.create({
-    data:{
+    data: {
       name: "organization 1",
       type: "inspection",
-    }
+    },
   });
-  
-    const username = "testuser";
-    const password = "testpassword";
-    const firstname = "testfirstname";
-    const lastname = "testlastname";
-    const organizationId = org.id;
-  
-    const salt = await genSalt(10);
-    const hashedPassword = await hash(password, salt);
-  
-    await prisma.user.create({
-      data: {
-        username,
-        password_salt: salt,
-        hashpassword: hashedPassword,
-        firstname,
-        lastname,
-        organization:{
-          connect:{
-            id: organizationId
-          }
-        }
+
+  const username = "testuser";
+  const password = "testpassword";
+  const firstname = "testfirstname";
+  const lastname = "testlastname";
+  const organizationId = org.id;
+
+  const salt = await genSalt(10);
+  const hashedPassword = await hash(password, salt);
+
+  await prisma.user.create({
+    data: {
+      username,
+      password_salt: salt,
+      hashpassword: hashedPassword,
+      firstname,
+      lastname,
+      organization: {
+        connect: {
+          id: organizationId,
+        },
       },
-    });
-  
+    },
+  });
 }
 
 async function main() {

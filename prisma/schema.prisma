@@ -57,17 +57,23 @@ model report {
 }
 
 model report_row {
-  id                Int                @id @default(autoincrement())
-  report_id         Int?
-  question_id       Int?               
-  inspection_status inspection_status?
-  comment           String?
-  created_at        DateTime?          @default(now()) @db.Timestamp(6)
-  updated_at        DateTime?          @default(now()) @db.Timestamp(6)
-  modified_by_user  Int?
-  attachments       attachments[]
-  question          question?          @relation(fields: [question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  report            report?            @relation(fields: [report_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  id                           Int                @id @default(autoincrement())
+  report_id                    Int?
+  question_id                  Int?               
+  inspection_status            inspection_status?
+  comment                      String?
+  created_at                   DateTime?          @default(now()) @db.Timestamp(6)
+  updated_at                   DateTime?          @default(now()) @db.Timestamp(6)
+  modified_by_user             Int?
+  attachments                  attachments[]
+  question                     question?          @relation(fields: [question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  report                       report?            @relation(fields: [report_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  input_left                   Int?            
+  input_left_measurement       String?            
+  input_right                  Int?            
+  input_right_measurement      String?            
+  additional_input             Int?            
+  additional_input_measurement String?
 
   @@unique([report_id, question_id])
 }
@@ -87,6 +93,7 @@ model question {
   question_map   question_mapping[]
   report_row     report_row[]
   translations   translation[]
+  type           question_type
 }
 
 model section {
@@ -158,4 +165,10 @@ enum report_type {
 enum attachment_type {
   image
   audio
+}
+
+enum question_type {
+  description
+  leftrightnumeric
+  celsius
 }
