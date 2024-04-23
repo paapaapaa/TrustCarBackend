@@ -170,5 +170,5 @@ enum attachment_type {
 enum question_type {
   description
   leftrightnumeric
-  celsius
+  singlenumeric
 }

@@ -5,7 +5,7 @@
 
 */
 -- CreateEnum
-CREATE TYPE "question_type" AS ENUM ('description', 'leftrightnumeric', 'celsius');
+CREATE TYPE "question_type" AS ENUM ('description', 'leftrightnumeric', 'singlenumeric');
 
 -- AlterTable
 ALTER TABLE "question" ADD COLUMN     "type" "question_type" NOT NULL;
