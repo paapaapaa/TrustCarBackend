@@ -34,8 +34,12 @@ async function createLanguages() {
 }
 
 async function createQuestions() {
-  const defaultType: question_type = "description";
+  const defaultType: question_type = question_type.description;
   for (const q of questions) {
+    let questionType: question_type = defaultType;
+    if (q.type && Object.values(question_type).includes(q.type as question_type)) {
+      questionType = q.type as question_type;
+    }
     await prisma.question.create({
       data: {
         id: q.id,
@@ -45,11 +49,12 @@ async function createQuestions() {
             language_id: t.language_id,
           })),
         },
-        type: defaultType,
+        type: questionType,
       },
     });
   }
 }
+
 
 async function createSections() {
   for (const s of sections) {
