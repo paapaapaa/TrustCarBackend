@@ -50,7 +50,8 @@ jobs:
 
       - name: Test
         env:
-          DATABASE_URL: postgres://testuser:password@localhost:5432/trustcar_test_db
+          DATABASE_URL: postgresql://testuser:password@localhost:5432/trustcar_test_db
+        echo: $DATABASE_URL
         run: npm run test
 
   deploy:
