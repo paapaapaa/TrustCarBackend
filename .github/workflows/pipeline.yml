@@ -55,6 +55,8 @@ jobs:
         run: npx ts-node ./prisma/test-seed.ts
 
       - name: Test
+        env:
+          DATABASE_URL: postgres://testuser:password@localhost:5432/trustcar_test_db
         run: npm run test
 
   deploy:
