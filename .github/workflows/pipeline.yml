@@ -13,6 +13,19 @@ on:
 jobs:
   lint_and_test:
     runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_DB: trustcar_test_db
+          POSTGRES_USER: testuser
+          POSTGRES_PASSWORD: password
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -31,7 +44,16 @@ jobs:
       - name: Lint 
         run: npm run lint
 
+      - name: Wait for PostgreSQL to be ready
+        run: |
+          dockerize -wait tcp://localhost:5432 -timeout 1m
+          
+      - name: Seed test data
+        run: npx ts-node ./prisma/test-seed.ts
+
       - name: Test
+        env:
+          DATABASE_URL: postgres://testuser:password@localhost:5432/trustcar_test_db
         run: npm run test
 
   deploy:
