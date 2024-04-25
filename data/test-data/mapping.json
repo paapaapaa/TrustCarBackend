@@ -1,0 +1,7 @@
+[
+  {"report_type": "full", "engine_type": "petrol", "section_id": 1, "question_id": 1},
+  {"report_type": "full", "engine_type": "electric", "section_id": 1, "question_id": 2},
+  {"report_type": "narrow", "engine_type": "petrol", "section_id": 1, "question_id": 3},
+  {"report_type": "full", "engine_type": "hybrid", "section_id": 2, "question_id": 4},
+  {"report_type": "full", "engine_type": "petrol", "section_id": 3, "question_id": 4}
+]
