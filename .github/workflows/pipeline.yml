@@ -57,6 +57,7 @@ jobs:
       - name: Test
         env:
           DATABASE_URL: postgres://testuser:password@localhost:5432/trustcar_test_db
+          JWT_SECRET: mysecret
         run: npm run test
 
   deploy:
