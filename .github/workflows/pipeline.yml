@@ -44,7 +44,10 @@ jobs:
       - name: Lint 
         run: npm run lint
 
-
+      - name: Generate database tables
+        env:
+          DATABASE_URL: postgres://testuser:password@localhost:5432/trustcar_test_db
+        run: npx prisma migrate dev --skip-seed
           
       - name: Seed test data
         env:
