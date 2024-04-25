@@ -44,13 +44,14 @@ jobs:
       - name: Lint 
         run: npm run lint
 
+
           
       - name: Seed test data
+        env:
+          DATABASE_URL: postgres://testuser:password@localhost:5432/trustcar_test_db
         run: npx ts-node ./prisma/test-seed.ts
 
       - name: Test
-        env:
-          DATABASE_URL: postgresql://testuser:password@localhost:5432/trustcar_test_db
         run: npm run test
 
   deploy:
