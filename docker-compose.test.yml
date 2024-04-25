@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=test_db_user
+      - POSTGRES_PASSWORD=test_db_password
+    ports:
+      - 5432:5432
