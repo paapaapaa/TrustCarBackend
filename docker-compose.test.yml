@@ -7,3 +7,11 @@ services:
       - POSTGRES_PASSWORD=test_db_password
     ports:
       - 5432:5432
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "trustcar@trustcar.fi"
+      PGADMIN_DEFAULT_PASSWORD: "password"
+    ports:
+      - 16543:80
