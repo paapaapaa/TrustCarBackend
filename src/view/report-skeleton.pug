@@ -20,7 +20,7 @@ html
           .header-section
             .header
               img(src="icon.png", alt="Small icon")
-              h2 #{section.title}
+              h3 #{section.title}
 
             .lists-container
               each row in section.rows 
@@ -28,14 +28,16 @@ html
                     .question-answer
                       strong  #{row.data.question}
                       span  #{row.data.answer}
-      
-      hr
+      .section-break
+        h2 
+          span #{inspectionTarget}
+        .underline
 
       each section in bodySections
         .header-section
           .header
             img(src="icon.png", alt="Small icon")
-            h2 #{section.title}
+            h3 #{section.title}
 
           .lists-container
             each row in section.rows 
