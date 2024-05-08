@@ -10,39 +10,38 @@ html
     .report
       .logo-segment
         .logo
-          img.svg(src='carpass_logo.svg', alt="carpass logo")
+          include carpass_logo.svg
 
-      - const firstSections = sections.slice(0,2)
-      - const bodySections = sections.slice(2)
+      
       
       .first-list-container
-        each section in firstSections
+        each section in headerSections
           .header-section
             .header
               img(src="icon.png", alt="Small icon")
-              h3 #{section.title}
+              h3 #{section.sectionName}
 
             .lists-container
               each row in section.rows 
                   .first-list-item
                     .question-answer
-                      strong  #{row.data.question}
-                      span  #{row.data.answer}
+                      strong  #{row.question}
+                      span  #{row.comment}
       .section-break
         h2 
-          span #{inspectionTarget}
+          span #{breaklineTitle}
         .underline
 
-      each section in bodySections
+      each section in sections
         .header-section
           .header
             img(src="icon.png", alt="Small icon")
-            h3 #{section.title}
+            h3 #{section.sectionName}
 
           .lists-container
             each row in section.rows 
                 .list-item
                   .question-answer
-                    strong  #{row.data.question}
-                    span  #{row.data.answer}
+                    strong  #{row.question}
+                    span  #{row.comment}
 

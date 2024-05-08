@@ -2,7 +2,8 @@ import {NextFunction, Request, Response} from "express";
 import {
     getReportStructureValidator,
     getReportValidator,
-    saveReportValidator
+    saveReportValidator,
+    populateReportValidator,
 } from "../../utility/validators/report";
 
 export const validateGetReportStructure = (
@@ -49,3 +50,19 @@ export const validateGetReport = (
             next(errors);
         });
 };
+
+export const validatePopulateReport = (
+    req: Request,
+    _res: Response,
+    next: NextFunction
+) => {
+    populateReportValidator
+        .validate(req.query, { abortEarly: false})
+        .then(() => {
+            next();
+        })
+        .catch((errors) => {
+            next(errors);
+        });
+
+}
