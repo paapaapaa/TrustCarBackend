@@ -4,20 +4,23 @@
     "translations": [
       {"language_id": 1, "value": "test section 1 with ln-id 1"},
       {"language_id": 2, "value": "test section 1 with ln-id 2"}
-    ]
+    ],
+    "unit_price": 500
   },
   {
     "id": 2,
     "translations": [
       {"language_id": 1, "value": "test section 2 with ln-id 1"},
       {"language_id": 2, "value": "test section 2 with ln-id 2"}
-    ]
+    ],
+    "unit_price": 500
   },
   {
     "id": 3,
     "translations": [
       {"language_id": 1, "value": "test section 3 with ln-id 1"},
       {"language_id": 2, "value": "test section 3 with ln-id 2"}
-    ]
+    ],
+    "unit_price": 500
   }
 ]
