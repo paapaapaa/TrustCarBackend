@@ -13,7 +13,7 @@ services:
       dockerfile: dev.Dockerfile
     container_name: backend-dev
     ports:
-      - 8081:8080
+      - 8080:8080
     depends_on:
       - postgres
 
@@ -23,5 +23,5 @@ services:
       - POSTGRES_USER=trustcar
       - POSTGRES_PASSWORD=password
     ports:
-      - 5433:5432
+      - 5432:5432
 
