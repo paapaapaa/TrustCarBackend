@@ -149,4 +149,4 @@ export const populateReportValidator = object().shape({
     registration_number: string().trim().required("Registration number is required"),
     language: string().trim().oneOf(["fi","en"],"Invalid language").default("fi"),
     report_id: string().trim().required("Report id is required"),
-})
+});

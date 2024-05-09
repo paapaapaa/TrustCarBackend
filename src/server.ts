@@ -5,7 +5,7 @@ import reportRouter from "./routers/report";
 import { ErrorHandler } from "./middleware";
 import swaggerDocs from "./swagger";
 import { PORT } from "./utility/Config";
-import * as path from 'path'
+import * as path from "path";
 // import https from "https";
 
 
@@ -32,8 +32,8 @@ swaggerDocs(server, PORT.toString());
 
 server.use(ErrorHandler);
 
-server.set('view engine', 'pug');
-server.set('views', path.join(__dirname, 'view'));
+server.set("view engine", "pug");
+server.set("views", path.join(__dirname, "view"));
 
 // export const httpsServer: https.Server = https.createServer(options, server);
 

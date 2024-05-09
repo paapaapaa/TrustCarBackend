@@ -194,7 +194,7 @@ export const populateReport = async (
         message: "Report not found",
       });
     }
-    const inspectorId = reportData!.modified_by_user ? reportData!.modified_by_user : undefined
+    const inspectorId = reportData!.modified_by_user ? reportData!.modified_by_user : undefined;
 
     const inspectorName = await prisma.user.findUnique({
       where:{
@@ -204,7 +204,7 @@ export const populateReport = async (
         firstname: true,
         lastname: true,
       }
-    })
+    });
     const sectionsData = await prisma.section.findMany({
       select:{
         id: true,
@@ -222,7 +222,7 @@ export const populateReport = async (
         }
       }
       
-    })
+    });
     const translationsData = await prisma.report.findUnique({
       where: {
         registration_number,
@@ -266,7 +266,7 @@ export const populateReport = async (
         }
 
       }
-    })
+    });
 
     if (!translationsData || translationsData === null) {
       res.status(404).json({
@@ -274,31 +274,31 @@ export const populateReport = async (
       });
     }
 
-    const breaklineTitle = language === 'en' ? 'INSPECTION TARGETS' : 'TARKASTUSKOHTEET';
-    const basicInfoTitle = language === 'en' ? 'Basic information' : 'Perustiedot';
-    const inspectorInfoTitle = language === 'en' ? 'Inspector information' : 'Tarkastajan tiedot';
+    const breaklineTitle = language === "en" ? "INSPECTION TARGETS" : "TARKASTUSKOHTEET";
+    const basicInfoTitle = language === "en" ? "Basic information" : "Perustiedot";
+    const inspectorInfoTitle = language === "en" ? "Inspector information" : "Tarkastajan tiedot";
 
 
-    const inspectorFullName = inspectorName?.firstname && inspectorName?.lastname ? inspectorName?.firstname + ' ' + inspectorName?.lastname : ''
+    const inspectorFullName = inspectorName?.firstname && inspectorName?.lastname ? inspectorName?.firstname + " " + inspectorName?.lastname : "";
 
       const headerSections = [{
         sectionName: basicInfoTitle,
         rows: [
-          {question: language === 'en' ? 'Registration number' : 'Rekisterinumero',comment: reportData!.registration_number},
-          {question: language === 'en' ? 'Brand and model' : 'Merkki ja malli',comment: reportData!.brand_and_model},
-          {question: language === 'en' ? 'Production number' : 'Valmistenumero',comment: reportData!.production_number},
-          {question: language === 'en' ? 'Odometer reading' : 'Matkamittarin lukema',comment: reportData!.odometer_reading},
+          {question: language === "en" ? "Registration number" : "Rekisterinumero",comment: reportData!.registration_number},
+          {question: language === "en" ? "Brand and model" : "Merkki ja malli",comment: reportData!.brand_and_model},
+          {question: language === "en" ? "Production number" : "Valmistenumero",comment: reportData!.production_number},
+          {question: language === "en" ? "Odometer reading" : "Matkamittarin lukema",comment: reportData!.odometer_reading},
         ]
       },
       {
         sectionName: inspectorInfoTitle,
         rows: [
-          {question: language === 'en' ? 'Inspector' : 'Tarkastaja',comment: inspectorFullName},
-          {question: language === 'en' ? 'Inspection date' : 'Tarkastuspäivä',comment: reportData!.updated_at},
-          {question: language === 'en' ? 'Inspection station' : 'Tarkastusasema',comment: reportData!.organization?.name ? reportData!.organization?.name : ''},
-          {question: language === 'en' ? 'Station phone number' : 'Aseman puhelinnumero',comment: reportData!.organization?.phone ? reportData!.organization?.phone : ''},
-          {question: language === 'en' ? 'Station address' : 'Aseman osoite',comment: reportData!.organization?.address ? reportData!.organization?.address : ''},
-          {question: language === 'en' ? 'Station email' : 'Aseman sähköposti',comment: reportData!.organization?.email ? reportData!.organization?.email : ''},
+          {question: language === "en" ? "Inspector" : "Tarkastaja",comment: inspectorFullName},
+          {question: language === "en" ? "Inspection date" : "Tarkastuspäivä",comment: reportData!.updated_at},
+          {question: language === "en" ? "Inspection station" : "Tarkastusasema",comment: reportData!.organization?.name ? reportData!.organization?.name : ""},
+          {question: language === "en" ? "Station phone number" : "Aseman puhelinnumero",comment: reportData!.organization?.phone ? reportData!.organization?.phone : ""},
+          {question: language === "en" ? "Station address" : "Aseman osoite",comment: reportData!.organization?.address ? reportData!.organization?.address : ""},
+          {question: language === "en" ? "Station email" : "Aseman sähköposti",comment: reportData!.organization?.email ? reportData!.organization?.email : ""},
         ]
 
       }
@@ -311,8 +311,8 @@ export const populateReport = async (
     translationsData!.report_rows.forEach(row => {
         const sectionId = row.question?.question_map[0]?.section_id;
         const sectionName = sectionId ? sectionsData.find(section => section.id === sectionId)?.translations[0]?.value : null;
-        const rowStatus = row.inspection_status ? row.inspection_status : 'green';
-        const rowComment = rowStatus === 'green' ? 'Ok': row.comment ? row.comment : rowStatus === 'red' ? 'red' : 'yellow';
+        const rowStatus = row.inspection_status ? row.inspection_status : "green";
+        const rowComment = rowStatus === "green" ? "Ok": row.comment ? row.comment : rowStatus === "red" ? "red" : "yellow";
 
     
         if (sectionId && sectionName) {
@@ -327,7 +327,7 @@ export const populateReport = async (
     });
 
 
-    res.render('report-skeleton',{headerSections: headerSections, sections: sections, breaklineTitle: breaklineTitle})
+    res.render("report-skeleton",{headerSections: headerSections, sections: sections, breaklineTitle: breaklineTitle});
 
   } catch (error) {
     next(error);
