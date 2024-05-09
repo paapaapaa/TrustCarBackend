@@ -59,6 +59,7 @@ import {
               language_id: t.language_id,
             })),
           },
+          unit_price: s.unit_price,
         },
       });
     }
