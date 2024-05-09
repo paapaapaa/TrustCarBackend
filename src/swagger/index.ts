@@ -31,6 +31,10 @@ const options: swaggerJsdoc.Options = {
     "./src/routers/report/index.ts",
     "./src/utility/validators/report.ts",
     "./src/utility/types/report.ts",
+    "./src/utility/validators/organization.ts",
+    "./src/routers/organization/index.ts",
+    "./src/routers/order/index.ts",
+    "./src/utility/validators/order.ts"
   ],
 };
 

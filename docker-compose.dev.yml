@@ -1,15 +1,15 @@
 version: "3.8"
 services:
-  backend:
-    image: backend-dev
-    build:
-      context: .
-      dockerfile: dev.Dockerfile
-    container_name: backend-dev
-    ports:
-      - 8080:8080
-    depends_on:
-      - postgres
+  # backend:
+  #   image: backend-dev
+  #   build:
+  #     context: .
+  #     dockerfile: dev.Dockerfile
+  #   container_name: backend-dev
+  #   ports:
+  #     - 8080:8080
+  #   depends_on:
+  #     - postgres
 
   postgres:
     image: postgres:15

@@ -1,100 +1,198 @@
 [
   {
-    "id": 1,
-    "translations": [
-      {"language_id": 1, "value": "Case papers and identification"},
-      {"language_id": 2, "value": "Asiapaperit ja tunnistus"}
-    ]
+      "id": 1,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Case papers and identification"
+          },
+          {
+              "language_id": 2,
+              "value": "Asiapaperit ja tunnistus"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 2,
-    "translations": [
-      {"language_id": 1, "value": "Brake system and shock absoption"},
-      {"language_id": 2, "value": "Jarrujärjestelmä ja iskunvaimennus"}
-    ]
+      "id": 2,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Brake system and shock absoption"
+          },
+          {
+              "language_id": 2,
+              "value": "Jarrujärjestelmä ja iskunvaimennus"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 3,
-    "translations": [
-      {"language_id": 1, "value": "Environmental emissions"},
-      {"language_id": 2, "value": "Ympäristöpäästöt"}
-    ]
+      "id": 3,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Environmental emissions"
+          },
+          {
+              "language_id": 2,
+              "value": "Ympäristöpäästöt"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 4,
-    "translations": [
-      {"language_id": 1, "value": "Lighting, washing equipment, windshield, horn"},
-      {"language_id": 2, "value": "Valaistus, pesulaitteet, tuulilasi, äänimerkki"}
-    ]
+      "id": 4,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Lighting, washing equipment, windshield, horn"
+          },
+          {
+              "language_id": 2,
+              "value": "Valaistus, pesulaitteet, tuulilasi, äänimerkki"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 5,
-    "translations": [
-      {"language_id": 1, "value": "Suspension, axle set, base plate"},
-      {"language_id": 2, "value": "Jousitus, akselisto, pohjalevy"}
-    ]
+      "id": 5,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Suspension, axle set, base plate"
+          },
+          {
+              "language_id": 2,
+              "value": "Jousitus, akselisto, pohjalevy"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 6,
-    "translations": [
-      {"language_id": 1, "value": "Tyres"},
-      {"language_id": 2, "value": "Renkaat"}
-    ]
+      "id": 6,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Tyres"
+          },
+          {
+              "language_id": 2,
+              "value": "Renkaat"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 7,
-    "translations": [
-      {"language_id": 1, "value": "Engine and auxiliary equipment"},
-      {"language_id": 2, "value": "Moottori ja apulaitteet"}
-    ]
+      "id": 7,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Engine and auxiliary equipment"
+          },
+          {
+              "language_id": 2,
+              "value": "Moottori ja apulaitteet"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 8,
-    "translations": [
-      {"language_id": 1, "value": "Interiors, controls"},
-      {"language_id": 2, "value": "Sisätilat, hallintalaitteet"}
-    ]
+      "id": 8,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Interiors, controls"
+          },
+          {
+              "language_id": 2,
+              "value": "Sisätilat, hallintalaitteet"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 9,
-    "translations": [
-      {"language_id": 1, "value": "General condition of the body"},
-      {"language_id": 2, "value": "Korin yleiskunto"}
-    ]
+      "id": 9,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "General condition of the body"
+          },
+          {
+              "language_id": 2,
+              "value": "Korin yleiskunto"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 10,
-    "translations": [
-      {"language_id": 1, "value": "Transmission"},
-      {"language_id": 2, "value": "Voimansiirto"}
-    ]
+      "id": 10,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Transmission"
+          },
+          {
+              "language_id": 2,
+              "value": "Voimansiirto"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 11,
-    "translations": [
-      {"language_id": 1, "value": "Short test drive"},
-      {"language_id": 2, "value": "Lyhyt koeajo"}
-    ]
+      "id": 11,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Short test drive"
+          },
+          {
+              "language_id": 2,
+              "value": "Lyhyt koeajo"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 12,
-    "translations": [
-      {"language_id": 1, "value": "Driving battery"},
-      {"language_id": 2, "value": "Ajoakku"}
-    ]
+      "id": 12,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Driving battery"
+          },
+          {
+              "language_id": 2,
+              "value": "Ajoakku"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 13,
-    "translations": [
-      {"language_id": 1, "value": "OBD"},
-      {"language_id": 2, "value": "OBD"}
-    ]
+      "id": 13,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "OBD"
+          },
+          {
+              "language_id": 2,
+              "value": "OBD"
+          }
+      ],
+      "unit_price": 500
   },
   {
-    "id": 14,
-    "translations": [
-      {"language_id": 1, "value": "Fault lights on the instrumental panel"},
-      {"language_id": 2, "value": "Valaistus, pesulaitteet, tuulilasi, äänimerkki"}
-    ]
+      "id": 14,
+      "translations": [
+          {
+              "language_id": 1,
+              "value": "Fault lights on the instrumental panel"
+          },
+          {
+              "language_id": 2,
+              "value": "Valaistus, pesulaitteet, tuulilasi, äänimerkki"
+          }
+      ],
+      "unit_price": 500
   }
 ]
