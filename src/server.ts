@@ -2,6 +2,8 @@ import express from "express";
 import multer from "multer";
 import userRouter from "./routers/user-router";
 import reportRouter from "./routers/report";
+import organiztionRouter from "./routers/organization";
+import orderRouter from "./routers/order";
 import { ErrorHandler } from "./middleware";
 import swaggerDocs from "./swagger";
 import { PORT } from "./utility/Config";
@@ -26,6 +28,8 @@ server.get("/api/v1/test-route", (_req, res) => {
 
 server.use("/api/v1/user", upload.none(), userRouter);
 server.use("/api/v1/report", upload.none(), reportRouter);
+server.use("/api/v1/organization", organiztionRouter);
+server.use("/api/v1/order", orderRouter);
 
 swaggerDocs(server, PORT.toString());
 

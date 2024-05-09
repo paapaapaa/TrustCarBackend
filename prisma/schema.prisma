@@ -10,7 +10,7 @@ datasource db {
 model organization {
   id               Int                @id @default(autoincrement())
   name             String?            @db.VarChar
-  type             organization_type?
+  type             organization_type
   business_number  String?            @db.VarChar
   address          String?            @db.VarChar
   city             String?            @db.VarChar
@@ -22,6 +22,10 @@ model organization {
   modified_by_user Int?
   reports          report[]
   users            user[]
+  created_orders   order[]  @relation("ReceivedOrders")
+  received_orders  order[]  @relation("CreatedOrders")
+  created_delivered_orders           delivered_order[]  @relation("CreatedDeliveredOrders")
+  received_delivered_orders  delivered_order[] @relation("ReceivedDeliveredOrders")
 }
 
 model user {
@@ -39,6 +43,10 @@ model user {
   modified_by_user Int?
   organization_id  Int?
   organization     organization? @relation(fields: [organization_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  created_orders   order[]  @relation("CreatedOrders")
+  received_orders  order[]  @relation("ReceivedOrders")
+  created_delivered_orders           delivered_order[]  @relation("CreatedDeliveredOrders")
+  received_delivered_orders  delivered_order[] @relation("ReceivedDeliveredOrders")    
 }
 
 model report {
@@ -90,11 +98,15 @@ model question {
 }
 
 model section {
-  id             Int                @id @unique
-  created_at     DateTime?          @default(now()) @db.Timestamp(6)
-  updated_at     DateTime?          @default(now()) @db.Timestamp(6)
-  question_map   question_mapping[]
-  translations   translation[]
+  id               Int                @id @unique
+  created_at       DateTime?          @default(now()) @db.Timestamp(6)
+  updated_at       DateTime?          @default(now()) @db.Timestamp(6)
+  unit_price       Int
+  question_map     question_mapping[]
+  translations     translation[]
+  order            order_row[]
+  delivered_order  delivered_order_row[]
+
 }
 
 model question_mapping {
@@ -125,6 +137,72 @@ model translation {
   language    language  @relation(fields: [language_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   question    question? @relation(fields: [questionId], references: [id])
   section     section?  @relation(fields: [sectionId], references: [id])
+}
+
+model order {
+  id          Int       @id @default(autoincrement())
+  created_at  DateTime? @default(now()) @db.Timestamp(6)
+  updated_at  DateTime? @default(now()) @db.Timestamp(6)
+  customer_id     Int?
+  inspector_id     Int?
+  report_type   report_type
+  customer       user?      @relation("CreatedOrders",fields: [customer_id], references: [id])
+  inspector       user?      @relation("ReceivedOrders",fields: [inspector_id], references: [id])
+  inspection_organization_id  Int
+  customer_organization_id Int
+  inspection_organization     organization @relation("CreatedOrders", fields: [inspection_organization_id], references: [id])
+  customer_organization    organization @relation("ReceivedOrders", fields: [customer_organization_id], references: [id])
+  registration_number String
+  car_production_number String
+  brand_and_model String
+  engine_type engine_type?
+  additional_information String?
+  additional_information2 String?
+  order_total_amount Int
+  order_rows  order_row[]
+}
+
+model order_row {
+  id          Int       @id @default(autoincrement())
+  created_at  DateTime? @default(now()) @db.Timestamp(6)
+  updated_at  DateTime? @default(now()) @db.Timestamp(6)
+  order_id    Int
+  order       order     @relation(fields: [order_id], references: [id])
+  section_id  Int
+  section     section   @relation(fields: [section_id], references: [id])
+}
+
+model delivered_order {
+  id          Int       @id @default(autoincrement())
+  created_at  DateTime? @default(now()) @db.Timestamp(6)
+  updated_at  DateTime? @default(now()) @db.Timestamp(6)
+  customer_id     Int
+  inspector_id     Int
+  customer       user      @relation("CreatedDeliveredOrders",fields: [customer_id], references: [id])
+  inspector       user      @relation("ReceivedDeliveredOrders",fields: [inspector_id], references: [id])
+  inspection_organization_id  Int
+  customer_organization_id Int
+  inspection_organization     organization @relation("CreatedDeliveredOrders", fields: [inspection_organization_id], references: [id])
+  customer_organization    organization @relation("ReceivedDeliveredOrders", fields: [customer_organization_id], references: [id])
+  delivery_date      DateTime
+  registeration_number String
+  car_production_number String
+  brand_and_model String
+  engine_type engine_type?
+  additional_information String
+  additional_information2 String
+  order_total_amount Int
+  delivered_order_row  delivered_order_row[]
+}
+
+model delivered_order_row {
+  id          Int       @id @default(autoincrement())
+  created_at  DateTime? @default(now()) @db.Timestamp(6)
+  updated_at  DateTime? @default(now()) @db.Timestamp(6)
+  order_id    Int
+  delivered_order       delivered_order     @relation(fields: [order_id], references: [id])
+  section_id  Int
+  section     section   @relation(fields: [section_id], references: [id])
 }
 
 enum inspection_status {

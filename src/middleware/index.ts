@@ -17,10 +17,16 @@ export const TokenExtractor = async (
         process.env.JWT_SECRET || "secret"
       ) as { username: string; id: string };
       const username = decodedToken.username;
-      const user = await prisma.user.findUnique({ where: { username } });
+      const user = await prisma.user.findUnique({
+        where: { username },
+        include: {
+          organization: true,
+        },
+      });
       if (user) {
         req.params.userId = user.id.toString();
         req.params.organizationId = user.organization_id!.toString();
+        req.params.organizationType = user.organization!.type;
         next();
       } else {
         res.status(401).send("token is missing or invalid");
@@ -34,7 +40,7 @@ export const TokenExtractor = async (
 };
 
 export const ErrorHandler: ErrorRequestHandler = (error, _req, _res, _next) => {
-  // console.log(error);
+  console.log(error);
 
   if (error.name === "ValidationError") {
     return _res.status(403).send(error.errors);

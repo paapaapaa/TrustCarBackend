@@ -2,6 +2,7 @@
 import {
   PrismaClient,
   engine_type,
+  organization_type,
   report_type,
 } from "@prisma/client";
 import questions from "../data/questions.json";
@@ -24,6 +25,10 @@ async function deleteAllTables() {
   await prisma.language.deleteMany({});
   await prisma.user.deleteMany({});
   await prisma.organization.deleteMany({});
+  await prisma.order_row.deleteMany({});
+  await prisma.order.deleteMany({});
+  await prisma.delivered_order_row.deleteMany({});
+  await prisma.delivered_order.deleteMany({});
 }
 
 async function createLanguages() {
@@ -59,6 +64,7 @@ async function createSections() {
             language_id: t.language_id,
           })),
         },
+        unit_price: s.unit_price,
       },
     });
   }
@@ -77,19 +83,20 @@ async function createQuestionMappings() {
   }
 }
 
-async function addTestUser() {
+async function addOrganization(organization:string,type:organization_type,user:string) {
 
   const org = await prisma.organization.create({
     data:{
-      name: "organization 1",
-      type: "inspection",
+      name: organization,
+      type: type,
     }
   });
+
   
-    const username = "testuser";
-    const password = "testpassword";
-    const firstname = "testfirstname";
-    const lastname = "testlastname";
+    const username = user;
+    const password = "password";
+    const firstname = "fname";
+    const lastname = "lname";
     const organizationId = org.id;
   
     const salt = await genSalt(10);
@@ -112,13 +119,17 @@ async function addTestUser() {
   
 }
 
+
 async function main() {
   await deleteAllTables();
   await createLanguages();
   await createQuestions();
   await createSections();
   await createQuestionMappings();
-  await addTestUser();
+  await addOrganization("ABC Inspection",organization_type.inspection,"inspector1");
+  await addOrganization("XYZ Inspection",organization_type.inspection,"inspector2");
+  await addOrganization("ABC Seller",organization_type.seller,"seller1");
+  await addOrganization("XYZ Seller",organization_type.seller,"seller2");
 }
 
 main()
