@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Report
+    style 
+      include pug-styles.css
+  body
+    .report
+      .logo-segment
+        .logo
+          include carpass_logo.svg
+
+      
+      
+      .first-list-container
+        each section in headerSections
+          .header-section
+            .header
+              img(src="icon.png", alt="Small icon")
+              h3 #{section.sectionName}
+
+            .lists-container
+              each row in section.rows 
+                  .first-list-item
+                    .question-answer
+                      strong  #{row.question}
+                      span  #{row.comment}
+      .section-break
+        h2 
+          span #{breaklineTitle}
+        .underline
+
+      each section in sections
+        .header-section
+          .header
+            img(src="icon.png", alt="Small icon")
+            h3 #{section.sectionName}
+
+          .lists-container
+            each row in section.rows 
+                .list-item
+                  .question-answer
+                    strong  #{row.question}
+                    span  #{row.comment}
+

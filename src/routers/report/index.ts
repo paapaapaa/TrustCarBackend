@@ -1,10 +1,11 @@
 import express from "express";
 import { RequestHandler } from "express";
-import { getReport, getReportStructure, saveReport} from "../../controllers/report";
+import { getReport, getReportStructure, saveReport, populateReport} from "../../controllers/report";
 import {
     validateGetReport,
     validateGetReportStructure,
     validateSaveReport,
+    validatePopulateReport,
 } from "../../middleware/validate/report";
 import {TokenExtractor} from "../../middleware";
 
@@ -110,6 +111,45 @@ router.get(
   validateGetReportStructure,
   TokenExtractor as RequestHandler,
   getReportStructure as RequestHandler
+);
+
+/**
+ * @openapi
+ * /api/v1/report/send:
+ *   get:
+ *     tags:
+ *       - Report
+ *     summary: Send Report Html
+ *     description: populate and send report html
+ *     parameters:
+ *       - name: registration_number
+ *         in: query
+ *         description: Registration number of the vehicle.
+ *         required: true
+ *       - name: report_id
+ *         in: query
+ *         description: Id of the desired report
+ *         required: true
+ *       - name: language
+ *         in: query
+ *         description: language code of the desired report, defaulted to 'fi'
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: HTML of the populated report
+ *         content:
+ *           text/html:
+ *             schema:
+ *               type: string
+ *               example: "<!DOCTYPE html><html><head>...</head><body>...</body></html>"
+ */
+
+router.get(
+    "/send",
+    validatePopulateReport,
+    TokenExtractor as RequestHandler,
+    populateReport as RequestHandler
 );
 
 export default router;
