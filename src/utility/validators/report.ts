@@ -34,11 +34,26 @@ import { object,string,number, array, mixed, } from "yup";
  *             - narrow
  *             - light
  *           default: full
+ *         sections:
+ *           type: array
+ *           description: Sections for the report
+ *           items:
+ *             type: integer
+ *           example:
+ *             - 1
+ *             - 2
+ *           nullable: true
+ * 
  */
 export const getReportStructureValidator = object().shape({
     language: string().trim().oneOf(["fi", "en"], "Invalid language").default("fi"),
-    engine_type: mixed<engine_type>().oneOf(Object.values(engine_type), "Invalid report type").default("petrol"),
+    engine_type: mixed<engine_type>().oneOf(Object.values(engine_type), "Invalid engine type").default("petrol"),
     report_type: mixed<report_type>().oneOf(Object.values(report_type), "Invalid report type").default("full"),
+    sections:array().when("report_type",{
+        is: report_type.light,
+        then: (schema) => schema.min(1, "At least one section is required").of(number().required("Section ids are required")),
+       otherwise: (schema) => schema.notRequired(),
+    })
 });
 
 
@@ -49,6 +64,9 @@ export const getReportStructureValidator = object().shape({
  *     SaveReport:
  *       type: object
  *       properties:
+ *         order_id:
+ *           type: number
+ *           description: ID of the order.
  *         registration_number:
  *           type: string
  *           description: Registration number of the vehicle.
@@ -116,6 +134,7 @@ export const getReportStructureValidator = object().shape({
  *         - odometer_reading
  *         - production_number
  *         - report_rows
+ *         - order_id
  */
 export const saveReportValidator = object().shape(
     {
@@ -137,6 +156,7 @@ export const saveReportValidator = object().shape(
                 ),
             }).required("Report row is required"),
         ).required("Report rows are required"),
+        order_id: number().required("Order id is required"),
     }
 );
 

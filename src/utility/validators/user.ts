@@ -60,12 +60,12 @@ export const registerUser = object().shape({
  *           type: string
  *           description: The username of the user
  *           minLength: 1
- *           example: testuser
+ *           example: seller1
  *         password:
  *           type: string
  *           description: The password of the user
  *           minLength: 1
- *           example: testpassword
+ *           example: password
  */
 export const loginUser = object().shape({
   username: string().trim().required("Username is required"),

@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import {
   createOrderValidator,
   getOrderPriceValidator,
+  updateOrderValidator,
 } from "../../utility/validators/order";
 import { PrismaClient } from "@prisma/client";
 
@@ -29,7 +30,6 @@ export const createOrder = async (
   } = createOrderValidator.cast(_req.body);
 
   try {
-    console.log(brand_and_model, engine_type, registration_number, report_type);
     if (report_type !== "light") {
       const sections = await prisma.section.findMany({
         where: {
@@ -45,8 +45,6 @@ export const createOrder = async (
         (acc, curr) => acc + curr.unit_price,
         0
       );
-      console.log(sections);
-      console.log(order_total);
       const order = await prisma.order.create({
         data: {
           brand_and_model,
@@ -67,6 +65,7 @@ export const createOrder = async (
           customer_id: parseInt(_req.params.userId),
           customer_organization_id: parseInt(_req.params.organizationId),
           inspection_organization_id,
+          order_status:"not_started"
         },
       });
       res.status(201).json({ order });
@@ -103,12 +102,13 @@ export const createOrder = async (
           customer_id: parseInt(_req.params.userId),
           customer_organization_id: parseInt(_req.params.organizationId),
           inspection_organization_id,
+          order_status:"not_started"
         },
       });
       res.status(201).json({ order });
      }
      else {
-      res.status(400).json({ message: "Yo must give a type" });
+      res.status(400).json({ message: "Something wrong with request" });
     }
   } catch (error) {
     next(error);
@@ -116,15 +116,26 @@ export const createOrder = async (
 };
 
 export const getOrders = async(_req: Request, res: Response) => {
-  if(_req.params.organizationType !== "inspection") {
-    res.status(403).json({ message: "You are not allowed to fetch orders" });
+  let query = {};
+  if(_req.params.organizationType === "inspection") {
+    query = {
+      where: {
+        inspection_organization_id: parseInt(_req.params.organizationId),
+      },
+    };
   }
-  try {
-    const orders = await prisma.order.findMany({
+  else if(_req.params.organizationType === "seller") {
+    query = {
       where: {
         customer_organization_id: parseInt(_req.params.organizationId),
       },
-    });
+    };
+  }
+  else {
+    res.status(403).json({ message: "You are not allowed to fetch orders" });
+  }
+  try {
+    const orders = await prisma.order.findMany(query);
     res.status(200).json({ orders });
   } catch (error) {
     res.status(400).json({ message: "Error fetching orders" });
@@ -189,5 +200,31 @@ export const getOrderPrice = async (_req: Request, res: Response) => {
     }
   } catch (error) {
     res.status(400).json({ message: "Error fetching order price" });
+  }
+};
+
+export const updateOrderStatus = async (_req: Request, res: Response, next: NextFunction) => {
+  if(_req.params.organizationType !== "inspection") {
+    res.status(403).json({ message: "You are not allowed to update order status" });
+  }
+  const { status,id } = updateOrderValidator.cast(_req.body);
+  if(status === "ready"){
+    res.status(403).json({ message: "You are not allowed to update order status to ready" });
+  }
+  const { userId } = _req.params;
+  const modified_by_user = parseInt(userId);
+  try {
+    const order = await prisma.order.update({
+      where: {
+        id: id,
+      },
+      data: {
+        order_status: status,
+        inspector_id: modified_by_user,
+      },
+    });
+    res.status(200).json({ order });
+  } catch (error) {
+    next(error);
   }
 };

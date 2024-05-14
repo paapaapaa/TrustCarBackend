@@ -1,5 +1,5 @@
 import { object,string,mixed, number, array } from "yup";
-import { engine_type, report_type } from "@prisma/client";
+import { engine_type, order_status, report_type } from "@prisma/client";
 
 /**
  * @openapi
@@ -94,6 +94,33 @@ export const getOrderPriceValidator = object().shape(
  * @openapi
  * components:
  *   schemas:
+ *     OrderStatus:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: number
+ *           description: The ID of the order. Required.
+ *         status:
+ *           type: string
+ *           enum: 
+ *             - started
+ *             - not_started
+ *             - ready
+ *           description: The status of the order. Required. Must be one of the predefined order statuses.
+ *       required:
+ *         - id
+ *         - status
+ */
+export const updateOrderValidator = object().shape(
+    {
+        id: number().required("Order id is required"),
+        status: mixed<order_status>().required("Status is required").oneOf(Object.values(order_status), "Invalid status"),
+    });
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
  *     Section:
  *       type: object
  *       properties:
@@ -168,8 +195,14 @@ export const getOrderPriceValidator = object().shape(
  *             - narrow
  *             - light
  *         engine_type:
- *           $ref: '#/components/schemas/EngineType'
  *           description: The type of engine in the car.
+ *           enum:
+ *             - petrol
+ *             - diesel
+ *             - electric
+ *             - hybrid
+ *             - hybrid_diesel
+ *             - hybrid_petrol 
  *         additional_information:
  *           type: string
  *           description: Additional information related to the order.
@@ -179,4 +212,10 @@ export const getOrderPriceValidator = object().shape(
  *         order_total_amount:
  *           type: integer
  *           description: The total amount of the order.
+ *         order_status:
+ *           description: The status of the order.
+ *           enum:
+ *             - not_started
+ *             - started
+ *             - ready
  */

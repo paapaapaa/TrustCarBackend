@@ -61,6 +61,9 @@ export const loginController = async (
       where: {
         username,
       },
+      include:{
+        organization:true
+      }
     });
 
     if (!user) {
@@ -83,6 +86,8 @@ export const loginController = async (
         username: user!.username,
         firstname: user!.firstname,
         lastname: user!.lastname,
+        organization: user!.organization,
+
       },
       JWT_SECRET!,
     );

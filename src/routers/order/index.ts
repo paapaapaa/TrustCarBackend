@@ -2,12 +2,14 @@ import express, { RequestHandler } from "express";
 import {
   validateCreateOrder,
   validateGetOrderPrice,
+  validateUpdateOrder,
 } from "../../middleware/validate/order";
 import {
   createOrder,
   getOrderPrice,
   getOrders,
   getSections,
+  updateOrderStatus,
 } from "../../controllers/order";
 import { TokenExtractor } from "../../middleware";
 
@@ -148,5 +150,31 @@ router.post(
  *              $ref: '#/components/schemas/Order'
  */
 router.get("/", TokenExtractor as RequestHandler, getOrders as RequestHandler);
+
+/**
+ * @openapi
+ * /api/v1/order:
+ *   put:
+ *     tags:
+ *       - Order
+ *     summary: Update order status
+ *     description: Update order status based on order id
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/OrderStatus'
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *        description: Updated order
+ *        content:
+ *          application/json:
+ *            schema:
+ *              $ref: '#/components/schemas/Order'
+ */
+router.put("/", validateUpdateOrder, TokenExtractor as RequestHandler, updateOrderStatus as RequestHandler);
 
 export default router;

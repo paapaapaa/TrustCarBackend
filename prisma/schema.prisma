@@ -62,6 +62,7 @@ model report {
   engine_type         engine_type?
   organization        organization? @relation(fields: [organization_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   report_rows         report_row[]
+  delivered_order     delivered_order[]
 }
 
 model report_row {
@@ -160,6 +161,7 @@ model order {
   additional_information2 String?
   order_total_amount Int
   order_rows  order_row[]
+  order_status order_status
 }
 
 model order_row {
@@ -185,7 +187,7 @@ model delivered_order {
   inspection_organization     organization @relation("CreatedDeliveredOrders", fields: [inspection_organization_id], references: [id])
   customer_organization    organization @relation("ReceivedDeliveredOrders", fields: [customer_organization_id], references: [id])
   delivery_date      DateTime
-  registeration_number String
+  registration_number String
   car_production_number String
   brand_and_model String
   engine_type engine_type?
@@ -193,6 +195,9 @@ model delivered_order {
   additional_information2 String
   order_total_amount Int
   delivered_order_row  delivered_order_row[]
+  order_status order_status
+  report_id Int @unique
+  report report @relation(fields: [report_id], references: [id])
 }
 
 model delivered_order_row {
@@ -236,4 +241,10 @@ enum report_type {
 enum attachment_type {
   image
   audio
+}
+
+enum order_status {
+  started
+  not_started
+  ready
 }
