@@ -37,7 +37,7 @@ swaggerDocs(server, PORT.toString());
 server.use(ErrorHandler);
 
 server.set("view engine", "pug");
-server.set("views", path.join(__dirname, "view"));
+server.set("views", path.join(process.cwd(), "src/view/"));
 
 // export const httpsServer: https.Server = https.createServer(options, server);
 
