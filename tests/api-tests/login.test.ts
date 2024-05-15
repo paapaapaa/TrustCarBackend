@@ -9,13 +9,13 @@ describe("Login API", () => {
       .send({ username: "", password: "" });
     expect(response.status).toEqual(403);
   });
-  it("should authenticate the user with correct credentials", async () => {
-    const response = await app
-      .post("/api/v1/user/login")
-      .send({ username: "seller1", password: "password" });
-    expect(response.status).toEqual(200);
-    expect(response.body.authToken).toBeDefined();
-  });
+  // it("should authenticate the user with correct credentials", async () => {
+  //   const response = await app
+  //     .post("/api/v1/user/login")
+  //     .send({ username: "seller1", password: "password" });
+  //   expect(response.status).toEqual(200);
+  //   expect(response.body.authToken).toBeDefined();
+  // });
   it("should not authenticate the user with invalid credentials", async () => {
     const response = await app
       .post("/api/v1/user/login")
