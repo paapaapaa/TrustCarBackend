@@ -128,8 +128,7 @@
     "translations": [
       {"language_id": 1, "value": "OBD-test"},
       {"language_id": 2, "value": "OBD-testi"}
-    ],
-    "type": "singlenumeric"
+    ]
   },
   {
     "id": 19,
