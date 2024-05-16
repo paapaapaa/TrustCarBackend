@@ -39,7 +39,8 @@
     "translations": [
       {"language_id": 1, "value": "Dynamometer test - values"},
       {"language_id": 2, "value": "Dynamometritesti - arvot"}
-    ]
+    ],
+    "type": "leftrightnumeric"
   },
   {
     "id": 7,
@@ -95,28 +96,32 @@
     "translations": [
       {"language_id": 1, "value": "CO-concentration"},
       {"language_id": 2, "value": "CO-Pitoisuus"}
-    ]
+    ],
+    "type": "singlenumeric"
   },
   {
     "id": 15,
     "translations": [
       {"language_id": 1, "value": "HC-concentration"},
       {"language_id": 2, "value": "HC-pitoisuus"}
-    ]
+    ],
+    "type": "singlenumeric"
   },
   {
     "id": 16,
     "translations": [
       {"language_id": 1, "value": "Lambda value"},
       {"language_id": 2, "value": "Lambda-arvo"}
-    ]
+    ],
+    "type": "singlenumeric"
   },
   {
     "id": 17,
     "translations": [
       {"language_id": 1, "value": "K-value"},
       {"language_id": 2, "value": "K-arvo"}
-    ]
+    ],
+    "type": "singlenumeric"
   },
   {
     "id": 18,
@@ -536,7 +541,8 @@
     "translations": [
       {"language_id": 1, "value": "Dynamometer test - values"},
       {"language_id": 2, "value": "Dynamometritesti"}
-    ]
+    ],
+    "type": "leftrightnumeric"
   },
   {
     "id": 78,

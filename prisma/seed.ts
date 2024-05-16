@@ -4,6 +4,7 @@ import {
   engine_type,
   organization_type,
   report_type,
+  question_type,
 } from "@prisma/client";
 import questions from "../data/questions.json";
 import sections from "../data/sections.json";
@@ -38,28 +39,35 @@ async function createLanguages() {
 }
 
 async function createQuestions() {
+  const defaultType: question_type = question_type.description;
   for (const q of questions) {
+    let questionType: question_type = defaultType;
+    if (q.type && Object.values(question_type).includes(q.type as question_type)) {
+      questionType = q.type as question_type;
+    }
     await prisma.question.create({
-      data:{
+      data: {
         id: q.id,
         translations: {
-          create: q.translations.map(t => ({
+          create: q.translations.map((t) => ({
             value: t.value,
             language_id: t.language_id,
           })),
         },
+        type: questionType,
       },
     });
   }
 }
 
+
 async function createSections() {
   for (const s of sections) {
     await prisma.section.create({
-      data:{
-        id:s.id,
+      data: {
+        id: s.id,
         translations: {
-          create: s.translations.map(t => ({
+          create: s.translations.map((t) => ({
             value: t.value,
             language_id: t.language_id,
           })),
@@ -73,12 +81,12 @@ async function createSections() {
 async function createQuestionMappings() {
   for (const m of mapping) {
     await prisma.question_mapping.create({
-      data:{
-        report_type:m["report_type"] as report_type,
-        section_id:m["section_id"] ,
-        question_id:m["question_id"] ,
-        engine_type:m["engine_type"] as engine_type
-      }
+      data: {
+        report_type: m["report_type"] as report_type,
+        section_id: m["section_id"],
+        question_id: m["question_id"],
+        engine_type: m["engine_type"] as engine_type,
+      },
     });
   }
 }
@@ -115,8 +123,8 @@ async function addOrganization(organization:string,type:organization_type,user:s
           }
         }
       },
-    });
-  
+    },
+  );
 }
 
 

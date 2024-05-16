@@ -1,4 +1,4 @@
-import { engine_type } from "@prisma/client";
+import { engine_type, question_type } from "@prisma/client";
 
 /**
  * @openapi
@@ -32,6 +32,7 @@ export type ReportStructureResponse = {
     | {
         id: number;
         name: string | null;
+        type: question_type;
       }[]
     | null;
 };
