@@ -138,6 +138,7 @@ export const getReportStructure = async (
                       value:true,
                     },
                   },
+                  type:true,
                 },
               },
             },
@@ -151,6 +152,7 @@ export const getReportStructure = async (
         const questions = questions_map.map((qm) => ({
           id: qm.question.id,
           name: qm.question.translations[0].value,
+          type: qm.question.type,
         }));
 
         return {
