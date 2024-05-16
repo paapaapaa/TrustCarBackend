@@ -2,6 +2,7 @@
 import {
     PrismaClient,
     engine_type,
+    question_type,
     report_type,
   } from "@prisma/client";
   import questions from "../data/test-data/questions.json";
@@ -33,20 +34,27 @@ import {
   }
   
   async function createQuestions() {
+    const defaultType: question_type = question_type.description;
     for (const q of questions) {
+      let questionType: question_type = defaultType;
+      if (q.type && Object.values(question_type).includes(q.type as question_type)) {
+        questionType = q.type as question_type;
+      }
       await prisma.question.create({
-        data:{
+        data: {
           id: q.id,
           translations: {
-            create: q.translations.map(t => ({
+            create: q.translations.map((t) => ({
               value: t.value,
               language_id: t.language_id,
             })),
           },
+          type: questionType,
         },
       });
     }
   }
+  
   
   async function createSections() {
     for (const s of sections) {

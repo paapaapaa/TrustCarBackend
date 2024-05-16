@@ -25,6 +25,7 @@
     "translations": [
       {"language_id": 1, "value": "test quetion 4 ln-id 1"},
       {"language_id": 2, "value": "test quetion 4 ln-id 2"}
-    ]
+    ],
+    "type": "singlenumeric"
   }
 ]
