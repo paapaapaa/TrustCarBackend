@@ -30,7 +30,7 @@ eg. `git branch <category>/<short-description>-<ticket no. on borad>`
 * If you need to experiment outside of an issue/ticket: `git branch test/http-client`
 
 
-### Database setup.
+### Database setup
 
 #### Using Docker
 
