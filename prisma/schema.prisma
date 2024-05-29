@@ -29,7 +29,7 @@ model organization {
 }
 
 model user {
-  id               Int           @id @default(autoincrement())
+  id               Int           @id @default(autoincrement()) @unique
   firstname        String        @db.VarChar
   lastname         String        @db.VarChar
   email            String?
@@ -62,7 +62,7 @@ model report {
   engine_type         engine_type?
   organization        organization? @relation(fields: [organization_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   report_rows         report_row[]
-  delivered_order     delivered_order[]
+  orders              order[]
 }
 
 model report_row {
@@ -169,6 +169,9 @@ model order {
   order_total_amount Int
   order_rows  order_row[]
   order_status order_status
+  report_id Int? @unique
+  report report? @relation(fields: [report_id], references: [id])
+
 }
 
 model order_row {
@@ -204,7 +207,6 @@ model delivered_order {
   delivered_order_row  delivered_order_row[]
   order_status order_status
   report_id Int @unique
-  report report @relation(fields: [report_id], references: [id])
 }
 
 model delivered_order_row {
