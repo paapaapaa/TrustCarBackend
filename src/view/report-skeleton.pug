@@ -40,6 +40,6 @@ html
             each row in section.rows 
                 .list-item
                   .question-answer
-                    strong  #{row.question}
-                    span  #{row.comment}
+                    strong(class=row.status)  #{row.question}
+                    span(class=row.status)  #{row.comment}
 
