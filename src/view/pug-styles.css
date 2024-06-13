@@ -112,13 +112,29 @@ body {
     display: flex; 
 }
 
-.question-answer strong {
+.question-answer strong.green{
     flex: 1;
     background-color: #d0d0d0;
     padding: 10px;
     margin: 0;
     border-bottom: 2px solid;
-    border-color: #fff;
+    border-color: #d0d0d0;
+}
+.question-answer strong.red{
+    flex: 1;
+    background-color: #db0000;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 2px solid;
+    border-color: #d0d0d0;
+}
+.question-answer strong.yellow{
+    flex: 1;
+    background-color: #fffb1b;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 2px solid;
+    border-color: #d0d0d0;
 }
 .question-answer span{
     flex: 1;

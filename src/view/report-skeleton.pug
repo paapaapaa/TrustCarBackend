@@ -18,7 +18,6 @@ html
         each section in headerSections
           .header-section
             .header
-              img(src="icon.png", alt="Small icon")
               h3 #{section.sectionName}
 
             .lists-container
@@ -35,13 +34,12 @@ html
       each section in sections
         .header-section
           .header
-            img(src="icon.png", alt="Small icon")
             h3 #{section.sectionName}
 
           .lists-container
             each row in section.rows 
                 .list-item
                   .question-answer
-                    strong  #{row.question}
-                    span  #{row.comment}
+                    strong(class=row.status)  #{row.question}
+                    span(class=row.status)  #{row.comment}
 
