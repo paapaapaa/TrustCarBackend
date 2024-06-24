@@ -207,7 +207,7 @@ export const updateOrderStatus = async (_req: Request, res: Response, next: Next
   if(_req.params.organizationType !== "inspection") {
     res.status(403).json({ message: "You are not allowed to update order status" });
   }
-  const { status,id } = updateOrderValidator.cast(_req.body);
+  const { status,id, delivery_date } = updateOrderValidator.cast(_req.body);
   if(status === "ready"){
     res.status(403).json({ message: "You are not allowed to update order status to ready" });
   }
@@ -221,6 +221,7 @@ export const updateOrderStatus = async (_req: Request, res: Response, next: Next
       data: {
         order_status: status,
         inspector_id: modified_by_user,
+        ...(delivery_date && { delivery_date }),
       },
     });
     res.status(200).json({ order });

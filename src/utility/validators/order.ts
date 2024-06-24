@@ -1,4 +1,4 @@
-import { object,string,mixed, number, array } from "yup";
+import { object,string,mixed, number, array, date } from "yup";
 import { engine_type, order_status, report_type } from "@prisma/client";
 
 /**
@@ -107,6 +107,10 @@ export const getOrderPriceValidator = object().shape(
  *             - not_started
  *             - ready
  *           description: The status of the order. Required. Must be one of the predefined order statuses.
+ *         delivery_date:
+ *           type: string
+ *           format: date-time
+ *           description: The delivery date of the order. Optional.
  *       required:
  *         - id
  *         - status
@@ -115,6 +119,7 @@ export const updateOrderValidator = object().shape(
     {
         id: number().required("Order id is required"),
         status: mixed<order_status>().required("Status is required").oneOf(Object.values(order_status), "Invalid status"),
+        delivery_date: date().optional(),
     });
 
 /**
