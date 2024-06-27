@@ -13,9 +13,6 @@ export const createOrder = async (
   res: Response,
   next: NextFunction
 ) => {
-  if (_req.params.organizationType !== "seller") {
-    res.status(403).json({ message: "You are not allowed to create orders" });
-  }
 
   const {
     brand_and_model,
