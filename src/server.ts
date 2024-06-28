@@ -27,6 +27,8 @@ server.get("/api/v1/test-route", (_req, res) => {
     res.send("Hello World!");
 });
 
+console.log("PORT", PORT);
+
 server.use("/api/v1/user", upload.none(), userRouter);
 server.use("/api/v1/report", upload.none(), reportRouter);
 server.use("/api/v1/organization", organiztionRouter);
