@@ -247,7 +247,9 @@ export const deleteOrder = async (
   res: Response,
   next: NextFunction
 ) => {
+
   const { id } = deleteOrderValidator.cast(_req.query);
+  console.log(id);
   try {
     const order = await prisma.order.findUnique({
       where: {
@@ -270,6 +272,11 @@ export const deleteOrder = async (
         .status(403)
         .json({ message: "You are not allowed to delete this order" });
     } else {
+      await prisma.order_row.deleteMany({
+        where: {
+          order_id: id,
+        },
+      });
       await prisma.order.delete({
         where: {
           id: id,

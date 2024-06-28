@@ -51,6 +51,7 @@ export const validateDeleteOrder = (
     _res: Response,
     next: NextFunction
 ) => {
+    console.log("req.query", req.query);
     deleteOrderValidator
         .validate(req.query, { abortEarly: false })
         .then(() => {
