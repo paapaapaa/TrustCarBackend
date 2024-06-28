@@ -117,6 +117,13 @@ export const updateOrderValidator = object().shape(
         status: mixed<order_status>().required("Status is required").oneOf(Object.values(order_status), "Invalid status"),
     });
 
+
+export const deleteOrderValidator = object().shape(
+    {
+        id: number().required("Order id is required"),
+    }
+);
+
 /**
  * @openapi
  * components:

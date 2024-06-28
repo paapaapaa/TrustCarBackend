@@ -1,11 +1,13 @@
 import express, { RequestHandler } from "express";
 import {
   validateCreateOrder,
+  validateDeleteOrder,
   validateGetOrderPrice,
   validateUpdateOrder,
 } from "../../middleware/validate/order";
 import {
   createOrder,
+  deleteOrder,
   getOrderPrice,
   getOrders,
   getSections,
@@ -176,5 +178,7 @@ router.get("/", TokenExtractor as RequestHandler, getOrders as RequestHandler);
  *              $ref: '#/components/schemas/Order'
  */
 router.put("/", validateUpdateOrder, TokenExtractor as RequestHandler, updateOrderStatus as RequestHandler);
+
+router.delete("/", validateDeleteOrder, TokenExtractor as RequestHandler, deleteOrder as RequestHandler);
 
 export default router;
