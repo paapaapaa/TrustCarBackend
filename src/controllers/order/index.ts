@@ -218,7 +218,7 @@ export const updateOrderStatus = async (
       .status(403)
       .json({ message: "You are not allowed to update order status" });
   }
-  const { status, id } = updateOrderValidator.cast(_req.body);
+  const { status, id, delivery_date } = updateOrderValidator.cast(_req.body);
   if (status === "ready") {
     res
       .status(403)
