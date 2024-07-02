@@ -122,6 +122,13 @@ export const updateOrderValidator = object().shape(
         delivery_date: date().optional(),
     });
 
+
+export const deleteOrderValidator = object().shape(
+    {
+        id: number().required("Order id is required"),
+    }
+);
+
 /**
  * @openapi
  * components:

@@ -232,12 +232,14 @@ export const saveReport = async (
       },
     });
 
-    const order = await prisma.order.findFirst({ 
+    const order = await prisma.order.update({ 
       where: {
         id: order_id,
       },
-      include: {
-        order_rows: true,
+      data:{
+        order_status: "ready",
+        inspector_id: modified_by_user,
+        report_id: data.id,
       }
     });
 
@@ -247,45 +249,45 @@ export const saveReport = async (
       });
     }
 
-    await prisma.order_row.deleteMany({
-      where: {
-        order_id,
-      },
-    });
+    // await prisma.order_row.deleteMany({
+    //   where: {
+    //     order_id,
+    //   },
+    // });
 
-    await prisma.order.delete({
-      where: {
-        id: order_id,
-      },
-    });
+    // await prisma.order.delete({
+    //   where: {
+    //     id: order_id,
+    //   },
+    // });
 
-    if(order){
-      const delivered_order = await prisma.delivered_order.create({
-        data:{
-          customer_id: order.customer_id!,
-          inspector_id: modified_by_user,
-          inspection_organization_id: organization_id,
-          customer_organization_id: order.customer_organization_id,
-          delivery_date: new Date(),
-          registration_number: order.registration_number,
-          car_production_number: order.car_production_number,
-          brand_and_model: order.brand_and_model,
-          engine_type: order.engine_type,
-          additional_information: order.additional_information!,
-          additional_information2: order.additional_information2!,
-          order_total_amount: order.order_total_amount,
-          order_status: "ready",
-          report_id: data.id,
-        }
-      });
+    // if(order){
+    //   const delivered_order = await prisma.delivered_order.create({
+    //     data:{
+    //       customer_id: order.customer_id!,
+    //       inspector_id: modified_by_user,
+    //       inspection_organization_id: organization_id,
+    //       customer_organization_id: order.customer_organization_id,
+    //       delivery_date: new Date(),
+    //       registration_number: order.registration_number,
+    //       car_production_number: order.car_production_number,
+    //       brand_and_model: order.brand_and_model,
+    //       engine_type: order.engine_type,
+    //       additional_information: order.additional_information!,
+    //       additional_information2: order.additional_information2!,
+    //       order_total_amount: order.order_total_amount,
+    //       order_status: "ready",
+    //       report_id: data.id,
+    //     }
+    //   });
 
-      await prisma.delivered_order_row.createMany({
-        data: order.order_rows.map((row) => ({
-          order_id: delivered_order.id,
-          section_id: row.section_id,
-        })),
-      });
-    }
+    //   await prisma.delivered_order_row.createMany({
+    //     data: order.order_rows.map((row) => ({
+    //       order_id: delivered_order.id,
+    //       section_id: row.section_id,
+    //     })),
+    //   });
+    // }
     
     res.status(201).json({
       data,

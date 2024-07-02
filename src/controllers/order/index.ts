@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import {
   createOrderValidator,
+  deleteOrderValidator,
   getOrderPriceValidator,
   updateOrderValidator,
 } from "../../utility/validators/order";
@@ -13,10 +14,6 @@ export const createOrder = async (
   res: Response,
   next: NextFunction
 ) => {
-  if (_req.params.organizationType !== "seller") {
-    res.status(403).json({ message: "You are not allowed to create orders" });
-  }
-
   const {
     brand_and_model,
     engine_type,
@@ -65,12 +62,11 @@ export const createOrder = async (
           customer_id: parseInt(_req.params.userId),
           customer_organization_id: parseInt(_req.params.organizationId),
           inspection_organization_id,
-          order_status:"not_started"
+          order_status: "not_started",
         },
       });
       res.status(201).json({ order });
-    }
-     else if(report_type === "light" && sections) {
+    } else if (report_type === "light" && sections) {
       const report_sections = await prisma.section.findMany({
         where: {
           id: {
@@ -102,12 +98,11 @@ export const createOrder = async (
           customer_id: parseInt(_req.params.userId),
           customer_organization_id: parseInt(_req.params.organizationId),
           inspection_organization_id,
-          order_status:"not_started"
+          order_status: "not_started",
         },
       });
       res.status(201).json({ order });
-     }
-     else {
+    } else {
       res.status(400).json({ message: "Something wrong with request" });
     }
   } catch (error) {
@@ -115,44 +110,55 @@ export const createOrder = async (
   }
 };
 
-export const getOrders = async(_req: Request, res: Response) => {
-  let query = {};
-  if(_req.params.organizationType === "inspection") {
-    query = {
-      where: {
-        inspection_organization_id: parseInt(_req.params.organizationId),
-      },
-    };
-  }
-  else if(_req.params.organizationType === "seller") {
-    query = {
-      where: {
-        customer_organization_id: parseInt(_req.params.organizationId),
-      },
-    };
-  }
-  else {
+export const getOrders = async (_req: Request, res: Response) => {
+  if (_req.params.organizationType === "inspection") {
+    try {
+      const orders = await prisma.order.findMany({
+        where: {
+          OR: [
+            {
+              inspection_organization_id: parseInt(_req.params.organizationId),
+            },
+            {
+              customer_organization_id: parseInt(_req.params.organizationId),
+            },
+          ],
+        },
+      });
+      res.status(200).json({
+        orders,
+      });
+    } catch (error) {
+      res.status(400).json({ message: "Error fetching orders" });
+    }
+  } else if (_req.params.organizationType === "seller") {
+    try {
+      const orders = await prisma.order.findMany({
+        where: {
+          customer_organization_id: parseInt(_req.params.organizationId),
+        },
+      });
+      res.status(200).json({
+        orders,
+      });
+    } catch (error) {
+      res.status(400).json({ message: "Error fetching orders" });
+    }
+  } else {
     res.status(403).json({ message: "You are not allowed to fetch orders" });
   }
-  try {
-    const orders = await prisma.order.findMany(query);
-    res.status(200).json({ orders });
-  } catch (error) {
-    res.status(400).json({ message: "Error fetching orders" });
-  }
 };
-
 
 export const getSections = async (_req: Request, res: Response) => {
   try {
     const sections = await prisma.section.findMany({
-      include:{
-        translations:{
-          select:{
-            value:true,
-          }
-        }
-      }
+      include: {
+        translations: {
+          select: {
+            value: true,
+          },
+        },
+      },
     });
     res.status(200).json({ sections });
   } catch (error) {
@@ -194,8 +200,7 @@ export const getOrderPrice = async (_req: Request, res: Response) => {
         0
       );
       res.status(200).json({ order_total });
-    }
-    else {
+    } else {
       res.status(400).json({ message: "Something wrong with the request" });
     }
   } catch (error) {
@@ -203,13 +208,21 @@ export const getOrderPrice = async (_req: Request, res: Response) => {
   }
 };
 
-export const updateOrderStatus = async (_req: Request, res: Response, next: NextFunction) => {
-  if(_req.params.organizationType !== "inspection") {
-    res.status(403).json({ message: "You are not allowed to update order status" });
+export const updateOrderStatus = async (
+  _req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  if (_req.params.organizationType !== "inspection") {
+    res
+      .status(403)
+      .json({ message: "You are not allowed to update order status" });
   }
-  const { status,id, delivery_date } = updateOrderValidator.cast(_req.body);
-  if(status === "ready"){
-    res.status(403).json({ message: "You are not allowed to update order status to ready" });
+  const { status, id } = updateOrderValidator.cast(_req.body);
+  if (status === "ready") {
+    res
+      .status(403)
+      .json({ message: "You are not allowed to update order status to ready" });
   }
   const { userId } = _req.params;
   const modified_by_user = parseInt(userId);
@@ -225,6 +238,53 @@ export const updateOrderStatus = async (_req: Request, res: Response, next: Next
       },
     });
     res.status(200).json({ order });
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const deleteOrder = async (
+  _req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+
+  const { id } = deleteOrderValidator.cast(_req.query);
+  console.log(id);
+  try {
+    const order = await prisma.order.findUnique({
+      where: {
+        id: id,
+      },
+    });
+    if (!order) {
+      res.status(404).json({ message: "Order not found" });
+    } else if (
+      order.order_status === "ready" ||
+      order.order_status === "started"
+    ) {
+      res
+        .status(403)
+        .json({ message: "You are not allowed to delete this order" });
+    } else if (
+      order.customer_organization_id !== parseInt(_req.params.organizationId)
+    ) {
+      res
+        .status(403)
+        .json({ message: "You are not allowed to delete this order" });
+    } else {
+      await prisma.order_row.deleteMany({
+        where: {
+          order_id: id,
+        },
+      });
+      await prisma.order.delete({
+        where: {
+          id: id,
+        },
+      });
+      res.status(200).json({ message: "Order deleted successfully" });
+    }
   } catch (error) {
     next(error);
   }
