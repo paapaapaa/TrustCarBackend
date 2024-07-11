@@ -85,7 +85,7 @@ jobs:
             cd trustcar/trustcar-back/
             git checkout main
             git pull
-            cd trustcar/trustcar-back/carpass-admin
+            cd carpass-admin
             npm install
             npm run build
             cp -r /dist/* ../public/
