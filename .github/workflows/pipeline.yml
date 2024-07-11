@@ -82,7 +82,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd trustcar/trustcar-back/
+            cd trustcar/trustcar-back/carpass-admin
+            npm run build
+            cp -r /dist/* ~/trustcar/trustcar-back/public/
+            cd ..
             git checkout main
             git pull
             docker-compose -f docker-compose.pro.yml down
