@@ -19,7 +19,7 @@ function App() {
       <AppBar position="static" sx={{backgroundColor:"transparent"}}>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            CarPass
+            CarPass.fi
           </Typography>
           <a href="./carpass.apk" target="_blank" rel="noreferrer">
           <Button color="info" sx={{backgroundColor:"#222222"}} startIcon={<Android sx={{color:"greenyellow"}}/>}>
