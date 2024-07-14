@@ -25,14 +25,14 @@ function App() {
         alignItems: "center",
         justifyContent: "center",
       }}>
-        <Box sx={{ width: "60%", height: "60%", backgroundColor: "black", display: "flex", flexDirection: "column", alignItems: "start", justifyContent: "center", padding: "20px 40px", border: "1px solid grey" }}>
-          <Typography variant="h2" sx={{ color: "white", marginBottom: "40px", fontSize:{xs:"1.75rem", sm:undefined} }}>
+        <Box sx={{ width: { xs: "90%", sm: "60%" }, height: { xs: "40%", sm: "60%" }, backgroundColor: "black", display: "flex", flexDirection: "column", alignItems: "start", justifyContent: "center", padding: { xs: "20px 10px", sm: "20px 40px" }, border: "1px solid grey" }}>
+          <Typography variant="h2" sx={{ color: "white", marginBottom: "40px", fontSize: { xs: "1.75rem", sm: "3.75rem" } }}>
             Contact Us
           </Typography>
-          <Typography variant="h4" sx={{ color: "white", fontSize:{xs:"1.125rem"} }}>
+          <Typography variant="h4" sx={{ color: "white", fontSize: { xs: "1.125rem", sm: "2.125rem" } }}>
             Name: Sami Seppälä
           </Typography>
-          <Typography variant="h4" sx={{ color: "white", fontSize:{xs:"1.125rem"} }}>
+          <Typography variant="h4" sx={{ color: "white", fontSize: { xs: "1.125rem", sm: "2.125rem" } }}>
             Phone: +358 45 6703822
           </Typography>
         </Box>
@@ -59,7 +59,7 @@ function App() {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               CarPass
             </Typography>
-            <Button color="info" sx={{ marginRight: {xs:"0px", sm:"20px"} }} onClick={() => { setOpen(true) }}>
+            <Button color="info" sx={{ marginRight: { xs: "0px", sm: "20px" } }} onClick={() => { setOpen(true) }}>
               Demo
             </Button>
             <Button onClick={() => { setShowContactUs(true) }} color="info">Contact Us</Button>
