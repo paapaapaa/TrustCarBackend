@@ -26,13 +26,13 @@ function App() {
         justifyContent: "center",
       }}>
         <Box sx={{ width: "60%", height: "60%", backgroundColor: "black", display: "flex", flexDirection: "column", alignItems: "start", justifyContent: "center", padding: "20px 40px", border: "1px solid grey" }}>
-          <Typography variant="h2" sx={{ color: "white", marginBottom: "40px" }}>
+          <Typography variant="h2" sx={{ color: "white", marginBottom: "40px", fontSize:{xs:"1.75rem", sm:undefined} }}>
             Contact Us
           </Typography>
-          <Typography variant="h4" sx={{ color: "white" }}>
+          <Typography variant="h4" sx={{ color: "white", fontSize:{xs:"1.125rem"} }}>
             Name: Sami Seppälä
           </Typography>
-          <Typography variant="h4" sx={{ color: "white" }}>
+          <Typography variant="h4" sx={{ color: "white", fontSize:{xs:"1.125rem"} }}>
             Phone: +358 45 6703822
           </Typography>
         </Box>

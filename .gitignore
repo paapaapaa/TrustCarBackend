@@ -4,5 +4,5 @@ database_dev
 .idea/
 .env
 *.pdf
-public/
+public
 docker-compose.pro.yml
