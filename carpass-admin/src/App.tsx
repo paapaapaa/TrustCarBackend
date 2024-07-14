@@ -59,7 +59,7 @@ function App() {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               CarPass
             </Typography>
-            <Button color="info" sx={{ marginRight: "40px" }} onClick={() => { setOpen(true) }}>
+            <Button color="info" sx={{ marginRight: {xs:"0px", sm:"20px"} }} onClick={() => { setOpen(true) }}>
               Demo
             </Button>
             <Button onClick={() => { setShowContactUs(true) }} color="info">Contact Us</Button>
@@ -76,13 +76,13 @@ function App() {
           }}
         >
           <Box sx={{
-            width: "60%",
+            width: { xs: "90%", sm: "65%" },
             height: "100%",
             display: "flex",
             flexDirection: "column",
             alignItems: "start",
             justifyContent: "center",
-            padding: "0px 50px",
+            padding: { xs: "5px", sm: "0px 40px" },
           }}>
             <Typography variant="h2" sx={{ color: "white", fontWeight: "100", marginBottom: "40px" }}>
               The Ultimate Car Inspection Solution
@@ -103,7 +103,7 @@ function App() {
             sx={{
               width: "35%",
               height: "100%",
-              display: "flex",
+              display: { xs: "none", sm: "flex" },
               alignItems: "center",
               justifyContent: "center",
             }}
