@@ -1,6 +1,6 @@
 # Trust Car Backend
 
-### Environment
+### Environment.
 
 `.env` file with
 
