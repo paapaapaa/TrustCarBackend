@@ -138,7 +138,7 @@ async function main() {
   await addOrganization("XYZ Inspection",organization_type.inspection,"inspector2");
   await addOrganization("ABC Seller",organization_type.seller,"seller1");
   await addOrganization("XYZ Seller",organization_type.seller,"seller2");
-  await addOrganization("Test Seller",organization_type.seller,"myyjä");
+  await addOrganization("Test Seller",organization_type.seller,"myyja");
   await addOrganization("Test Inspection",organization_type.inspection,"tarkastaja");
 
 }
