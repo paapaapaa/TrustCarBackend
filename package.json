@@ -48,6 +48,7 @@
     "pug": "^3.0.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",
+    "trustcar-back": "file:",
     "yup": "^1.3.3"
   }
 }

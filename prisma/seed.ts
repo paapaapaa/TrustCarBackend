@@ -102,7 +102,7 @@ async function addOrganization(organization:string,type:organization_type,user:s
 
   
     const username = user;
-    const password = "password";
+    const password = "salasana";
     const firstname = "fname";
     const lastname = "lname";
     const organizationId = org.id;
@@ -138,6 +138,9 @@ async function main() {
   await addOrganization("XYZ Inspection",organization_type.inspection,"inspector2");
   await addOrganization("ABC Seller",organization_type.seller,"seller1");
   await addOrganization("XYZ Seller",organization_type.seller,"seller2");
+  await addOrganization("Test Seller",organization_type.seller,"myyja");
+  await addOrganization("Test Inspection",organization_type.inspection,"tarkastaja");
+
 }
 
 main()

@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import { PrismaClient, organization_type } from "@prisma/client";
+// import { PrismaClient, organization_type } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 import {
   getReportStructureValidator,
   saveReportValidator,
@@ -177,16 +178,17 @@ export const saveReport = async (
   res: Response,
   next: NextFunction
 ) => {
-  const { userId, organizationId, organizationType } = req.params;
+  // const { userId, organizationId, organizationType } = req.params;
+  const { userId, organizationId } = req.params;
   const modified_by_user = parseInt(userId);
   const organization_id = parseInt(organizationId);
-  const organization_type = organizationType as organization_type;
+  // const organization_type = organizationType as organization_type;
   
-  if(organization_type !== "inspection"){
-    res.status(403).json({
-      message: "You are not allowed to save reports",
-    });
-  }
+  // if(organization_type !== "inspection"){
+  //   res.status(403).json({
+  //     message: "You are not allowed to save reports",
+  //   });
+  // }
 
   const {
     brand_and_model,

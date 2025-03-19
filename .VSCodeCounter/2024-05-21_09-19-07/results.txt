@@ -1,0 +1,81 @@
+Date : 2024-05-21 09:19:07
+Directory : c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src
+Total : 29 files,  1586 codes, 845 comments, 189 blanks, all 2620 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| TypeScript |         26 |      1,398 |        845 |        156 |      2,399 |
+| CSS        |          1 |        142 |          0 |         22 |        164 |
+| Pug        |          1 |         40 |          0 |          8 |         48 |
+| XML        |          1 |          6 |          0 |          3 |          9 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                           | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                              |         29 |      1,586 |        845 |        189 |      2,620 |
+| . (Files)                                                                                      |          2 |         31 |          6 |         13 |         50 |
+| controllers                                                                                    |          4 |        854 |          0 |         62 |        916 |
+| controllers\order                                                                              |          1 |        221 |          0 |         10 |        231 |
+| controllers\organization                                                                       |          1 |         21 |          0 |          4 |         25 |
+| controllers\report                                                                             |          1 |        524 |          0 |         34 |        558 |
+| controllers\user-controller                                                                    |          1 |         88 |          0 |         14 |        102 |
+| messages                                                                                       |          2 |          2 |          0 |          0 |          2 |
+| messages\report                                                                                |          1 |          1 |          0 |          0 |          1 |
+| messages\user                                                                                  |          1 |          1 |          0 |          0 |          1 |
+| middleware                                                                                     |          5 |        213 |          0 |         16 |        229 |
+| middleware (Files)                                                                             |          1 |         60 |          0 |          5 |         65 |
+| middleware\validate                                                                            |          4 |        153 |          0 |         11 |        164 |
+| routers                                                                                        |          4 |         86 |        325 |         33 |        444 |
+| routers\order                                                                                  |          1 |         30 |        143 |          8 |        181 |
+| routers\organization                                                                           |          1 |         12 |         24 |          4 |         40 |
+| routers\report                                                                                 |          1 |         36 |        106 |         14 |        156 |
+| routers\user-router                                                                            |          1 |          8 |         52 |          7 |         67 |
+| swagger                                                                                        |          2 |         67 |          2 |          8 |         77 |
+| swagger (Files)                                                                                |          1 |         48 |          2 |          7 |         57 |
+| swagger\schema                                                                                 |          1 |         19 |          0 |          1 |         20 |
+| utility                                                                                        |          7 |        145 |        512 |         24 |        681 |
+| utility (Files)                                                                                |          2 |          7 |          0 |          2 |          9 |
+| utility\types                                                                                  |          1 |         36 |        118 |          4 |        158 |
+| utility\validators                                                                             |          4 |        102 |        394 |         18 |        514 |
+| view                                                                                           |          3 |        188 |          0 |         33 |        221 |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                       | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\controllers\order\index.ts           | TypeScript |        221 |          0 |         10 |        231 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\controllers\organization\index.ts    | TypeScript |         21 |          0 |          4 |         25 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\controllers\report\index.ts          | TypeScript |        524 |          0 |         34 |        558 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\controllers\user-controller\index.ts | TypeScript |         88 |          0 |         14 |        102 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\index.ts                             | TypeScript |          5 |          0 |          1 |          6 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\messages\report\index.ts             | TypeScript |          1 |          0 |          0 |          1 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\messages\user\index.ts               | TypeScript |          1 |          0 |          0 |          1 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\middleware\index.ts                  | TypeScript |         60 |          0 |          5 |         65 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\middleware\validate\order.ts         | TypeScript |         44 |          0 |          3 |         47 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\middleware\validate\organization.ts  | TypeScript |         16 |          0 |          1 |         17 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\middleware\validate\report.ts        | TypeScript |         63 |          0 |          5 |         68 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\middleware\validate\user.ts          | TypeScript |         30 |          0 |          2 |         32 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\routers\order\index.ts               | TypeScript |         30 |        143 |          8 |        181 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\routers\organization\index.ts        | TypeScript |         12 |         24 |          4 |         40 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\routers\report\index.ts              | TypeScript |         36 |        106 |         14 |        156 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\routers\user-router\index.ts         | TypeScript |          8 |         52 |          7 |         67 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\server.ts                            | TypeScript |         26 |          6 |         12 |         44 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\swagger\index.ts                     | TypeScript |         48 |          2 |          7 |         57 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\swagger\schema\login.schema.ts       | TypeScript |         19 |          0 |          1 |         20 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\utility\Config.ts                    | TypeScript |          4 |          0 |          2 |          6 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\utility\createError.ts               | TypeScript |          3 |          0 |          0 |          3 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\utility\types\report.ts              | TypeScript |         36 |        118 |          4 |        158 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\utility\validators\order.ts          | TypeScript |         35 |        178 |          8 |        221 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\utility\validators\organization.ts   | TypeScript |          5 |         35 |          2 |         42 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\utility\validators\report.ts         | TypeScript |         50 |        123 |          5 |        178 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\utility\validators\user.ts           | TypeScript |         12 |         58 |          3 |         73 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\view\carpass_logo.svg                | XML        |          6 |          0 |          3 |          9 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\view\pug-styles.css                  | CSS        |        142 |          0 |         22 |        164 |
+| c:\Users\soura\OneDrive\Desktop\softEng\trustcar-back\src\view\report-skeleton.pug             | Pug        |         40 |          0 |          8 |         48 |
+| Total                                                                                          |            |      1,586 |        845 |        189 |      2,620 |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
